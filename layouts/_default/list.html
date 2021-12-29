@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+
+<!-- checking blog -->
+{{ if or (or (eq .Section "post") (eq .Section "blog") (eq .Type site.Params.blogCategoryType)) (or (eq .Section "categories") (eq .Section "tags") )}}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ range first 1 (where .Data.Pages "Type" "featured") }}
+      <div class="col-12 mb-5 pb-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="{{ .Params.image | relURL }}" alt="{{.Title}}" class="img-fluid rounded-lg w-100">
+          </div>
+          <div class="col-md-6">
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h2>
+            <p class="card-text">{{ .Summary }}</p>
+            <a href="{{.Permalink}}" title="{{ i18n "readmore" }} - {{ .Title }}" class="btn btn-primary">{{ i18n "readmore" }}</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ $paginator := .Paginate  (where .Data.Pages "Type" "!=" "featured") }}
+      {{ range $paginator.Pages }}
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card border-0">
+          <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4">
+          <div class="card-body p-0">
+            <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h3>
+            <p class="card-text">{{ .Summary }}</p>
+            <a href="{{.Permalink}}" title="{{ i18n "readmore" }} - {{ .Title }}" class="btn btn-primary btn-sm">{{ i18n "readmore" }}</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      <div class="col-12">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- regular page -->
+{{ else }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

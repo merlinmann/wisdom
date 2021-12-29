@@ -1,0 +1,175 @@
+body {
+  background-color: $body-color;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color:darken($color: $primary-color, $amount: 10);
+  color: $white;
+}
+
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+  outline: 2px solid #fff;
+}
+
+
+/* preloader */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ol,
+ul {
+  margin: 0px;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: .2s ease;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+a:hover {
+  color: $primary-color;
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &-title {
+    margin-bottom: 30px;
+  }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.border-default {
+  border-color: $border-color !important;
+}
+
+/* overlay */
+
+.overlay {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $black;
+    opacity: .5;
+  }
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.bg-light {
+  background-color: $light !important;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.rounded-lg{
+  border-radius: 10px !important;
+}
+
+.shadow{
+  box-shadow: 0 12px 24px -6px rgba(45,67,121,.10) !important;
+}
+
+// form control
+
+.form-control {
+  &:focus {
+    outline: 0;
+    border-color: $primary-color;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $text-color;
+  }
+}
+
+textarea.form-control {
+  height: 100px !important;
+}
+
+.list-unstyled{
+  li{
+    margin-bottom: 10px;
+  }
+}
+
+.check-mark{
+  position: relative;
+  padding-left: 0px;
+  &::before{
+    position: absolute;
+    content: "\f058";
+    color: $primary-color;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -30px;
+    top: 3px;
+  }
+  svg{
+    position: absolute;
+    color: $primary-color;
+    font-size: 25px;
+    left: -30px;
+    top: 3px;
+  }
+}

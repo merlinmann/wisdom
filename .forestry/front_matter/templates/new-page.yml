@@ -1,0 +1,13 @@
+---
+label: New Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: description
+  label: meta description

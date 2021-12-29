@@ -1,0 +1,76 @@
+/*  typography */
+
+body {
+  line-height: 1.2;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: $text-color;
+}
+
+p,
+.paragraph {
+  font-weight: 400;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $primary-font;
+}
+
+small {
+  font-size: 88%;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: $text-color-dark;
+  font-family: $primary-font;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1,
+.h1 {
+  font-size: 48px;
+
+  @include tablet {
+    font-size: 40px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 38px;
+
+  @include tablet {
+    font-size: 30px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+}
+
+h6,
+.h6 {
+  font-size: 15px;
+}
+
+.display-3{
+  font-size: 3.5rem;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+	{{ partial "head.html" . }}
+	{{ partialCached "style.html" . }}
+</head>
+
+<body>
+	{{- partial "preloader.html" . -}}
+	{{- partial "header.html" . -}}
+    
+    <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto text-center">
+              <h1 class="mb-3">404</h1>
+              <p class="mb-4">{{ i18n "error404" }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+	{{- partial "footer.html" . -}}
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!-- font family -->
+<script src="https://cdn.jsdelivr.net/gh/theprojectsomething/webfontloader@feature/google-fonts-v2/webfontloader.js"></script>
+{{$pf:= site.Params.variables.primary_font}}
+{{$sf:= site.Params.variables.secondary_font}}
+<script type="application/javascript">
+  WebFont.load({
+    google: {
+      api: 'https://fonts.googleapis.com/css2',
+      families: ['{{$pf | default `Lato:wght@400`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Lato:wght@400`}}&display=swap'{{end}}],
+      version: 2
+    },
+    active: () => {
+      sessionStorage.fontsLoaded = true
+    }
+  });
+</script>
+
+<!-- JS Plugins + Main script -->
+{{ $scripts := slice }}
+{{ range site.Params.plugins.js}}
+{{ if findRE "^http" .link }}
+<script crossorigin="anonymous" defer="defer" src="{{ .link | relURL }}" type="application/javascript" {{.attributes | safeHTMLAttr}}></script>
+{{ else }}
+{{ $scripts = $scripts | append (resources.Get .link) }}
+{{ end }}
+{{ end }}
+{{ $scripts := $scripts | append (resources.Get "js/script.js" | minify) }}
+{{ $scripts := $scripts | resources.Concat "/js/script.js" | minify | fingerprint "sha512" }}
+<script crossorigin="anonymous" defer="defer" integrity="{{ $scripts.Data.Integrity }}" type="application/javascript">{{$scripts.Content | safeJS}}</script>
+
+<!-- cookie -->
+{{ with site.Params.cookies }}
+{{ if .enable }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	{{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">{{.button}}</span>
+</div>
+<script type="application/javascript">
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires: {{ .expire_days }}
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+<!-- cookie style -->
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+{{ end }}
+{{ end }}

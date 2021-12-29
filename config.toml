@@ -1,0 +1,51 @@
+# This file is for render site varibles and plugins
+# don't remove this file.
+# The presence of this file is for compatibility with Blogdown and Forestry.
+#
+# The actual configuration files are stored in the `config/_default/` folder.
+
+
+######################### site variables ##############################
+# customize your color and font from here.
+[params.variables]
+primary_color = "#0AA8A7"
+text_color = "#777"
+text_color_dark = "#222"
+body_color = "#fff"
+border_color = "#ECECEC"
+black = "#000"
+white = "#fff"
+light = "#EDF6F5"
+
+# font variable
+# Give your font name from google font. add font weight using ":wght@" and separate by ";"
+# example: "Work Sans:wght@400;500;600"
+primary_font = "Lato:wght@400"
+primary_font_type = "sans-serif" # [serif/sans-serif]
+icon_font = "Font Awesome 5 Free"
+
+
+############################# Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+[[params.plugins.css]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"
+[[params.plugins.css]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css"
+
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.slim.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+# [[params.plugins.js]]
+# link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+# attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"

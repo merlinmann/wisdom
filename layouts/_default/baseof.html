@@ -1,0 +1,45 @@
+<!-- 
+
+PROJECT: Bigspring Hugo
+VERSION: 2.0.0
+AUTHOR: Gethugothemes
+AUTHOR WEBSITE: https://gethugothemes.com
+
+-->
+
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default `en-US` }}">
+
+<head>
+	{{ partial "head.html" . }}
+
+	{{ if hugo.IsProduction }}
+	{{ partialCached "style.html" . }}
+	{{ else }}
+	{{ partial "style.html" . }}
+	{{ end }}
+</head>
+
+<body>
+
+	{{ if hugo.IsProduction }}
+	{{ partialCached "preloader.html" . }}
+	{{ else }}
+	{{ partial "preloader.html" . }}
+	{{ end }}
+	{{ partial "header.html" . }}
+
+	<main>
+		{{ block "main" . }}{{ end }}
+	</main>
+
+	{{ if hugo.IsProduction }}
+	{{ partialCached "footer.html" . }}
+	{{ partialCached "script.html" . }}
+	{{ else }}
+	{{ partial "footer.html" . }}
+	{{ partial "script.html" . }}
+	{{ end }}
+</body>
+
+</html>

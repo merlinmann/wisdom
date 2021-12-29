@@ -1,0 +1,13 @@
+name = "Bigspring Light"
+license = "MIT"
+licenselink = "https://github.com/themefisher/bigspring-light/blob/master/LICENSE"
+description = "Bigspring is a web development company Hugo theme. It is very stylish, responsive and ready to use theme. You can use this theme to create your contemporary web design studio, creative agency, advertising firm website. This theme has a very creative and well decorated landing page, Blog page, Contact page, Pricing page and many more."
+homepage = "https://gethugothemes.com/products/bigspring/"
+demosite = "https://demo.gethugothemes.com/bigspring-light/"
+tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'clean', 'simple', 'creative', 'contact-form', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'theme', 'typography', 'multilingual', 'gethugothemes']
+features = ['bootstrap','responsive']
+min_version = "0.64.0"
+
+[author]
+name = "Themefisher"
+homepage = "https://themefisher.com/"

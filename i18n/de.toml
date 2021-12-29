@@ -1,0 +1,24 @@
+[readmore]
+other = "Weiterlesen"
+
+[translations]
+other="Übersetzungen"
+
+[error404]
+other = "Es tut uns wirklich leid aber hier scheint es nichts zu geben."
+
+[yourname]
+other = "Ihr Name"
+
+[youremail]
+other = "Ihre Email"
+
+[subject]
+other = "Betreff"
+
+[yourmessage]
+other = "Ihre Nachricht"
+
+[sendnow]
+other = "Abschicken"
+

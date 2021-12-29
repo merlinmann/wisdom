@@ -1,0 +1,68 @@
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="navigation">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
+        {{ with site.Params.logo}}
+        <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relLangURL }}" alt="{{ site.Title }}">
+        {{ else }}{{site.Title}}{{end}}
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-label="menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          {{ range site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a class="dropdown-item" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+
+          <!-- Language List -->
+        {{ if .IsTranslated }}
+        <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+          {{ $siteLanguages := site.Languages}}
+          {{ $pageLang := .Page.Lang}}
+          {{ range .Page.AllTranslations }}
+          {{ $translation := .}}
+          {{ range $siteLanguages }}
+          {{ if eq $translation.Lang .Lang }}
+          {{ $selected := false }}
+          {{ if eq $pageLang .Lang}}
+          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+          </option>
+          {{ else }}
+          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </select>
+        {{ end }}
+        </ul>
+
+        {{ if site.Params.navigation_button.enable }}
+        {{ with site.Params.navigation_button }}
+        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}
