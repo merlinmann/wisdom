@@ -193,7 +193,7 @@ Some introductory thoughts on the wisdom.
 - Related. When you meet a child, ask them if they would share the coolest thing that's happened to them this week. You can also ask them about their favorite food. Kids love food and have many thoughts about it.
 - Whenever you're considering escalating any relationship, ask yourself whether you'd be okay with getting ten times more of them. In other words, consider whether a lot more of "how they are" is a thing you really want to pursue.
 - Take a walk in a place that has lots of leaves and grass and other natural, irregular patterns. It stimulates dopamine, plus you should probably be walking more anyway. (Thanks, Tom L.)
-- Related. This is why the carpeting in casinos and hotels has such whackadoo patterns. They're squirting your brain parts with free happy juice. From a scientific standpoint.
+- Related. This is why the carpeting in casinos and hotels has such whackadoo patterns. They're squirting your brain parts with free happy juice. From a scientific standpoint. These patterns also make it more difficult to notice stains.
 - Once your party has been seated, always order a large pepperoni pizza _for the table_. (Thanks, John R.)
 - Treat every person you encounter as though they are having a way worse day than you.
 - Related: ask yourself how you might become the least annoying stranger that a given person met today. If you became the subject of a private anecdote, how great would you feel about hearing it?
