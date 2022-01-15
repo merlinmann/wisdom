@@ -44,3 +44,8 @@ We are what we pretend to be, so we must be careful about what we pretend to be.
 I'm just as God made me, sir.
 
 — Hotel Desk Clerk (_This is Spinal Tap_, 1984)
+
+
+I've been involved in a number of cults — both as a leader and a follower. You have more fun as a follower. But you make more money as a leader.
+
+— Creed Bratton  
