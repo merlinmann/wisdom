@@ -40,3 +40,7 @@ If a man love to give advice, it is a sure sign that he himself wanteth it.
 We are what we pretend to be, so we must be careful about what we pretend to be.
 
 ― Kurt Vonnegut (1962)
+
+I'm just as God made me, sir.
+
+— Desk Clerk (_This is Spinal Tap_, 1984)
