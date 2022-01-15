@@ -327,7 +327,7 @@ Some introductory thoughts on the wisdom.
 - Try to save some parts of your life to be just for you. Including some special things that you're happy about or are even a little proud of. If your only private things are shameful things, you will become very sad and will eventually despise your own company.
 - Learn to love at least one snack that can be stored in a glove box without going bad.
 - To delight a busy person, learn to ask questions that can easily be answered with a single word: "Yes."
-- Whenever the first solution to a problem involves buying something plastic at The Container Store, consider a second solution.
+- Whenever your first solution to a problem feels like it should involve buying something plastic at The Container Store, consider a second solution.
 - Most anecdotes that begin with the word "Apparently…" do not end well.
 - Open your mail over the recycling bin.
 - Related: Put a trash can anyplace your dominant hand repeatedly wants to let go of trash.
