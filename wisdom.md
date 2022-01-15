@@ -320,7 +320,7 @@ Some introductory thoughts on the wisdom.
 
 - When you first try to meditate, it'll feel like you're doing it wrong and are terrible at it. Eventually, you'll figure out that being terrible at meditation and feeling like you're doing it wrong is kind of the whole point of meditation. In truth, as long as you keep getting back to your practice, you are actually great at meditation, and you are doing very well at it.
 - Related: You'll rarely earn points in life for repeatedly thinking about something you're not doing. Unless worrying and fretting about something you're not doing makes you happy, you may wish to worry and fret less. 
-- If a given thing you've decided to do goes flawlessly, what's the best possible outcome you can imagine? Keep this question in mind before you, say, jump on a moving car or scream at a baby.
+- If a given thing you've decided to do goes flawlessly, what's the best possible outcome you can imagine? Keep this question in mind before you, say, jump onto a moving car or scream at a baby.
 - Don't buy food to get a free toy, and don't buy toys to get free food.
 - The best optimism is *earned*. Everything else is just magical thinking.
 - Everybody feels bad sometimes, but try not to feel too bad about it. Choosing to feel bad about feeling bad is ultimately optional.
@@ -339,6 +339,7 @@ Some introductory thoughts on the wisdom.
 
 ----
 
+## About the Author
 
 
 [**Merlin Mann**](http://www.merlinmann.com/) is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies) and a [bearded dragon](https://twitter.com/bandomanndo).
@@ -348,6 +349,6 @@ Some introductory thoughts on the wisdom.
 
 ----
 
-#### Legalese 
+## Licensing & Legalese 
 
 <p><a href="https://github.com/merlinmann/wisdom">Merlin's Wisdom Project</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.merlinmann.com">Merlin D. Mann</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<br /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
