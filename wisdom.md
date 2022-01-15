@@ -1,4 +1,4 @@
-<!-- hello, world 2022-01-10 16:14:18 -->
+<!-- hello, world 2022-01-14 16:47:03 -->
 
 # Merlin's Wisdom Project
 
@@ -8,7 +8,7 @@ By Merlin Mann.
 
 It's only advice for you because it **had** to be advice for me.
 
-([Link to this page](https://gist.github.com/merlinmann/09af1df28d76ba028b0999f66945fd61))
+([Link to this project](https://github.com/merlinmann/wisdom))
 
 
 
@@ -317,7 +317,26 @@ Some introductory thoughts on the wisdom.
 
 ----
 
+- When you first try to meditate, it'll feel like you're doing it wrong and are terrible at it. Eventually, you'll figure out that being terrible at meditation and feeling like you're doing it wrong is kind of the whole point of meditation. In truth, as long as you keep getting back to your practice, you are actually great at meditation, and you are doing very well at it.
+- Related: You'll rarely earn points in life for repeatedly thinking about something you're not doing. Unless worrying and fretting about something you're not doing makes you happy, you may wish to worry and fret less. 
+- If a given thing you've decided to do goes flawlessly, what's the best possible outcome you can imagine? Keep this question in mind before you, say, jump on a moving car or scream at a baby.
+- Don't buy food to get a free toy, and don't buy toys to get free food.
+- The best optimism is *earned*. Everything else is just magical thinking.
+- Everybody feels bad sometimes, but try not to feel too bad about it. Choosing to feel bad about feeling bad is ultimately optional.
+- We don't get to pick what we love or what makes us cry. Seek relationships with people who support the things that make you weepy or horny.
+- Try to save some parts of your life to be just for you. Including some special things that you're happy about or are even a little proud of. If your only private things are shameful things, you will become very sad and will eventually despise your own company.
+- Learn to love at least one snack that can be stored in a glove box without going bad.
+- To delight a busy person, learn to ask questions that can easily be answered with a single word: "Yes."
+- Whenever the first solution to a problem involves buying something plastic at The Container Store, consider a second solution.
+- Most anecdotes that begin with the word "Apparently…" do not end well.
+- Open your mail over the recycling bin.
+- Related: Put a trash can anyplace your dominant hand repeatedly wants to let go of trash.
+- If you think you're immune to making unintentional cognitive errors, you should read this sentence over and over for a few minutes.
+- Before you buy a new book, try to get a copy from the library—or just download an ebook sample. If you can't manage to finish the Kindle sample, you certainly oughtn't pay to not read the rest.
+- Reading Shakespeare is all about finding the right velocity. Read it too fast, and it won't make any sense. Read it too slow, and it'll make even less sense.
+- If your guitar sounds out of tune, it's probably the G string.
 
+----
 
 
 
@@ -330,4 +349,4 @@ Some introductory thoughts on the wisdom.
 
 #### Legalese 
 
-<p><a href="https://gist.github.com/merlinmann/09af1df28d76ba028b0999f66945fd61">The Wisdom Project</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.merlinmann.com">Merlin D. Mann</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<br /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+<p><a href="https://github.com/merlinmann/wisdom">Merlin's Wisdom Project</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.merlinmann.com">Merlin D. Mann</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<br /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
