@@ -26,7 +26,7 @@ Advice is what we ask for when we already know the answer but wish we didn't...
 
 Play the opponent, not the cards.
 
-— Pam Beasley
+— Pam Beesly
 
 The physician can bury his mistakes, but the architect can only advise his clients to plant vines.
 
@@ -43,4 +43,4 @@ We are what we pretend to be, so we must be careful about what we pretend to be.
 
 I'm just as God made me, sir.
 
-— Desk Clerk (_This is Spinal Tap_, 1984)
+— Hotel Desk Clerk (_This is Spinal Tap_, 1984)

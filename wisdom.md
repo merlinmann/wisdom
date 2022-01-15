@@ -332,7 +332,7 @@ Some introductory thoughts on the wisdom.
 - Open your mail over the recycling bin.
 - Related: Put a trash can anyplace your dominant hand repeatedly wants to let go of trash.
 - If you think you're immune to making unintentional cognitive errors, you should read this sentence over and over for a few minutes.
-- Before you buy a new book, try to get a copy from the library—or just download an ebook sample. If you can't manage to finish the Kindle sample, you certainly oughtn't pay to not read the rest.
+- Before you buy a new book, try to get a copy from the library—or just download an ebook sample. If you can't manage to finish reading the Kindle sample, you certainly oughtn't pay to not read the rest.
 - Reading Shakespeare is all about finding the right velocity. Read it too fast, and it won't make any sense. Read it too slow, and it'll make even less sense.
 - If your guitar sounds out of tune, it's probably the G string.
 
