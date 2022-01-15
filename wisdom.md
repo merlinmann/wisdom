@@ -125,6 +125,7 @@ Some introductory thoughts on the wisdom.
 - Whoever wants the meeting most usually holds the least power.
 - Archive any email that’s older than 30 days. If it kills you to archive a given email, *immediately* turn it into a task, and then archive it.
 - Most team culture comes out of a combination of what is tolerated and what is rewarded. If you legit want your culture to improve, change what you reward and rethink what you will tolerate.
+- To better understand anyone's childhood, learn which things were _way_ harder for them than they were for you.
 - Any Slack is only as good as the guy who always has the latest post. (And, it's nearly always a guy.)
 - Avoid any children’s movie whose theatrical trailer includes more than one fart or butt joke. That’s their idea of the best parts of the movie.
 - If you don't remember what an app does, you can probably delete it.
