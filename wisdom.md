@@ -337,7 +337,7 @@ Some introductory thoughts on the wisdom.
 - Reading Shakespeare is all about finding the right velocity. Read it too fast, and it won't make any sense. Read it too slow, and it'll make even less sense.
 - If your guitar sounds out of tune, it's probably the G string.
 
-----
+
 
 ## About the Author
 
@@ -347,7 +347,7 @@ Some introductory thoughts on the wisdom.
 ![Your Author (detail)](https://res.craft.do/user/full/e736ad70-e0a5-3d4c-c6da-919c20843698/doc/4FFB315E-F42B-4E74-B9C2-CE76DC20B8EF/E7D734BC-31F7-49A7-9E09-843EBC70737D_2 "Your Author (detail)")
 
 
-----
+
 
 ## Licensing & Legalese 
 
