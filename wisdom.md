@@ -210,7 +210,7 @@ Some introductory thoughts on the wisdom.
 
 - If you have trouble keeping up with washing dishes, cutlery, or cooking stuff, you probably have too much of them.
 - Be mindful about giving gifts. A gift you give with *any* expectation is a burden, and people rarely enjoy being given a burden.
-- In thinking about optimizing how you work, try to distinguish between the parts of your job that are *necessarily difficult* versus the parts that are harder than they actually need to be. The former is the reason that you get the big bucks, and the latter is the reason why you may often feel like the bucks should be bigger. 
+- In thinking about optimizing how you work, try to distinguish between the parts of your job that are *necessarily difficult* versus the parts that are harder than they actually need to be. The former is the reason that you get the big bucks, and the latter is the reason why you may often feel like the bucks should be bigger.
 - Be gracious when someone points out a dumb error you made. Especially when it comes from someone whom you respect. They're doing it because *they like you*, and because they pay attention to stuff that you do.
 - Related: To bad faith actors, you may wish to say something like, "You might just be right" or, "Yeah, life sure is pretty complicated." Answers to bad faith can and should be extremely personal.
 - Use shoe trees. It'll make you feel like a fancy duchess, plus it'll make your shoes last a lot longer.
@@ -247,7 +247,7 @@ Some introductory thoughts on the wisdom.
 ----
 
 - Everybody is doing the best they can each day. Even though what they can do is rarely enough.  
-- To entertain a child, it helps to know which things delight them and which things terrify them. 
+- To entertain a child, it helps to know which things delight them and which things terrify them.
 - Related: Most kids can be surprisingly entertained by your making them just a little bit terrified.
 - Pay attention to the times of day when you tend to have the most and the least energy. Schedule your future days accordingly.
 - You have no more than about 40 contiguous hours in which to "catch up" on sleep. Viz. you can't use Saturday morning to refill on sleep you missed last Monday night.
