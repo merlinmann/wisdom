@@ -19,7 +19,7 @@ It's only advice for you because it **had** to be advice for me.
 
 > Yet here, Laertes! aboard, aboard, for shame!  
 > The wind sits in the shoulder of your sail,  
-> And you are stay'd for.   
+> And you are stay'd for.
 >   
 > — _Hamlet_, Act 1, Scene 3.
 
@@ -222,8 +222,7 @@ Some introductory thoughts on the wisdom.
 - Write down the travel items that you forgot to pack _while you're still traveling_. You'll never remember things you've forgotten once you're back home. Choose to lean into your annoyance with yourself.
 - Order more appetizers and fewer daily specials.
 
-
-----
+-----
 
 - If you want something in life, consider just asking for it. Your friends, clients, and romantic partners are probably not mind-readers. (Thanks, Harry F. H. M.) 
 - Related: if you want a sex thing that you think is a little weird—and your partner is a healthy adult—just tell them. They probably want a weird sex thing too, and if you could just give a special thing to each other, how cool would that be?
@@ -344,7 +343,7 @@ Some introductory thoughts on the wisdom.
 
 [**Merlin Mann**](http://www.merlinmann.com/) is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies) and a [bearded dragon](https://twitter.com/bandomanndo).
 
-![Your Author (detail)](https://res.craft.do/user/full/e736ad70-e0a5-3d4c-c6da-919c20843698/doc/4FFB315E-F42B-4E74-B9C2-CE76DC20B8EF/E7D734BC-31F7-49A7-9E09-843EBC70737D_2 "Your Author (detail)")
+![Your Author (detail)](https://res.craft.do/user/full/e736ad70-e0a5-3d4c-c6da-919c20843698/doc/4FFB315E-F42B-4E74-B9C2-CE76DC20B8EF/E7D734BC-31F7-49A7-9E09-843EBC70737D_2 "Your Author")
 
 
 
@@ -352,3 +351,4 @@ Some introductory thoughts on the wisdom.
 ## Licensing & Legalese 
 
 <p><a href="https://github.com/merlinmann/wisdom">Merlin's Wisdom Project</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.merlinmann.com">Merlin D. Mann</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<br /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+
