@@ -1,4 +1,4 @@
-<!-- hello, world 2022-01-14 16:47:03 -->
+<!-- hello, world 2022-01-20 13:39:59 -->
 
 # Merlin's Wisdom Project
 
@@ -335,6 +335,20 @@ Some introductory thoughts on the wisdom.
 - Before you buy a new book, try to get a copy from the library—or just download an ebook sample. If you can't manage to finish reading the Kindle sample, you certainly oughtn't pay to not read the rest.
 - Reading Shakespeare is all about finding the right velocity. Read it too fast, and it won't make any sense. Read it too slow, and it'll make even less sense.
 - If your guitar sounds out of tune, it's probably the G string.
+
+----
+- The people most obsessed with the (supposed) hypocrisy of strangers are often the people who most dread strangers uncovering *their own* hypocrisy. This makes many of these people a little insufferable and not very fun to hang out with.
+- Related: There are numerous things in life worse and more damaging than hypocrisy. Including the implicit belief that eventually changing to become a little less of a jerk must be excoriated for its rank "hypocrisy."
+- Before deciding that you have solved a problem, it's useful to ask yourself whether you understand what *caused* the problem—as well as knowing precisely how your specific choice of solution has "fixed" it. If you mostly just kept trying various random things until something seemed to improve, you just got lucky. Which is different.
+- Whenever you acquire anything that has a manual, Google for a PDF of it, then stick it in a folder on your cloud service of choice.
+- It's mostly to young people's credit and benefit that they rarely realize that youth and its benefits are anomalous. Youth is all you have ever known in life until you reach an age when you are no longer young. At which point, you are likely to develop a strong hunch that your own youth was absolutely an anomaly.
+- Unless you are cannily identifying a specific logical fallacy, a question has likely been *raised*. Not begged.
+- Consider using less corn starch than the recipe demands.
+- Being good at arguing is not the same thing as being right; being bad at arguing is not the same thing as being wrong. 
+- It is normal and human to fear things that you don't understand. But, seeking to understand something does *not* mean you have to like it or agree with it. It may, however, suddenly make some of your fears feel refreshingly optional.
+- Carry more Imodium than you think you will ever need. They are compact in size, light in weight, and miraculously effective at keeping you from suddenly needing to shit egregiously at times and locations when you'd prefer not be shitting egregiously.
+- Related: Imodium works by sucking liquid out of your bowels, so compensate by drinking more water than you normally would. The Imodium will still work fine.
+- Relatedly Related: Several Imodiums will fit conveniently in the right-side "watch pocket" of a pair Levi's. Ditto guitar picks, a small USB drive, or some quarters with which to play the excellent 1981 arcade game, "Galaga."
 
 ----
 
