@@ -346,7 +346,7 @@ Some introductory thoughts on the wisdom.
 - Consider using less corn starch than the recipe demands.
 - Being good at arguing is not the same thing as being right; being bad at arguing is not the same thing as being wrong. 
 - It is normal and human to fear things that you don't understand. But, seeking to understand something does *not* mean you have to like it or agree with it. It may, however, suddenly make some of your fears feel refreshingly optional.
-- Carry more Imodium than you think you will ever need. They are compact in size, light in weight, and miraculously effective at keeping you from suddenly needing to shit egregiously at times and locations when you'd prefer not be shitting egregiously.
+- Carry more Imodium than you think you will ever need. They are compact in size, light in weight, and miraculously effective at keeping you from suddenly needing to shit egregiously at times and locations when you'd prefer not to be shitting egregiously.
 - Related: Imodium works by sucking liquid out of your bowels, so compensate by drinking more water than you normally would. The Imodium will still work fine.
 - Relatedly Related: Several Imodiums will fit conveniently in the right-side "watch pocket" of a pair Levi's. Ditto guitar picks, a small USB drive, or some quarters with which to play the excellent 1981 arcade game, "Galaga."
 
