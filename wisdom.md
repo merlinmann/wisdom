@@ -342,7 +342,7 @@ Some introductory thoughts on the wisdom.
 - Before deciding that you have solved a problem, it's useful to ask yourself whether you understand what *caused* the problem—as well as knowing precisely how your specific choice of solution has "fixed" it. If you mostly just kept trying various random things until something seemed to improve, you just got lucky. Which is different.
 - Whenever you acquire anything that has a manual, Google for a PDF of it, then stick it in a folder on your cloud service of choice.
 - It's mostly to young people's credit and benefit that they rarely realize that youth and its benefits are anomalous. Youth is all you have ever known in life until you reach an age when you are no longer young. At which point, you are likely to develop a strong hunch that your own youth was absolutely an anomaly.
-- Unless you are cannily identifying a specific logical fallacy, a question has likely been *raised*. Not begged.
+- Unless you are cannily identifying a specific logical fallacy, the question has likely been *raised*. Not begged.
 - Consider using less corn starch than the recipe demands.
 - Being good at arguing is not the same thing as being right; being bad at arguing is not the same thing as being wrong. 
 - It is normal and human to fear things that you don't understand. But, seeking to understand something does *not* mean you have to like it or agree with it. It may, however, suddenly make some of your fears feel refreshingly optional.
