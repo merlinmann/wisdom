@@ -1,9 +1,6 @@
 
 # Some Good Quotes
 
-
-
-
 Never trust the advice of a man in difficulties.  
 
 — Aesop, _The Fox and the Goat_ (~500 B.C.).
