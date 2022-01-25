@@ -30,7 +30,7 @@ It's only advice for you because it **had** to be advice for me.
 
 > We are what we pretend to be, so we must be careful about what we pretend to be.
 > 
-> ― Kurt Vonnegut, jr. (1962)
+> ― Kurt Vonnegut, Jr. (1962) <!-- LATER pick a format and style for quotes. Fiction vs. non-fiction? -->
 
 ----
 
@@ -60,7 +60,6 @@ Some introductory thoughts on the wisdom.
 ----
 
 ## The Wisdom So Far
-
 
 - Sometimes, an email is just a way to say, “I love you.”
 - People think about you much less than you either hope or fear.
