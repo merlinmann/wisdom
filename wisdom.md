@@ -320,7 +320,7 @@ Some introductory thoughts on the wisdom.
 
 [**Merlin Mann**](http://www.merlinmann.com/) is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies) and a [bearded dragon](https://twitter.com/bandomanndo).
 
-![Your Author (detail)](https://res.craft.do/user/full/e736ad70-e0a5-3d4c-c6da-919c20843698/doc/4FFB315E-F42B-4E74-B9C2-CE76DC20B8EF/E7D734BC-31F7-49A7-9E09-843EBC70737D_2 "Your Author")
+![Your Author (detail)](/i/so%20angry%20-%20960.jpg "Your Author")
 
 ## Licensing & Legalese
 
