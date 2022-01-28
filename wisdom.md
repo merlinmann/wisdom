@@ -1,4 +1,4 @@
-<!-- hello, world 2022-01-20 13:39:59 -->
+<!-- hello, world 2022-01-27 16:10:34        -->
 
 # Merlin's Wisdom Project
 
@@ -10,9 +10,6 @@ It's only advice for you because it **had** to be advice for me.
 
 ([Link to this project](https://github.com/merlinmann/wisdom))
 
-
-
-
 ----
 
 ## Epigraphs
@@ -20,40 +17,36 @@ It's only advice for you because it **had** to be advice for me.
 > Yet here, Laertes! aboard, aboard, for shame!  
 > The wind sits in the shoulder of your sail,  
 > And you are stay'd for.
->   
+>
 > — _Hamlet_, Act 1, Scene 3.
 
 > If a man love to give advice, it is a sure sign that he himself wanteth it.
-> 
+>
 > ― George Savile (1912)
 
-
 > We are what we pretend to be, so we must be careful about what we pretend to be.
-> 
-> ― Kurt Vonnegut, Jr. (1962) <!-- LATER pick a format and style for quotes. Fiction vs. non-fiction? -->
+>
+> ― Kurt Vonnegut, Jr. (1962)
+
+<!-- TODO pick a format and style for quotes. Fiction vs. non-fiction? -->
 
 ----
-
-
-
-
 
 ## Voi ch'entrate…
 
 Some introductory thoughts on the wisdom.
 
-- The items on offer here are based on my own experiences and sensibilities. They are each and all things that, above all, I have needed to learn. 
+- The items on offer here are based on my own experiences and sensibilities. They are each and all things that, above all, I have needed to learn.
 - None of these items is true for every person or for all times. In the event that you ever identify things that are true for every person and for all times, you may wish to start a religion.
-- None of these thoughts is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance. 
+- None of these thoughts is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
 - Related: for any item here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject items that match any of these unsavory criteria.
 - These are things that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
 - Items appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not _Reader’s Digest_.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose.
-- None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, it is provided _as-is_. 
+- None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, it is provided _as-is_.
 - You should not rely upon this document or its contents for _any purpose_ without seeking legal, medical, mental, spiritual  and/or directed  career counseling.
 - No glass containers, coolers, or inflammable materials are permitted. No motorcycles after 3pm.
-
 
 —*The Management*
 
@@ -106,14 +99,9 @@ Some introductory thoughts on the wisdom.
 - Call people what they'd like to be called. And, don't be a dick about it.
 - Frequently ask yourself: do I want to be right, or do I want to be happy?
 
+----
 
-
-* * * * *
-
-
-
-
-- Every project is a triangle made of time, money, and quality; shortening the length of one side necessarily lengthens one or—more often—*both* of the other sides. 
+- Every project is a triangle made of time, money, and quality; shortening the length of one side necessarily lengthens one or—more often—*both* of the other sides.
 - Less well known is that we each tend to blow it hardest in estimating the sides of the triangle we least understand or respect.
 - Kindly note that the grave existential truth of the Project Management Triangle is *non-negotiable*. People **hate** this. Which is normal.
 - If the person with whom you are negotiating finds it difficult to provide a decisive budget estimate for their project, ask them to try and situate it between two orders of magnitude. As in, "How many zeroes are we talking about here?" Quickly discovering that your ballpark figures are 2 to 6 zeroes apart can save you both a *lot* of time and frustration.
@@ -140,12 +128,7 @@ Some introductory thoughts on the wisdom.
 - If you want an honest opinion, ask for the second superlative. For example, if you want a thoughtful answer about someone's job, ask them their *second-least-favorite* thing about it.
 - Avoid any food whose name has been altered for legal reasons. (Thanks, Chris C.)
 
-
-
-* * * * *
-
-
-
+----
 
 - Sometimes, people ask you how you're doing when they're especially concerned about how *they’re* doing.
 - Stay focused on the outcome, not your original strategy. Viz.: if you’re looking for *a* USB cable, don't fixate on finding a *specific* box that might contain a *specific* USB cable. Just find *a* goddamned cable.
@@ -155,14 +138,7 @@ Some introductory thoughts on the wisdom.
 - After you’ve had two alcoholic beverages, begin alternating with equal amounts of water. If you have more than five drinks, change that ratio to two-to one in favor of water. (Thanks, Dennis. G.)
 - Dinner parties and most large group meals are not really about eating. They’re mostly about easy socializing. So, if you get weird when you’re hungry, *eat before you arrive*. It’ll make everyone's evening more easy and more social.
 
-
-
-
-
-* * * * *
-
-
-
+----
 
 - Sometimes in life, even though it's not your *fault*, it's still your problem. (Thanks, Marco A.)
 - Being on time for things is a sign of character and respect. Adults who are pathologically late for things are unconsciously telling the world that other people's time is worthless to them.
@@ -178,12 +154,7 @@ Some introductory thoughts on the wisdom.
 - Related. Please don't say "impact" (v.) if you just mean "affect" (v.). It makes you sound like a lame PowerPoint about dentistry.
 - Few journalists get to choose the headline for their piece. So, whenever the clickbait of a terrible, search-engine-optimized headline belies an actually-good article, consider getting mad at the editor. Not the writer.
 
-
-
-* * * * *
-
-
-
+----
 
 - You are not obliged to have a strong opinion about everything. Get fewer opinions about way fewer things, and then strive always to interrogate the basis of your strongest opinions. This is very difficult, so be grateful if you've found fewer strong opinions to interrogate.
 - Priorities are like arms. If you think you have more than a couple, you're either lying or crazy.
@@ -200,12 +171,7 @@ Some introductory thoughts on the wisdom.
 - If you're not sure what you want, it's almost definitely more sleep.
 - Your kids are not little versions of you; they are little versions of themselves. So, don't be sad or alarmed whenever they are becoming something different from you. Because, they will become *lots* of things that are different from you, and that's arguably the whole point. It is inarguably a thing that you need to cheerfully celebrate and support.
 
-
-
-
-* * * * *
-
-
+----
 
 - If you have trouble keeping up with washing dishes, cutlery, or cooking stuff, you probably have too much of them.
 - Be mindful about giving gifts. A gift you give with *any* expectation is a burden, and people rarely enjoy being given a burden.
@@ -223,7 +189,7 @@ Some introductory thoughts on the wisdom.
 
 -----
 
-- If you want something in life, consider just asking for it. Your friends, clients, and romantic partners are probably not mind-readers. (Thanks, Harry F. H. M.) 
+- If you want something in life, consider just asking for it. Your friends, clients, and romantic partners are probably not mind-readers. (Thanks, Harry F. H. M.)
 - Related: if you want a sex thing that you think is a little weird—and your partner is a healthy adult—just tell them. They probably want a weird sex thing too, and if you could just give a special thing to each other, how cool would that be?
 - Be circumspect about which strangers are allowed to alter your mood.
 - Get new socks.
@@ -260,8 +226,7 @@ Some introductory thoughts on the wisdom.
 
 ----
 
-
-- Summon a memory you dislike, and then consider how you might feel different about it tomorrow if you weren't ashamed about it. Then, consider not feeling ashamed about it. 
+- Summon a memory you dislike, and then consider how you might feel different about it tomorrow if you weren't ashamed about it. Then, consider not feeling ashamed about it.
 - Learn about Chesterton's Fence. Then, actively resist altering a given situation before you understand the reasons why it's remained unchanged for so long. (Thanks, G. K. C.)
 - Related: Bruce Lee said the "snap" of a punch should happen _behind_ the target. So, if or when you _do_ decide to change something, change the shit out of it. Because, you get almost zero points for a perfectly executed punch that snapped before the target. Because, yeah, that's so not a perfect punch.
 - Relatedly related: Read the room. When entering any new situation, be practically invisible and absolutely non-assertive until you can gauge what happened before you arrived—and how it likely felt.
@@ -276,12 +241,11 @@ Some introductory thoughts on the wisdom.
 - If you have time to check email, you have time to *do* something about it.
 - There are no "bad words." Apart from "moist, "succulent," and "craveable."
 - No one has ever died wishing they'd spent more time documenting their "minimalist desk."
-- Negative feelings are like cockroaches. You can chase them away for a few minutes, but they'll always come back as soon as you look someplace else. 
+- Negative feelings are like cockroaches. You can chase them away for a few minutes, but they'll always come back as soon as you look someplace else.
 - Related: being chased makes feelings a lot stronger.
 - In life, you _are_ your options. (Thanks, Dan I.)
 
 ----
-
 
 - Almost always order the specific food that is mentioned in the name of the restaurant. If you go to "Sally's Sirloin Shack" and order the sushi sampler, you're probably not hooked up right.
 - Give kids the opportunity to learn and practice new things in a low-stakes environment. Failure is important in life, but it needn't always be costly or dangerous.
@@ -294,7 +258,7 @@ Some introductory thoughts on the wisdom.
 - Security is a continuum that requires context, updates, and almost infinite trade-offs. Latching your screen door will not prevent a determined person from entering your home, but it will help keep the honest people honest. (Thanks, Chris C.)
 - There are things that you always want with you when you leave the house. Keys, wallet, phone, etc. That's why, when you *are* at home, they always (and only) ever belong in exactly one place—a bowl, a shelf, a hook, or what have you. Setting them down anyplace else is madness, and you know in your heart that this is true.
 
----- 
+----
 
 - Thoughts and feelings are real, but they do not have to define you. Remember that you are the sky—*not the weather*. (Thanks, Pema C.)
 - If you're going to a party, always bring a bag of ice. The host will  appreciate it, because nobody has ever been annoyed about receiving something useful that just turns into water once it's no longer useful.
@@ -317,7 +281,7 @@ Some introductory thoughts on the wisdom.
 ----
 
 - When you first try to meditate, it'll feel like you're doing it wrong and are terrible at it. Eventually, you'll figure out that being terrible at meditation and feeling like you're doing it wrong is kind of the whole point of meditation. In truth, as long as you keep getting back to your practice, you are actually great at meditation, and you are doing very well at it.
-- Related: You'll rarely earn points in life for repeatedly thinking about something you're not doing. Unless worrying and fretting about something you're not doing makes you happy, you may wish to worry and fret less. 
+- Related: You'll rarely earn points in life for repeatedly thinking about something you're not doing. Unless worrying and fretting about something you're not doing makes you happy, you may wish to worry and fret less.
 - If a given thing you've decided to do goes flawlessly, what's the best possible outcome you can imagine? Keep this question in mind before you, say, jump onto a moving car or scream at a baby.
 - Don't buy food to get a free toy, and don't buy toys to get free food.
 - The best optimism is *earned*. Everything else is just magical thinking.
@@ -336,6 +300,7 @@ Some introductory thoughts on the wisdom.
 - If your guitar sounds out of tune, it's probably the G string.
 
 ----
+
 - The people most obsessed with the (supposed) hypocrisy of strangers are often the people who most dread strangers uncovering *their own* hypocrisy. This makes many of these people a little insufferable and not very fun to hang out with.
 - Related: There are numerous things in life worse and more damaging than hypocrisy. Including the implicit belief that eventually changing to become a little less of a jerk must be excoriated for its rank "hypocrisy."
 - Before deciding that you have solved a problem, it's useful to ask yourself whether you understand what *caused* the problem—as well as knowing precisely how your specific choice of solution has "fixed" it. If you mostly just kept trying various random things until something seemed to improve, you just got lucky. Which is different.
@@ -343,7 +308,7 @@ Some introductory thoughts on the wisdom.
 - It's mostly to young people's credit and benefit that they rarely realize that youth and its benefits are anomalous. Youth is all you have ever known in life until you reach an age when you are no longer young. At which point, you are likely to develop a strong hunch that your own youth was absolutely an anomaly.
 - Unless you are cannily identifying a specific logical fallacy, the question has likely been *raised*. Not begged.
 - Consider using less corn starch than the recipe demands.
-- Being good at arguing is not the same thing as being right; being bad at arguing is not the same thing as being wrong. 
+- Being good at arguing is not the same thing as being right; being bad at arguing is not the same thing as being wrong.
 - It is normal and human to fear things that you don't understand. But, seeking to understand something does *not* mean you have to like it or agree with it. It may, however, suddenly make some of your fears feel refreshingly optional.
 - Carry more Imodium than you think you will ever need. They are compact in size, light in weight, and miraculously effective at keeping you from suddenly needing to shit egregiously at times and locations when you'd prefer not to be shitting egregiously.
 - Related: Imodium works by sucking liquid out of your bowels, so compensate by drinking more water than you normally would. The Imodium will still work fine.
@@ -353,15 +318,10 @@ Some introductory thoughts on the wisdom.
 
 ## About the Author
 
-
 [**Merlin Mann**](http://www.merlinmann.com/) is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies) and a [bearded dragon](https://twitter.com/bandomanndo).
 
 ![Your Author (detail)](https://res.craft.do/user/full/e736ad70-e0a5-3d4c-c6da-919c20843698/doc/4FFB315E-F42B-4E74-B9C2-CE76DC20B8EF/E7D734BC-31F7-49A7-9E09-843EBC70737D_2 "Your Author")
 
-
-
-
-## Licensing & Legalese 
+## Licensing & Legalese
 
 <p><a href="https://github.com/merlinmann/wisdom">Merlin's Wisdom Project</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.merlinmann.com">Merlin D. Mann</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<br /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
-
