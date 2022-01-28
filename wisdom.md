@@ -1,4 +1,4 @@
-<!-- hello, world 2022-01-27 16:10:34        -->
+<!-- hello, world 2022-01-27 20:34:11 -->
 
 # Merlin's Wisdom Project
 
@@ -43,7 +43,7 @@ Some introductory thoughts on the wisdom.
 - These are things that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
 - Items appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not _Reader’s Digest_.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
-- Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose.
+- Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
 - None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, it is provided _as-is_.
 - You should not rely upon this document or its contents for _any purpose_ without seeking legal, medical, mental, spiritual  and/or directed  career counseling.
 - No glass containers, coolers, or inflammable materials are permitted. No motorcycles after 3pm.
@@ -187,7 +187,7 @@ Some introductory thoughts on the wisdom.
 - Write down the travel items that you forgot to pack _while you're still traveling_. You'll never remember things you've forgotten once you're back home. Choose to lean into your annoyance with yourself.
 - Order more appetizers and fewer daily specials.
 
------
+----
 
 - If you want something in life, consider just asking for it. Your friends, clients, and romantic partners are probably not mind-readers. (Thanks, Harry F. H. M.)
 - Related: if you want a sex thing that you think is a little weird—and your partner is a healthy adult—just tell them. They probably want a weird sex thing too, and if you could just give a special thing to each other, how cool would that be?
