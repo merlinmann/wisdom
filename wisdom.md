@@ -318,7 +318,7 @@ Some introductory thoughts on the wisdom.
 
 ## About the Author
 
-[**Merlin Mann**](http://www.merlinmann.com/) is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies) and a [bearded dragon](https://twitter.com/bandomanndo).
+[**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and a [bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
 
 ![Your Author (detail)](/i/so_angry_-_960.jpg "Your Author")
 
