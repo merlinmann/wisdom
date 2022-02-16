@@ -18,7 +18,7 @@ It's only advice for you because it **had** to be advice for me.
 > The wind sits in the shoulder of your sail,  
 > And you are stay'd for.
 >
-> — _Hamlet_, Act 1, Scene 3.
+> — *Hamlet*, Act 1, Scene 3.
 
 > If a man love to give advice, it is a sure sign that he himself wanteth it.
 >
@@ -41,11 +41,11 @@ Some introductory thoughts on the wisdom.
 - None of these thoughts is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
 - Related: for any item here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject items that match any of these unsavory criteria.
 - These are things that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
-- Items appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not _Reader’s Digest_.
+- Items appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
-- None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, it is provided _as-is_.
-- You should not rely upon this document or its contents for _any purpose_ without seeking legal, medical, mental, spiritual  and/or directed  career counseling.
+- None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, it is provided *as-is*.
+- You should not rely upon this document or its contents for *any purpose* without seeking legal, medical, mental, spiritual  and/or directed  career counseling.
 - No glass containers, coolers, or inflammable materials are permitted. No motorcycles after 3pm.
 
 —*The Management*
@@ -112,7 +112,7 @@ Some introductory thoughts on the wisdom.
 - Whoever wants the meeting most usually holds the least power.
 - Archive any email that’s older than 30 days. If it kills you to archive a given email, *immediately* turn it into a task, and then archive it.
 - Most team culture comes out of a combination of what is tolerated and what is rewarded. If you legit want your culture to improve, change what you reward and rethink what you will tolerate.
-- To better understand anyone's childhood, learn which things were _way_ harder for them than they were for you.
+- To better understand anyone's childhood, learn which things were *way* harder for them than they were for you.
 - Any Slack is only as good as the guy who always has the latest post. (And, it's nearly always a guy.)
 - Avoid any children’s movie whose theatrical trailer includes more than one fart or butt joke. That’s their idea of the best parts of the movie.
 - If you don't remember what an app does, you can probably delete it.
@@ -165,7 +165,7 @@ Some introductory thoughts on the wisdom.
 - Whenever you're considering escalating any relationship, ask yourself whether you'd be okay with getting ten times more of them. In other words, consider whether a lot more of "how they are" is a thing you really want to pursue.
 - Take a walk in a place that has lots of leaves and grass and other natural, irregular patterns. It stimulates dopamine, plus you should probably be walking more anyway. (Thanks, Tom L.)
 - Related. This is why the carpeting in casinos and hotels has such whackadoo patterns. They're squirting your brain parts with free happy juice. From a scientific standpoint.
-- Once your party has been seated, always order a large pepperoni pizza _for the table_. (Thanks, John R.)
+- Once your party has been seated, always order a large pepperoni pizza *for the table*. (Thanks, John R.)
 - Treat every person you encounter as though they are having a way worse day than you.
 - Related: ask yourself how you might become the least annoying stranger that a given person met today. If you became the subject of a private anecdote, how great would you feel about hearing it?
 - If you're not sure what you want, it's almost definitely more sleep.
@@ -182,9 +182,9 @@ Some introductory thoughts on the wisdom.
 - Bring along an extra pen that you like.
 - Buy supplies before you need them and gadgets after you need them.
 - Three is two, two is one, and one is none.
-- Related: change the toilet paper _before_ the roll runs out. There is no reward for using the last slice, and, also, you are not seven.
+- Related: change the toilet paper *before* the roll runs out. There is no reward for using the last slice, and, also, you are not seven.
 - Always have fresh lemons around.
-- Write down the travel items that you forgot to pack _while you're still traveling_. You'll never remember things you've forgotten once you're back home. Choose to lean into your annoyance with yourself.
+- Write down the travel items that you forgot to pack *while you're still traveling*. You'll never remember things you've forgotten once you're back home. Choose to lean into your annoyance with yourself.
 - Order more appetizers and fewer daily specials.
 
 ----
@@ -217,10 +217,10 @@ Some introductory thoughts on the wisdom.
 - You have no more than about 40 contiguous hours in which to "catch up" on sleep. Viz. you can't use Saturday morning to refill on sleep you missed last Monday night.
 - Related: You definitely need more sleep.
 - Maybe almost never say anything about how someone looks ever.
-- Related: If you _are_ commenting on how someone looks, only ever compliment them on a thing that they have chosen.
+- Related: If you *are* commenting on how someone looks, only ever compliment them on a thing that they have chosen.
 - Relatedly related: But, yeah, maybe still almost never say anything about how someone looks ever.
 - Whenever someone insufferable keeps finding a way to mention specific large amounts of money they've spent, you may wish to respond by saying, "Wow! That is a ***lot*** of money!" You may also wish to keep saying this until they leave. (Thanks, Chris C.)
-- If you feel uncomfortable in small talk situations, first ensure you're doing a _really_ good job of listening. No, like: actually listening instead of thinking about how uncomfortable you are about being in the conversation.
+- If you feel uncomfortable in small talk situations, first ensure you're doing a *really* good job of listening. No, like: actually listening instead of thinking about how uncomfortable you are about being in the conversation.
 - Related: Great listeners ask good questions. "And what year was that?" and "Wow, did that feel really weird at the time?" and "Yikes, was that as terrible as it sounds?" are the sorts of things humans ask one another when they're actively listening to what someone is saying.
 - Before you move out of a house or an apartment, consider hiding a friendly note to the future tenants. Future tenants love finding friendly hidden notes.
 
@@ -228,7 +228,7 @@ Some introductory thoughts on the wisdom.
 
 - Summon a memory you dislike, and then consider how you might feel different about it tomorrow if you weren't ashamed about it. Then, consider not feeling ashamed about it.
 - Learn about Chesterton's Fence. Then, actively resist altering a given situation before you understand the reasons why it's remained unchanged for so long. (Thanks, G. K. C.)
-- Related: Bruce Lee said the "snap" of a punch should happen _behind_ the target. So, if or when you _do_ decide to change something, change the shit out of it. Because, you get almost zero points for a perfectly executed punch that snapped before the target. Because, yeah, that's so not a perfect punch.
+- Related: Bruce Lee said the "snap" of a punch should happen *behind* the target. So, if or when you *do* decide to change something, change the shit out of it. Because, you get almost zero points for a perfectly executed punch that snapped before the target. Because, yeah, that's so not a perfect punch.
 - Relatedly related: Read the room. When entering any new situation, be practically invisible and absolutely non-assertive until you can gauge what happened before you arrived—and how it likely felt.
 - Generally avoid clothing that's more interesting than you are.
 - Any noun can be made a lot funnier by placing the word "prescription" in front of it.
@@ -243,7 +243,7 @@ Some introductory thoughts on the wisdom.
 - No one has ever died wishing they'd spent more time documenting their "minimalist desk."
 - Negative feelings are like cockroaches. You can chase them away for a few minutes, but they'll always come back as soon as you look someplace else.
 - Related: being chased makes feelings a lot stronger.
-- In life, you _are_ your options. (Thanks, Dan I.)
+- In life, you *are* your options. (Thanks, Dan I.)
 
 ----
 
@@ -267,15 +267,15 @@ Some introductory thoughts on the wisdom.
 - Rather than curating a collection of well-rounded students, strive instead to attract the constituents of a well-rounded *class*. (Thanks, Rab T.)
 - Avoid situations that someone you love might later have to explain on a medical or government form.
 - Until you learn the distinction between an adversary and an enemy, you're likely to accumulate quite a few of the latter.
-- Always speak as though quoting _Fight Club_ costs at least forty dollars.
+- Always speak as though quoting *Fight Club* costs at least forty dollars.
 - Loving books and loving reading are very different things. One is about treasuring the priceless gift of the written word, and the other is about constantly telling strangers how much you love books.
 - If you can manage it, avoid teeing up a media suggestion with "I couldn't recommend this more." Because if the listener (understandably) zones out on the journey to that crucial last word, it really sounds like you kinda hated it.
-- Learn the difference between being "busy" versus being _time-constrained_. Time constraint is an immutable fact of adult life; while it can (and should) be managed, time constraint can never be eradicated. Being "busy" should be better understood as a time-limited result of an earlier management error. If you find that your busy-ness has become permanent, you must learn to manage earlier, differently, and much *much* better.
+- Learn the difference between being "busy" versus being *time-constrained*. Time constraint is an immutable fact of adult life; while it can (and should) be managed, time constraint can never be eradicated. Being "busy" should be better understood as a time-limited result of an earlier management error. If you find that your busy-ness has become permanent, you must learn to manage earlier, differently, and much *much* better.
 - Related: Start acting like your life matters.
 - Always eat and shit *before* your flight. These are just two of the numerous human requirements that are best performed anywhere that's not a commercial airline flight.
 - Start noticing how often you explain away stasis, trauma, codependence, abuse, or generally unwholesome situations because of something you claim that you "**have**" to do.
-- Related: Consider accepting that you do not actually _have_ to do anything except die.
-- Make time to write the thank-you note _before_ you open the present.
+- Related: Consider accepting that you do not actually *have* to do anything except die.
+- Make time to write the thank-you note *before* you open the present.
 - Don't call it a "warning" if it's really a *threat*. "Be careful walking to school" is a warning; "I am going to bomb your school" is a threat.
 
 ----
@@ -313,6 +313,29 @@ Some introductory thoughts on the wisdom.
 - Carry more Imodium than you think you will ever need. They are compact in size, light in weight, and miraculously effective at keeping you from suddenly needing to shit egregiously at times and locations when you'd prefer not to be shitting egregiously.
 - Related: Imodium works by sucking liquid out of your bowels, so compensate by drinking more water than you normally would. The Imodium will still work fine.
 - Relatedly Related: Several Imodiums will fit conveniently in the right-side "watch pocket" of a pair Levi's. Ditto guitar picks, a small USB drive, or some quarters with which to play the excellent 1981 arcade game, "Galaga."
+
+----
+
+- Most parents understand it's their job to keep their child from dying. But, as the kid gets older, it also becomes increasingly vital not to prevent them from living. This is very difficult.
+- If you're going to pick a fight online, do it in the late afternoon. That way, you're less likely to blow a perfectly good working day being all mad. Plus, you'll both tire yourselves out eventually, and maybe you'll do better tomorrow.
+- Related: Do not pick fights online.
+- Minimize the number of conversations you have through a closed bathroom door. Unless you're outside the door and there's a fire, or you're *inside* the door and you're out of toilet paper. Otherwise, have a little dignity, and wait for the door to open.
+- Don't be too thirsty in your quest for gratitude and acknowledgement. If you want to help someone and have the requisite skills, *just help them*. A person with a problem who also has to graciously manage needy communications about that problem now very much has two problems.
+- Related: if you *really* want to help someone, offer something extremely specific. "I'm here for you! 😬👍" is not nearly as cool as "Can I drop off a lasagna at 4?"
+- You cannot alter history by choosing not to use words. But, you do stand a small chance of improving the future by choosing better words.
+- Learn to play guitar. It takes, like, two weeks. And, once you kinda know what you're doing, you can play songs you like or just keep your hands occupied while you're thinking.
+- Related: a ukulele-sized six-string guitar (or, *guitalele*) is a portable, affordable, small-footprint instrument that you can just have around the house. Plus, they're super fun to play.
+- While it's weird to *invent* a tradition, start noticing the things that have made you happy when (or because) they've happened more than once. Then, consider acknowledging those things as a tradition.
+- Related: some of the best traditions are silly or weird or trivial traditions. Traditions related to repeating events like holidays can be a lot of fun and even very moving. But, you may discover that your new favorite traditions are just the dumb group rituals that arise amongst people who like each other and quietly treasure the hours and years they've spent sharing mundane things.
+- Xerox or scan the non-currency contents of your wallet twice a year. You'll likely regard this as a weird waste of effort until the day it saves your bacon.
+- Tip the hotel housekeeping staff. Tip them handsomely. If you had to clean *their* toilet, wouldn't you appreciate a little something for the effort?
+- Be conservative about how much stuff you accumulate because you imagine someone "might want it someday." If you're warehousing something that feels like a minor heirloom, ask the person if they want it right now, and when they inevitably say, "Oh, my God, ***NO!***" be gracious in defeat, and just find it a good home with a charity or a trash can.
+- Related: Charities, homeless shelters, and schools do not need your filthy or broken shit; they need your money. So, just give them some cash, and stop treating "worthy causes" like a guilt-free DMZ for your junk.
+- Relatedly related: quit buying products because "a portion of the proceeds goes to charity." If you actually care about a cause, give that cause some actual money. Then, you'll know *all* of the proceeds have gone to charity.
+- If there's a book that means a lot to you, buy five print copies. It helps the author, plus now you can give a free copy to a friend whom you think would love it.
+- When you get coins as change, throw them in a jar and forget about it.  That's now your baby steps toward savings, a vacation, or what have you.
+- Alternatively: leave your spare coins in a tidy little stack right outside the store you just exited. I'll bet you a chicken dinner the person who finds them could use them a lot more than you.
+- When you die, your family will be charged $100 for every time you've ever honked your car horn. I cannot tell you how I know this, but please just understand with all sober certainty how very important it is that you never again honk your car horn.
 
 ----
 
