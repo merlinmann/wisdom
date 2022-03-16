@@ -339,6 +339,22 @@ Some introductory thoughts on the wisdom.
 
 ----
 
+- If you're noticing a new name or phrase being used to refer to something you know by an older or more familiar name, try to keep an open mind. Rather than focusing on your own annoyance or discomfort, ask yourself in which direction the new name is encouraging people to move. If it feels like a good faith step toward inclusion, authenticity, kindness, or greater humanity, maybe set aside your priors and make the effort to take those positive steps right along with it.
+- Related: Get skeptical about adopting new jargon from the worlds of business, technology, or journalism. Especially if it's that sort of new jargon that enthusiastically trades clarity and precision for deliberate opacity or cheap novelty. The track record for jargon's longterm contributions to society has been bleak.
+- Be suspicious of people who like being owed a favor. Especially if it's not a favor that you requested. Often, these people are eldritch monsters who thrive on accumulating goodwill for darkly selfish reasons.
+- If the soap in a guest bathroom is new and shaped like anything besides a bar of soap, do not use it. Also, do not eat it. Because I know you kinda want to. Especially those shiny little sea shells.
+- If you're not sure who's doing your emotional labor, it's probably everyone you know.
+- When you order delivery food from a new place that looks promising, use it as an opportunity to explore. Set a baseline by ordering a dish you love, especially if it seems hard to screw up. But, as a flyer, also consider ordering an appetizer or side dish they claim people love.
+- When you order delivery food on behalf of a child, and you have a special request whose contravention risks ruining their meal, don't be squeamish about it. Just say, "No mustard, please. It's for a kid."
+- Related: Maybe think twice before telling the order-taker about a (non-existent) allergy that you claim gravely constrains your diet. A lot of people do this, restaurants know it, and it ends up harming the people who actually do have an actual allergy. A strong preference rarely rises to the level of being an emergent medical issue.
+- Relatedly related: If you really don't want mustard on your food? Yeah, maybe just tell them "It's for a kid."
+- In between "yes" and "no" is a powerful thing called *the qualified 'yes.'* Responsible and self-aware adults have every right to place conditions on their agreeing to do almost anything. And, trust me that the people who either reject or ignore this seeming subtlety are rarely the sort of people to whom you want to be making *any* kind of commitments.
+- If someone asks you to critique their work, try to gauge what it is they're actually looking for. Many people just want a friend's praise, others may be seeking insight on how close they are to being finished, while a rare few crave the most candid and withering feedback you can muster.
+- Related: People who are *accustomed* to receiving honest feedback are often really good at providing focus on what they specifically need help with, as well as context for why your advice would be useful to them right now. If their big question is "So, do you love it?" you are likely not talking to one of those people.
+- Success in relationships—especially in marriage—will largely come down to how many things only one person is ever allowed to be right about.
+
+----
+
 ## About the Author
 
 [**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and a [bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
