@@ -266,6 +266,7 @@ Some introductory thoughts on the wisdom.
 - Relatedly Related: A party is only as good as the people who attend it. Especially you. Be helpful, be fun, and delight at least one new stranger.
 - Rather than curating a collection of well-rounded students, strive instead to attract the constituents of a well-rounded *class*. (Thanks, Rab T.)
 - Avoid situations that someone you love might later have to explain on a medical or government form.
+- Think of every email you send as a pebble. To you, it may seem like a comically small thing—almost non-existent in size and weight. But, to a recipient already holding hundreds of other people's pebbles, receiving even one more tiny pebble is not without a cost.
 - Until you learn the distinction between an adversary and an enemy, you're likely to accumulate quite a few of the latter.
 - Always speak as though quoting *Fight Club* costs at least forty dollars.
 - Loving books and loving reading are very different things. One is about treasuring the priceless gift of the written word, and the other is about constantly telling strangers how much you love books.
