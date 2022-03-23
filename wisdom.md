@@ -4,7 +4,7 @@
 
 Or: “*Everybody likes being given a glass of water*.”
 
-By Merlin Mann.
+By [Merlin Mann](http://www.MerlinMann.com "Merlin's Website").
 
 It's only advice for you because it **had** to be advice for me.
 
@@ -156,15 +156,15 @@ Some introductory thoughts on the wisdom.
 
 ----
 
-- You are not obliged to have a strong opinion about everything. Get fewer opinions about way fewer things, and then strive always to interrogate the basis of your strongest opinions. This is very difficult, so be grateful if you've found fewer strong opinions to interrogate.
+- You are not obligated to have a strong opinion about everything. Get fewer opinions about way fewer things, and then strive always to interrogate the basis of your strongest opinions. This is very difficult, so be grateful if you've found fewer strong opinions to interrogate.
 - Priorities are like arms. If you think you have more than a couple, you're either lying or crazy.
-- If you're struggling to understand someone's behavior or motivation, understand that it's usually because of money, fear, or both.
+- If you're struggling to understand someone's behavior or motivation, understand that it's almost always because of money, fear, or both.
 - If you have cool stickers, use them. Put them on things. Be carelessly joyful about using your stickers. If you die with a collection of dozens of cool stickers that you never used, you did it wrong.
 - Whenever you meet someone new, ask them what they're most excited about right now. Everyone interesting is excited about something right now, and they'd probably love to tell you about it.
 - Related. When you meet a child, ask them if they would share the coolest thing that's happened to them this week. You can also ask them about their favorite food. Kids love food and have many thoughts about it.
 - Whenever you're considering escalating any relationship, ask yourself whether you'd be okay with getting ten times more of them. In other words, consider whether a lot more of "how they are" is a thing you really want to pursue.
-- Take a walk in a place that has lots of leaves and grass and other natural, irregular patterns. It stimulates dopamine, plus you should probably be walking more anyway. (Thanks, Tom L.)
-- Related. This is why the carpeting in casinos and hotels has such whackadoo patterns. They're squirting your brain parts with free happy juice. From a scientific standpoint.
+- Take a walk in a place that has lots of leaves and grass and other natural, irregular patterns. It stimulates dopamine, plus you should probably be walking more anyway. (Thanks, Tom L.)<!-- - Related. This is why the carpeting in casinos and hotels has such whackadoo patterns. They're squirting your brain parts with free happy juice. From a scientific standpoint.
+ -->
 - Once your party has been seated, always order a large pepperoni pizza *for the table*. (Thanks, John R.)
 - Treat every person you encounter as though they are having a way worse day than you.
 - Related: ask yourself how you might become the least annoying stranger that a given person met today. If you became the subject of a private anecdote, how great would you feel about hearing it?
@@ -173,17 +173,17 @@ Some introductory thoughts on the wisdom.
 
 ----
 
-- If you have trouble keeping up with washing dishes, cutlery, or cooking stuff, you probably have too much of them.
+- If you have trouble keeping up with washing dishes, cutlery, or cooking stuff, you may have too much of them.
 - Be mindful about giving gifts. A gift you give with *any* expectation is a burden, and people rarely enjoy being given a burden.
 - In thinking about optimizing how you work, try to distinguish between the parts of your job that are *necessarily difficult* versus the parts that are harder than they actually need to be. The former is the reason that you get the big bucks, and the latter is the reason why you may often feel like the bucks should be bigger.
-- Be gracious when someone points out a dumb error you made. Especially when it comes from someone whom you respect. They're doing it because *they like you*, and because they pay attention to stuff that you do.
+- Be gracious when someone points out a dumb error that you made. Especially when it comes from someone whom you respect. They're doing it because *they like you*, and because they pay attention to stuff that you do.
 - Related: To bad faith actors, you may wish to say something like, "You might just be right" or, "Yeah, life sure is pretty complicated." Answers to bad faith can and should be extremely personal.
 - Use shoe trees. It'll make you feel like a fancy duchess, plus it'll make your shoes last a lot longer.
 - Bring along an extra pen that you like.
-- Buy supplies before you need them and gadgets after you need them.
+- Buy supplies before you need them and gadgets *after* you need them.
 - Three is two, two is one, and one is none.
 - Related: change the toilet paper *before* the roll runs out. There is no reward for using the last slice, and, also, you are not seven.
-- Always have fresh lemons around.
+- Try to always have fresh lemons around.
 - Write down the travel items that you forgot to pack *while you're still traveling*. You'll never remember things you've forgotten once you're back home. Choose to lean into your annoyance with yourself.
 - Order more appetizers and fewer daily specials.
 
@@ -305,7 +305,7 @@ Some introductory thoughts on the wisdom.
 - The people most obsessed with the (supposed) hypocrisy of strangers are often the people who most dread strangers uncovering *their own* hypocrisy. This makes many of these people a little insufferable and not very fun to hang out with.
 - Related: There are numerous things in life worse and more damaging than hypocrisy. Including the implicit belief that eventually changing to become a little less of a jerk must be excoriated for its rank "hypocrisy."
 - Before deciding that you have solved a problem, it's useful to ask yourself whether you understand what *caused* the problem—as well as knowing precisely how your specific choice of solution has "fixed" it. If you mostly just kept trying various random things until something seemed to improve, you just got lucky. Which is different.
-- Whenever you acquire anything that has a manual, Google for a PDF of it, then stick it in a folder on your cloud service of choice.
+- Whenever you acquire anything that has a manual, Google for a PDF of it, then drop it in a folder on your cloud service of choice.
 - It's mostly to young people's credit and benefit that they rarely realize that youth and its advantages are anomalous. Youth is all you have ever known in life until you reach an age when you are no longer young. At which point, you are likely to develop a strong hunch that your own youth was absolutely an anomaly.
 - Unless you are cannily identifying a specific logical fallacy, the question has likely been *raised*. Not begged.
 - Consider using less corn starch than the recipe demands.
@@ -360,7 +360,7 @@ Some introductory thoughts on the wisdom.
 
 [**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and a [bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
 
-![Your Author (detail)](/i/so_angry_-_960.jpg "Your Author")
+![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
 
 ## Licensing & Legalese
 
