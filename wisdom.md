@@ -32,6 +32,10 @@ It's only advice for you because it **had** to be advice for me.
 
 ----
 
+![Tweet Advice](/i/tweet-advice-solution.jpg "'Good advice helps you find the solution to your problem. Great advice helps you find you were solving the wrong problem.'")
+
+----
+
 ## Voi ch'entrate…
 
 Some introductory thoughts on the wisdom.
