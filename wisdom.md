@@ -76,13 +76,13 @@ Some introductory thoughts on the wisdom.
 - *Never* touch a pregnant person unless they specifically asked for it.
 - *Never* tell a pregnant person horror stories about childbirth unless they specifically asked for it.
 - Corollary: When someone shares something scary about their birth story, it's probably because they're (justifiably) proud of surviving something that they never had imagined that they could survive.
-- Related: This also goes for most other scary personal anecdotes.
+- Related: this also goes for most other scary personal anecdotes.
 - Stop correcting people by immediately telling them what they "*should have said*." You are not helping.
 - When you’re feeling awful and aren't sure what to do, pretend you are the person you love the most, and give *them* your best advice.
 - Without active care and curation, any area in your home will tend to become "storage."
-- Related: "Storage" is the least muscular or affirmative use of space in your life. Live and active areas represent future possibility; "storage" is an emotionally costly way of warehousing the past.
+- Related: "storage" is the least muscular or affirmative use of space in your life. Live and active areas represent future possibility; "storage" is an emotionally costly way of warehousing the past.
 - If you see someone photographing a group, offer to take the photo for them so they can get in the picture. Please do not steal their camera.
-- Related: When you shoot a group photo, always take *at least* five shots from *at least* two angles. For the last couple photos, say: "Everybody say ***'BUTTS!'***" You will instantly get many totally natural smiles, plus you just gave them a fun story.
+- Related: when you shoot a group photo, always take *at least* five shots from *at least* two angles. For the last couple photos, say: "Everybody say ***'BUTTS!'***" You will instantly get many totally natural smiles, plus you just gave them a fun story.
 - In photography—as in life—always keep the light behind you.
 - Sometimes, a person will confess something embarrassing that obviously makes them feel really dumb and vulnerable. That is *never* the time to say "I told you so," and it is rarely the best moment to offer advice that they never asked for. Just shut the fuck up and listen.
 - If you have a small household responsibility—no matter how lame or quotidian—just do it now and without being asked. If you think the trash may need to go out, do not "check" to see if the trash needs to go out. Just take out the fucking trash. And quit reminding everybody you took the trash out. This is not Vietnam, and you are not a forgotten hero.
@@ -91,7 +91,7 @@ Some introductory thoughts on the wisdom.
 - Buy the nicest screwdrivers you can afford.
 - Every few months, take at least one panorama photo of your kid's room. At least annually, secretly record your kid talking for at least ten minutes. I promise you'll treasure both, and then you will curse yourself for not having done each way more often.
 - Most well-written characters have something they want—or something they *think* they want. The more fascinating characters also have something they don’t want you to know. The best ones also have something they’re not pulling off nearly as well as they think.
-- Related: These are each also true for real people.
+- Related: these are each also true for real people.
 - Try always to store something in the first place you just looked for it. Not "where it's pretty" or "where we used to keep it" or "where we have more room." It goes *where it goes*—not where you **think** it goes.
 - Almost every task in life benefits from the addition of a nearby trash bag.
 - Just because you know something doesn't mean everybody knows it. Every day, somebody's born who's never seen *The Flintstones*.
@@ -106,7 +106,7 @@ Some introductory thoughts on the wisdom.
 - Kindly note that the grave existential truth of the Project Management Triangle is *non-negotiable*. People **hate** this. Which is normal.
 - If the person with whom you are negotiating finds it difficult to provide a decisive budget estimate for their project, ask them to try and situate it between two orders of magnitude. As in, "How many zeroes are we talking about here?" Quickly discovering that your ballpark figures are 2 to 6 zeroes apart can save you both a *lot* of time and frustration.
 - Related: if the client's estimate for any given aspect of the project feels poorly thought out, mentally double the estimated budget for money and time. At the end of all estimations, add *at least* another 20% to the time and budget. You’re gonna need it, and, boy, are you ever going to earn it.
-- Related: have you leavened your estimate of the project with your hunches about the credibility of the client? Have you accounted for human foibles and flakiness in your estimate?
+- Relatedly related: have you leavened your estimate of the project with your hunches about the credibility of the client? Have you accounted for human foibles and flakiness in your estimate?
 - When estimating the time it will take to do anything involving a child, add at least ten minutes per child. Make that 30 minutes for kids under five or over twelve.
 - Always have a twelve-pack of Diet Coke and a good quantity of unflavored fizzy water. A lot of people love one (or both), and most of the people who do drink a lot of it.
 - Whoever wants the meeting most usually holds the least power.
@@ -177,7 +177,7 @@ Some introductory thoughts on the wisdom.
 - Be mindful about giving gifts. A gift you give with *any* expectation is a burden, and people rarely enjoy being given a burden.
 - In thinking about optimizing how you work, try to distinguish between the parts of your job that are *necessarily difficult* versus the parts that are harder than they actually need to be. The former is the reason that you get the big bucks, and the latter is the reason why you may often feel like the bucks should be bigger.
 - Be gracious when someone points out a dumb error that you made. Especially when it comes from someone whom you respect. They're doing it because *they like you*, and because they pay attention to stuff that you do.
-- Related: To bad faith actors, you may wish to say something like, "You might just be right" or, "Yeah, life sure is pretty complicated." Answers to bad faith can and should be extremely personal.
+- Related: to bad faith actors, you may wish to say something like, "You might just be right" or, "Yeah, life sure is pretty complicated." Answers to bad faith can and should be extremely personal.
 - Use shoe trees. It'll make you feel like a fancy duchess, plus it'll make your shoes last a lot longer.
 - Bring along an extra pen that you like.
 - Buy supplies before you need them and gadgets *after* you need them.
@@ -212,24 +212,23 @@ Some introductory thoughts on the wisdom.
 
 - Everybody is doing the best they can each day. Even though what they can do is rarely enough.  
 - To entertain a child, it helps to know which things delight them and which things terrify them.
-- Related: Most kids can be surprisingly entertained by your making them just a little bit terrified.
+- Related: most kids can be surprisingly entertained by your making them just a little bit terrified.
 - Pay attention to the times of day when you tend to have the most and the least energy. Schedule your future days accordingly.
 - You have no more than about 40 contiguous hours in which to "catch up" on sleep. Viz. you can't use Saturday morning to refill on sleep you missed last Monday night.
-- Related: You definitely need more sleep.
+- Related: you definitely need more sleep.
 - Maybe almost never say anything about how someone looks ever.
-- Related: If you *are* commenting on how someone looks, only ever compliment them on a thing that they have chosen.
-- Relatedly related: But, yeah, maybe still almost never say anything about how someone looks ever.
+- Related: if you *are* commenting on how someone looks, only ever compliment them on a thing that they have chosen.
+- Relatedly related: but, yeah, maybe still almost never say anything about how someone looks ever.
 - Whenever someone insufferable keeps finding a way to mention specific large amounts of money they've spent, you may wish to respond by saying, "Wow! That is a ***lot*** of money!" You may also wish to keep saying this until they leave. (Thanks, Chris C.)
 - If you feel uncomfortable in small talk situations, first ensure you're doing a *really* good job of listening. No, like: actually listening instead of thinking about how uncomfortable you are about being in the conversation.
-- Related: Great listeners ask good questions. "And what year was that?" and "Wow, did that feel really weird at the time?" and "Yikes, was that as terrible as it sounds?" are the sorts of things humans ask one another when they're actively listening to what someone is saying.
+- Related: great listeners ask good questions. "And what year was that?" and "Wow, did that feel really weird at the time?" and "Yikes, was that as terrible as it sounds?" are the sorts of things humans ask one another when they're actively listening to what someone is saying.
 - Before you move out of a house or an apartment, consider hiding a friendly note to the future tenants. Future tenants love finding friendly hidden notes.
 
 ----
 
 - Summon a memory you dislike, and then consider how you might feel different about it tomorrow if you weren't ashamed about it. Then, consider not feeling ashamed about it.
 - Learn about Chesterton's Fence. Then, actively resist altering a given situation before you understand the reasons why it's remained unchanged for so long. (Thanks, G. K. C.)
-- Related: Bruce Lee said the "snap" of a punch should happen *behind* the target. So, if or when you *do* decide to change something, change the shit out of it. Because, you get almost zero points for a perfectly executed punch that snapped before the target. Because, yeah, that's so not a perfect punch.
-- Relatedly related: Read the room. When entering any new situation, be practically invisible and absolutely non-assertive until you can gauge what happened before you arrived—and how it likely felt.
+- Relatedly related: always read the room. When entering any new situation, be practically invisible and absolutely non-assertive until you can gauge what happened before you arrived—and how it likely felt.
 - Generally avoid clothing that's more interesting than you are.
 - Any noun can be made a lot funnier by placing the word "prescription" in front of it.
 - Try not to guess too much about other people's motivations. Yes: even when you can easily imagine what they are guessing about yours.
@@ -249,9 +248,9 @@ Some introductory thoughts on the wisdom.
 
 - Almost always order the specific food that is mentioned in the name of the restaurant. If you go to "Sally's Sirloin Shack" and order the sushi sampler, you're probably not hooked up right.
 - Give kids the opportunity to learn and practice new things in a low-stakes environment. Failure is important in life, but it needn't always be costly or dangerous.
-- Related: Also do this for everyone else. Including yourself.
+- Related: also do this for everyone else. Including yourself.
 - People often unintentionally screw up because they don't realize they're thinking more about their next thing than their current thing. In life, your next thing will tend to go way better if you focus first on not screwing up your current thing.
-- Related: Build a grocery list *before* you go to the store. Because, once you're *at* the grocery store, you're mainly thinking about getting out of the grocery store. Rather than, say, two-ply toilet paper.
+- Related: build a grocery list *before* you go to the store. Because, once you're *at* the grocery store, you're mainly thinking about getting out of the grocery store. Rather than, say, two-ply toilet paper.
 - Your calendar represents a portfolio of promises to your future self. Treat it that way.
 - Thus: The only events allowed on a serious person's calendar are commitments about time, location, and effort that will die if they are not successfully completed on a specific day. Full stop.
 - Corollary: If you're only tentatively committed to a calendar item—especially if the time of the event has not been mutually confirmed—title the event using Spanish-language questions marks. A future event like "`¿Pick apples with Aunt Sue?`" successfully blocks out the time while also affording a quickly scannable reminder about events that still need to either be formalized or deleted.
@@ -262,8 +261,8 @@ Some introductory thoughts on the wisdom.
 
 - Thoughts and feelings are real, but they do not have to define you. Remember that you are the sky—*not the weather*. (Thanks, Pema C.)
 - If you're going to a party, always bring a bag of ice. The host will  appreciate it, because nobody has ever been annoyed about receiving something useful that just turns into water once it's no longer useful.
-- Related: Remember whose event this is. If it's not your party, you don't get to pick the music, the guest list, or the vibe. If you can't find a way to get along, just leave.
-- Relatedly Related: A party is only as good as the people who attend it. Especially you. Be helpful, be fun, and delight at least one new stranger.
+- Related: remember whose event this is. If it's not your party, you don't get to pick the music, the guest list, or the vibe. If you can't find a way to get along, just leave.
+- Relatedly related: a party is only as good as the people who attend it. Especially you. Be helpful, be fun, and delight at least one new stranger.
 - Rather than curating a collection of well-rounded students, strive instead to attract the constituents of a well-rounded *class*. (Thanks, Rab T.)
 - Avoid situations that someone you love might later have to explain on a medical or government form.
 - Think of every email you send as a pebble. To you, it may seem like a comically small thing—almost non-existent in size and weight. But, to a recipient already holding hundreds of other people's pebbles, receiving even one more tiny pebble is not without a cost.
@@ -272,17 +271,17 @@ Some introductory thoughts on the wisdom.
 - Loving books and loving reading are very different things. One is about treasuring the priceless gift of the written word, and the other is about constantly telling strangers how much you love books.
 - If you can manage it, avoid teeing up a media suggestion with "I couldn't recommend this more." Because if the listener (understandably) zones out on the journey to that crucial last word, it really sounds like you kinda hated it.
 - Learn the difference between being "busy" versus being *time-constrained*. Time constraint is an immutable fact of adult life; while it can (and should) be managed, time constraint can never be eradicated. Being "busy" should be better understood as a time-limited result of an earlier management error. If you find that your busy-ness has become permanent, you must learn to manage earlier, differently, and much *much* better.
-- Related: Start acting like your life matters.
+- Related: start acting like your life matters.
 - Always eat and shit *before* your flight. These are just two of the numerous human requirements that are best performed anywhere that's not a commercial airline flight.
 - Start noticing how often you explain away stasis, trauma, codependence, abuse, or generally unwholesome situations because of something you claim that you "**have**" to do.
-- Related: Consider accepting that you do not actually *have* to do anything except die.
+- Related: consider accepting that you do not actually *have* to do anything except die.
 - Make time to write the thank-you note *before* you open the present.
 - Don't call it a "warning" if it's really a *threat*. "Be careful walking to school" is a warning; "I am going to bomb your school" is a threat.
 
 ----
 
 - When you first try to meditate, it'll feel like you're doing it wrong and are terrible at it. Eventually, you'll figure out that being terrible at meditation and feeling like you're doing it wrong is kind of the whole point of meditation. In truth, as long as you keep getting back to your practice, you are actually great at meditation, and you are doing very well at it.
-- Related: You'll rarely earn points in life for repeatedly thinking about something you're not doing. Unless worrying and fretting about something you're not doing makes you happy, you may wish to worry and fret less.
+- Related: you'll rarely earn points in life for repeatedly thinking about something you're not doing. Unless worrying and fretting about something you're not doing makes you happy, you may wish to worry and fret less.
 - If a given thing you've decided to do goes flawlessly, what's the best possible outcome you can imagine? Keep this question in mind before you, say, jump onto a moving car or scream at a baby.
 - Don't buy food to get a free toy, and don't buy toys to get free food.
 - The best optimism is *earned*. Everything else is just magical thinking.
@@ -294,7 +293,7 @@ Some introductory thoughts on the wisdom.
 - Whenever your first solution to a problem feels like it should involve buying something plastic at The Container Store, consider a second solution.
 - Most anecdotes that begin with the word "Apparently…" do not end well.
 - Open your mail over the recycling bin.
-- Related: Put a trash can anyplace your dominant hand repeatedly wants to let go of trash.
+- Related: put a trash can anyplace your dominant hand repeatedly wants to let go of trash.
 - If you think you're immune to making unintentional cognitive errors, you should read this sentence over and over for a few minutes.
 - Before you buy a new book, try to get a copy from the library—or just download an ebook sample. If you can't manage to finish reading the Kindle sample, you certainly oughtn't pay to not read the rest.
 - Reading Shakespeare is all about finding the right velocity. Read it too fast, and it won't make any sense. Read it too slow, and it'll make even less sense.
@@ -303,7 +302,7 @@ Some introductory thoughts on the wisdom.
 ----
 
 - The people most obsessed with the (supposed) hypocrisy of strangers are often the people who most dread strangers uncovering *their own* hypocrisy. This makes many of these people a little insufferable and not very fun to hang out with.
-- Related: There are numerous things in life worse and more damaging than hypocrisy. Including the implicit belief that eventually changing to become a little less of a jerk must be excoriated for its rank "hypocrisy."
+- Related: there are numerous things in life worse and more damaging than hypocrisy. Including the implicit belief that eventually changing to become a little less of a jerk must be excoriated for its rank "hypocrisy."
 - Before deciding that you have solved a problem, it's useful to ask yourself whether you understand what *caused* the problem—as well as knowing precisely how your specific choice of solution has "fixed" it. If you mostly just kept trying various random things until something seemed to improve, you just got lucky. Which is different.
 - Whenever you acquire anything that has a manual, Google for a PDF of it, then drop it in a folder on your cloud service of choice.
 - It's mostly to young people's credit and benefit that they rarely realize that youth and its advantages are anomalous. Youth is all you have ever known in life until you reach an age when you are no longer young. At which point, you are likely to develop a strong hunch that your own youth was absolutely an anomaly.
@@ -313,13 +312,13 @@ Some introductory thoughts on the wisdom.
 - It is normal and human to fear things that you don't understand. But, seeking to understand something does *not* mean you have to like it or agree with it. It may, however, suddenly make some of your fears feel refreshingly optional.
 - Carry more Imodium than you think you will ever need. They are compact in size, light in weight, and miraculously effective at keeping you from suddenly needing to shit egregiously at times and locations when you'd prefer not to be shitting egregiously.
 - Related: Imodium works by sucking liquid out of your bowels, so compensate by drinking more water than you normally would. The Imodium will still work fine.
-- Relatedly Related: Several Imodiums will fit conveniently in the right-side "watch pocket" of a pair Levi's. Ditto guitar picks, a small USB drive, or some quarters with which to play the excellent 1981 arcade game, "Galaga."
+- Relatedly related: several Imodiums will fit conveniently in the right-side "watch pocket" of a pair Levi's. Ditto guitar picks, a small USB drive, or some quarters with which to play the excellent 1981 arcade game, "Galaga."
 
 ----
 
 - Most parents understand it's their job to keep their child from dying. But, as the kid gets older, it also becomes increasingly vital not to prevent them from living. This is very difficult.
 - If you're going to pick a fight online, do it in the late afternoon. That way, you're less likely to blow a perfectly good working day being all mad. Plus, you'll both tire yourselves out eventually, and maybe you'll do better tomorrow.
-- Related: Do not pick fights online.
+- Related: do not pick fights online.
 - Minimize the number of conversations you have through a closed bathroom door. Unless you're outside the door and there's a fire, or you're *inside* the door and you're out of toilet paper. Otherwise, have a little dignity, and wait for the door to open.
 - Don't be too thirsty in your quest for gratitude and acknowledgement. If you want to help someone and have the requisite skills, *just help them*. A person with a problem who also has to graciously manage needy communications about that problem now very much has two problems.
 - Related: if you *really* want to help someone, offer something extremely specific. "I'm here for you! 😬👍" is not nearly as cool as "Can I drop off a lasagna at 4?"
@@ -331,7 +330,7 @@ Some introductory thoughts on the wisdom.
 - Xerox or scan the non-currency contents of your wallet twice a year. You'll likely regard this as a weird waste of effort until the day it saves your bacon.
 - Tip the hotel housekeeping staff. Tip them handsomely. If you had to clean *their* toilet, wouldn't you appreciate a little something for the effort?
 - Be conservative about how much stuff you accumulate because you imagine someone "might want it someday." If you're warehousing something that feels like a minor heirloom, ask the person if they want it right now, and when they inevitably say, "Oh, my God, ***NO!***" be gracious in defeat, and just find it a good home with a charity or a trash can.
-- Related: Charities, homeless shelters, and schools do not need your filthy or broken shit; they need your money. So, just give them some cash, and stop treating "worthy causes" like a guilt-free DMZ for your junk.
+- Related: charities, homeless shelters, and schools do not need your filthy or broken shit; they need your money. So, just give them some cash, and stop treating "worthy causes" like a guilt-free DMZ for your junk.
 - Relatedly related: quit buying products because "a portion of the proceeds goes to charity." If you actually care about a cause, give that cause some actual money. Then, you'll know *all* of the proceeds have gone to charity.
 - If there's a book that means a lot to you, buy five print copies. It helps the author, plus now you can give a free copy to a friend whom you think would love it.
 - When you get coins as change, throw them in a jar and forget about it.  That's now your baby steps toward savings, a vacation, or what have you.
@@ -341,18 +340,33 @@ Some introductory thoughts on the wisdom.
 ----
 
 - If you're noticing a new name or phrase being used to refer to something you know by an older or more familiar name, try to keep an open mind. Rather than focusing on your own annoyance or discomfort, ask yourself in which direction the new name is encouraging people to move. If it feels like a good faith step toward inclusion, authenticity, kindness, or greater humanity, maybe set aside your priors and make the effort to take those positive steps right along with it.
-- Related: Get skeptical about adopting new jargon from the worlds of business, technology, or journalism. Especially if it's that sort of new jargon that enthusiastically trades clarity and precision for deliberate opacity or cheap novelty. The track record for jargon's longterm contributions to society has been bleak.
+- Related: get skeptical about adopting new jargon from the worlds of business, technology, or journalism. Especially if it's that sort of new jargon that enthusiastically trades clarity and precision for deliberate opacity or cheap novelty. The track record for jargon's longterm contributions to society has been bleak.
 - Be suspicious of people who like being owed a favor. Especially if it's not a favor that you requested. Often, these people are eldritch monsters who thrive on accumulating goodwill for darkly selfish reasons.
 - If the soap in a guest bathroom is new and shaped like anything besides a bar of soap, do not use it. Also, do not eat it. Because I know you kinda want to. Especially those shiny little sea shells.
 - If you're not sure who's doing your emotional labor, it's probably everyone you know.
 - When you order delivery food from a new place that looks promising, use it as an opportunity to explore. Set a baseline by ordering a dish you love, especially if it seems hard to screw up. But, as a flyer, also consider ordering an appetizer or side dish they claim people love.
 - When you order delivery food on behalf of a child, and you have a special request whose contravention risks ruining their meal, don't be squeamish about it. Just say, "No mustard, please. It's for a kid."
-- Related: Maybe think twice before telling the order-taker about a (non-existent) allergy that you claim gravely constrains your diet. A lot of people do this, restaurants know it, and it ends up harming the people who actually do have an actual allergy. A strong preference rarely rises to the level of being an emergent medical issue.
-- Relatedly related: If you really don't want mustard on your food? Yeah, maybe just tell them "It's for a kid."
+- Related: maybe think twice before telling the order-taker about a (non-existent) allergy that you claim gravely constrains your diet. A lot of people do this, restaurants know it, and it ends up harming the people who actually do have an actual allergy. A strong preference rarely rises to the level of being an emergent medical issue.
+- Relatedly related: if you really don't want mustard on your food? Yeah, maybe just tell them "It's for a kid."
 - In between "yes" and "no" is a powerful thing called *the qualified 'yes.'* Responsible and self-aware adults have every right to place conditions on their agreeing to do almost anything. And, trust me that the people who either reject or ignore this seeming subtlety are rarely the sort of people to whom you want to be making *any* kind of commitments.
 - If someone asks you to critique their work, try to gauge what it is they're actually looking for. Many people just want a friend's praise, others may be seeking insight on how close they are to being finished, while a rare few crave the most candid and withering feedback you can muster.
-- Related: People who are *accustomed* to receiving honest feedback are often really good at providing focus on what they specifically need help with, as well as context for why your advice would be useful to them right now. If their big question is "So, do you love it?" you are likely not talking to one of those people.
+- Related: people who are *accustomed* to receiving honest feedback are often really good at providing focus on what they specifically need help with, as well as context for why your advice would be useful to them right now. If their big question is "So, do you love it?" you are likely not talking to one of those people.
 - Success in relationships—especially in marriage—will largely come down to how many things only one person is ever allowed to be right about.
+
+----
+
+- Piles can be a quick and dirty way to tidy an area or organize a bunch of stuff. But, temporary piles tend to devolve into permanent piles, and permanent piles are struggling to warn that you are becoming neither tidy nor organized.
+- When you take a book off a shelf (especially at a library), turn the book to its immediate right 90° away from you (spine up, please). Now you know where to put the book back when you're done with it.
+- Related: also remember to put the book back.
+- When removing a full bag from a trash can, consider dropping a folded-up future replacement bag at the bottom of the can. This will seem weird and unnecessary until the day you hadn't realized you've run out of trash bags, and then—hey—free bonus bags.
+- IKEA's blue *FRAKTA* shopping bags are one of life's low-key power tools. They fold ridiculously small, so they can live unobtrusively in places like automobiles or even other bags, like suitcases. Because, some day you may suddenly wish you had *fresaking nineteen gallons* of extra bag with you.
+- If you're going to hide a spare house key, consider putting it somewhere that's not right outside your house. Even an industrious prowler is less likely to gain easy access to your home if your unmarked spare is tucked behind a neighbor's picnic table or buried under a rock in the park.
+- The potent powdered stuff used to clean espresso machines is also a kick-ass solution for soaking nasty cookware.
+- You are using too much dish soap. Use less dish soap but hotter water.
+- Buy some manila file folder jackets, and deploy them for any occasion or destination where random paper kipple is likely to pile up. You know that wad of receipts and boarding passes and theme park maps and whatnot that accumulate every time you travel? Anticipate the wad, and then easily manage it with your new folder friend. It would like to live right next to your room's ad hoc charging station, please.
+- When you get multiple hotel key cards for the multiple people in your party, use stickers or a Sharpie to identify whose card is whose. Seems dumb until you realize too late that one person has left with three cards and two people have left with zero cards.
+- If you're about to depart for an event that requires physical pre-purchased tickets, every person in your party has to hold their own ticket to their own forehead. Then, you don't leave until the entire group agrees that they've all seen each person's ticket.
+- Your ear buds are only allowed to be in one of two places *ever*. They are either in your ears or in their charging case. That's it. Ever. (Thanks, John S.)
 
 ----
 
