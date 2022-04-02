@@ -363,7 +363,7 @@ Some introductory thoughts on the wisdom.
 - When you take a book off a shelf (especially at a library), turn the book to its immediate right 90° away from you (spine up, please). Now you know where to put the book back when you're done with it.
 - Related: also remember to put the book back.
 - When removing a full bag from a trash can, consider dropping a folded-up future replacement bag at the bottom of the can. This will seem weird and unnecessary until the day you hadn't realized you've run out of trash bags, and then—hey—free bonus bags.
-- IKEA's blue *FRAKTA* shopping bags are one of life's low-key power tools. They fold ridiculously small, so they can live unobtrusively in places like automobiles or even other bags, like suitcases. Because, some day you may suddenly wish you had *fresaking nineteen gallons* of extra bag with you.
+- IKEA's blue *FRAKTA* shopping bags are one of life's low-key power tools. They fold ridiculously small, so they can live unobtrusively in places like automobiles or even other bags, like suitcases. Because, some day you may suddenly wish you had *freaking nineteen gallons* of extra bag with you.
 - If you're going to hide a spare house key, consider putting it somewhere that's not right outside your house. Even an industrious prowler is less likely to gain easy access to your home if your unmarked spare is tucked behind a neighbor's picnic table or buried under a rock in the park.
 - The potent powdered stuff used to clean espresso machines is also a kick-ass solution for soaking nasty cookware.
 - You are using too much dish soap. Use less dish soap but hotter water.
