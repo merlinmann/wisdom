@@ -153,7 +153,7 @@ Some introductory thoughts on the wisdom.
 - Just in general: never explain food. Yes, I see the provided sauce. And, no, I do not need a webinar on how it should be deployed.
 - Whenever someone demands you change who you are, it's useful to ask yourself what they stand to gain from you agreeing to become someone else.
 - To an anxious person, it often feels like the only way to achieve relaxed certainty is to keep seeking new information. But, remember that the more you know, the more you'll realize you don't know. And, then, you'll usually just find yourself fretting about getting more and more information, et cetera. Incline yourself towards getting out of the information centrifuge.
-- Everybody grieves differently. You're not the mourning police, and no one benefits from you telling them they're being sad wrong.
+- Everybody grieves differently. You're not the mourning police, and no one benefits from you telling them that their being sad is wrong.
 - "Experience" is rarely the verb you're looking for. Reword your sentence with a more clear and muscular focus on what actually happened—and who or what caused it to happen. So, maybe don't say "I am experiencing technical difficulties" if you really mean "I broke the internet." You're not fooling anyone.
 - Related. Please don't say "impact" (v.) if you just mean "affect" (v.). It makes you sound like a lame PowerPoint about dentistry.
 - Few journalists get to choose the headline for their piece. So, whenever the clickbait of a terrible, search-engine-optimized headline belies an actually-good article, consider getting mad at the editor. Not the writer.
