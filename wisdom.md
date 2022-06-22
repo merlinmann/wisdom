@@ -301,7 +301,7 @@ Some introductory thoughts on the wisdom.
 - If you think you're immune to making unintentional cognitive errors, you should read this sentence over and over for a few minutes.
 - Before you buy a new book, try to get a copy from the library—or just download an ebook sample. If you can't manage to finish reading the Kindle sample, you certainly oughtn't pay to not read the rest.
 - Reading Shakespeare is all about finding the right velocity. Read it too fast, and it won't make any sense. Read it too slow, and it'll make even less sense.
-- If your guitar sounds out of tune, it's probably the G string.
+- If your guitar sounds out of tune, it's almost definitely the B string, the G string, or both.
 
 ----
 
@@ -360,8 +360,6 @@ Some introductory thoughts on the wisdom.
 ----
 
 - Piles can be a quick and dirty way to tidy an area or organize a bunch of stuff. But, temporary piles tend to devolve into permanent piles, and permanent piles are struggling to warn that you are becoming neither tidy nor organized.
-- When you take a book off a shelf (especially at a library), turn the book to its immediate right 90° away from you (spine up, please). Now you know where to put the book back when you're done with it.
-- Related: also remember to put the book back.
 - When removing a full bag from a trash can, consider dropping a folded-up future replacement bag at the bottom of the can. This will seem weird and unnecessary until the day you hadn't realized you've run out of trash bags, and then—hey—free bonus bags.
 - IKEA's blue *FRAKTA* shopping bags are one of life's low-key power tools. They fold ridiculously small, so they can live unobtrusively in places like automobiles or even other bags, like suitcases. Because, some day you may suddenly wish you had *freaking nineteen gallons* of extra bag with you.
 - If you're going to hide a spare house key, consider putting it somewhere that's not right outside your house. Even an industrious prowler is less likely to gain easy access to your home if your unmarked spare is tucked behind a neighbor's picnic table or buried under a rock in the park.
@@ -374,12 +372,12 @@ Some introductory thoughts on the wisdom.
 
 ----
 
-- Whenever you change to having two of something, change is happening, and you need to be aware of that. If you had one lover, but then suddenly find yourself with two, change is afoot. If you recently had one-thousand dollars, but are now down to two? Something big has changed.
+- Whenever you switch to having two of something, change is happening, and you need to be aware of that. If you had one lover, but then suddenly find yourself with two, change is afoot. If you recently had one-thousand dollars, but are now down to two? Something big has changed.
 - Related: this also goes for keys, college majors, addictions, indictments, toilet paper rolls, wishes from a genie, and almost everything else. "Two" often means shit is on the precipice of getting extremely weird.
 - Like it or not, you're always practicing *something*. Put another way, whichever muscle you exercise the most can't help but strengthen. Often to the detriment of others.
 - Related: okay, that was mostly an analogy. What I'm saying is that you will become whatever you frequently do, so be picky about frequently doing only the things that help aid whatever it is you *want* to become.
 - No one speaks through a translator; it is we who *listen* through a translator.
-- Your refrigerator is not a library or a hope chest. So, if you decide to save leftovers, write the current day of the week on them. Then, when you rediscover your treat 3-5 weeks from now and wonder "Now, *which* Sunday was that?" Yeah. Time to deeply curate your odd little food museum.
+- Your refrigerator is not a library or a hope chest. So, if you decide to save some leftovers, write the current day of the week on them. Then, when you rediscover your treat 3-5 weeks from now and wonder "Now, *which* Sunday was that?" Yeah. Time to deeply curate your odd little food museum.
 - Related: good intentions to reduce waste are best operationalized before acquiring the things that tend to get wasted. Live the rule of the buffet: "Take what you want, but eat what you take."
 - Life would be simpler if we got to choose which things made us a little less dumb or ugly. If something has made you rethink how you roll, just humbly take the win, and keep getting better without regard to what caused it and when.
 - As you get older, you will increasingly fear losing power, and you will become bitter, defensive, and angry about change. Curiosity, acceptance, and exposure to new people can help with this. But, man are you ever going to get weird about people with purple hair who are not afraid of you.
