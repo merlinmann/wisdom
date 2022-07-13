@@ -387,9 +387,20 @@ Some introductory thoughts on the wisdom.
 
 ----
 
+- Remember that, like babies and balls, you can bounce. The extent to which any given event—often an imagined event—might derail or even destroy you is, at least in small ways, still something that's in your control. Especially when you remember that you can bounce.
+- When the start time for a call or similar gets delayed—even for a theoretically specific time in just a few minutes—consider asking your colleague for a *bumper*. "Text me when you're ready, but, then give me 15 minutes" allows your brain to move fully out of "waiting mode" and into "doing stuff mode." If the event ends up starting promptly at the new time? (Which it won't.) Great. And, if it doesn't start on time? (Which it won't). No problem. You will have disappeared into an appropriately-sized task instead of being all mad about transitively wasted time that could have been more artfully redeployed.
+- In considering whether and how often to ingest a source of new or updating information, always try to ask yourself: "What might this make me want to see, think, or do differently—and how might that be beneficial?" Whenever you estimate that your honest answers should be "Nothing important" and "It won't," be cautious about ingesting it at all. You do not need to know everything all the time.
+- One easy and quick free writing exercise is to pick a word you just heard that tickles your brain. For three minutes and without pausing, write as many associations as you can think of with that word. Weirdly, something will grab you and stimulate your juices, and you may find yourself writing for longer than three minutes.
+- Related: try to avoid saying that you're going to "make yourself" do something. Instead, take a breath, and describe what you hope to *find yourself* doing. Inhabit your intentionality, and quit trying to knock down a fully unlocked door.
+- Relatedly related: a *goal* can be a fine thing that describes a desired outcome defined by a positive change that you desire. On the other hand, think of an *intentionality* as the mindful way you'll choose to conduct and focus yourself on the way to a "goal." Or pretty much anything else for that matter.
+- Before telling someone else "how they are" or "what they should do," ask yourself how much those very important notes may actually be all about *your* shit and absolutely zero about theirs.
+- Give each of your houseplants a funny name. Then, *use* it. If you have one plant and have no ideas, you may choose to call your friend, "Planty." That's what I do.
+
+----
+
 ## About the Author
 
-[**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and a [bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
+[**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and [this bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
 
