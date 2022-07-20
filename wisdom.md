@@ -370,7 +370,7 @@ Some introductory thoughts on the wisdom.
 - If you're about to depart for an event that requires physical pre-purchased tickets, every person in your party has to hold their own ticket to their own forehead. Then, you don't leave until the entire group agrees that they've all seen each person's ticket.
 - Your ear buds are only allowed to be in one of two places *ever*. They are either in your ears or in their charging case. That's it. Ever. (Thanks, John S.)
 
-----
+<hr id="foo" />
 
 - Whenever you switch to having two of something, change is happening, and you need to be aware of that. If you had one lover, but then suddenly find yourself with two, change is afoot. If you recently had one-thousand dollars, but are now down to two? Something big has changed.
 - Related: this also goes for keys, college majors, addictions, indictments, toilet paper rolls, wishes from a genie, and almost everything else. "Two" often means shit is on the precipice of getting extremely weird.
