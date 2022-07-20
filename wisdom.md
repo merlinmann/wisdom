@@ -357,7 +357,7 @@ Some introductory thoughts on the wisdom.
 - Related: people who are *accustomed* to receiving honest feedback are often really good at providing focus on what they specifically need help with, as well as context for why your advice would be useful to them right now. If their big question is "So, do you love it?" you are likely not talking to one of those people.
 - Success in relationships—especially in marriage—will largely come down to how many things only one person is ever allowed to be right about.
 
-----
+<hr id="2022-07-20_11-10-42" />
 
 - Piles can be a quick and dirty way to tidy an area or organize a bunch of stuff. But, temporary piles tend to devolve into permanent piles, and permanent piles are struggling to warn that you are becoming neither tidy nor organized.
 - When removing a full bag from a trash can, consider dropping a folded-up future replacement bag at the bottom of the can. This will seem weird and unnecessary until the day you hadn't realized you've run out of trash bags, and then—hey—free bonus bags.
