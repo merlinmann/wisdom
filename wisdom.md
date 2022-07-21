@@ -372,7 +372,7 @@ Some introductory thoughts on the wisdom.
 
 ----
 
-- Whenever you switch to having two of something, change is happening, and you need to be aware of that. If you had one lover, but then suddenly find yourself with two, change is afoot. If you recently had one-thousand dollars, but are now down to two? Something big has changed.
+- Whenever you switch to having two of something, change is happening, and you need to be aware of that. If you had one lover, but then suddenly find yourself with two, change is afoot. If you recently had one-thousand dollars, but are now up to two? Something big has changed.
 - Related: this also goes for keys, college majors, addictions, indictments, toilet paper rolls, wishes from a genie, and almost everything else. "Two" often means shit is on the precipice of getting extremely weird.
 - Like it or not, you're always practicing *something*. Put another way, whichever muscle you exercise the most can't help but strengthen. Often to the detriment of others.
 - Related: okay, that was mostly an analogy. What I'm saying is that you will become whatever you frequently do, so be picky about frequently doing only the things that help aid whatever it is you *want* to become.
