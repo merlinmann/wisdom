@@ -398,6 +398,17 @@ Some introductory thoughts on the wisdom.
 
 ----
 
+- Sometimes, when you're about to ask someone for help, you have a hunch that it might be something you could probably figure out on your own. To test your hunch, *draft* (but do not send) your question as the smartest and most succinct message you can manage. Yes, reading it back to yourself may end up solving your actual problem. But, it nearly always helps to clarify whether it's something you actually *could* figure out on your own.
+- Related: knowing whether a problem is something you can probably figure out on your own is arguably as important as actually "solving" the problem. Just ask anyone who ever assumed they knew how to fix their own brakes or diagnose a weird lump.
+- If you cannot understand why someone was traumatized by an event, maybe ask yourself who that says more about.
+- The second step in almost any project will involve the mindful introduction of *infrastructure*. I don't even need to know what your first step is; I can almost guarantee that there will be no third or fourth step if you aren't canny about getting the proper initial scaffolding in place.
+- Related: a lack of infrastructure is also why nearly all New Year's resolutions fail. Human will is a lot like a new locomotive; it's basically useless without the rails, controls, and signals that make the right thing the easy thing.
+- Always act as though you're going to survive. If you don't survive, it probably won't matter how you acted. And, if you do survive (which you probably will), I'll bet it's at least partly because you *acted* like you were going to survive. Try it.
+- "Creative work" and "independent work" are rarely the same thing. In practice, a great deal of creative work is contracted or controlled by other people, and a striking amount of independent work is just shockingly non-creative. This is not a bad thing, but knowing about it in advance can save you a ton of unnecessary disappointment.
+- Unless you *really* know what you’re doing, never give anyone underwear as a gift.
+
+----
+
 ## About the Author
 
 [**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and [this bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
