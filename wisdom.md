@@ -25,7 +25,7 @@ It's only advice for you because it **had** to be advice for me.
 > If a man love to give advice, it is a sure sign that he himself wanteth it.
 >
 ― George Savile (1912)
- 
+
 ----
 
 > We are what we pretend to be, so we must be careful about what we pretend to be.
@@ -36,7 +36,7 @@ It's only advice for you because it **had** to be advice for me.
 
 > At all times keep your crap detector on. If I say something that helps, good. If what I say is of no help, let it go. Don’t start arguments. They are futile and take us away from our purpose.
 
-— Richard Hugo, _The Triggering Town_ (1979)
+— Richard Hugo, *The Triggering Town* (1979)
 
 <!-- TODO pick a format and style for quotes. Fiction vs. non-fiction? -->
 
