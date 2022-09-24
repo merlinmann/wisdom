@@ -1,4 +1,4 @@
-<!-- hello, world 2022-01-27 20:34:11 -->
+<!-- hello, world 2022-09-24 12:51:05 -->
 
 # Merlin's Wisdom Project
 
@@ -17,16 +17,26 @@ It's only advice for you because it **had** to be advice for me.
 > Yet here, Laertes! aboard, aboard, for shame!  
 > The wind sits in the shoulder of your sail,  
 > And you are stay'd for.
->
-> — *Hamlet*, Act 1, Scene 3.
+
+— *Hamlet*, Act 1, Scene 3.
+
+----
 
 > If a man love to give advice, it is a sure sign that he himself wanteth it.
 >
-> ― George Savile (1912)
+― George Savile (1912)
+ 
+----
 
 > We are what we pretend to be, so we must be careful about what we pretend to be.
->
-> ― Kurt Vonnegut, Jr. (1962)
+
+― Kurt Vonnegut, Jr. (1962)
+
+----
+
+> At all times keep your crap detector on. If I say something that helps, good. If what I say is of no help, let it go. Don’t start arguments. They are futile and take us away from our purpose.
+
+— Richard Hugo, _The Triggering Town_ (1979)
 
 <!-- TODO pick a format and style for quotes. Fiction vs. non-fiction? -->
 
