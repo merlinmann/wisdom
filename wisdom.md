@@ -1,4 +1,4 @@
-<!-- hello, world 2022-09-24 12:51:05 -->
+<!-- hello, world 2022-10-11 -->
 
 # Merlin's Wisdom Project
 
@@ -425,6 +425,4 @@ Some introductory thoughts on the wisdom.
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
 
-## Licensing & Legalese
 
-<p><a href="https://github.com/merlinmann/wisdom">Merlin's Wisdom Project</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.merlinmann.com">Merlin D. Mann</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<br /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
