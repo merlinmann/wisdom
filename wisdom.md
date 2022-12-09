@@ -420,7 +420,7 @@ Some introductory thoughts on the wisdom.
 
 ----
 
-- Kids are unintentionally curious. What happen when I flush this rug? Would my cat enjoy wearing a fancy dress? Could this LEGO head also be a cool hat? Without regard to topic, try not to lose what’s left of your unintentional curiosity.
+- Kids are unintentionally curious. What happens    x when I flush this rug? Would my cat enjoy wearing a fancy dress? Could this LEGO head also be a cool hat? Without regard to topic, try not to lose what’s left of your unintentional curiosity.
 - Some people like to tell you what to pay attention to. Many want to determine how you should feel about it. Others specialize in advising exactly what you should do about it. Just be aware that these are each different things, and it's probably wise to avoid people who demand to control all three.
 - Related: being good at one of these things rarely means someone's also great at the others.
 - Unrelated: this also goes for the expertise portfolio of billionaires. Sometimes, perversely so.
