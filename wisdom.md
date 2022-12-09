@@ -8,7 +8,7 @@ By [Merlin Mann](http://www.MerlinMann.com "Merlin's Website").
 
 It's only advice for you because it **had** to be advice for me.
 
-([Link to this project](https://github.com/merlinmann/wisdom))
+([Link to this project](http://wisdom.limo "wisdom.limo"))
 
 ----
 
@@ -435,6 +435,10 @@ Some introductory thoughts on the wisdom.
 - If someone else is doing your dishes, be guarded in how often and loudly your criticize how they do it.
 - Related: This also goes for almost everything else.
 - You may not always get to choose what makes you emotional, but you have more agency than you might think about what makes you *irrational*. Which is really kind of the point when you think about it. Which you should.
+
+
+([Link to this project](http://wisdom.limo "wisdom.limo"))
+
 
 ----
 
