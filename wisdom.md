@@ -436,11 +436,10 @@ Some introductory thoughts on the wisdom.
 - Related: This also goes for almost everything else.
 - You may not always get to choose what makes you emotional, but you have more agency than you might think about what makes you *irrational*. Which is really kind of the point when you think about it. Which you should.
 
-
+----
 ([Link to this project](http://wisdom.limo "wisdom.limo"))
 
-
-----
+****
 
 ## About the Author
 
