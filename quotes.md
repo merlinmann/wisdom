@@ -39,6 +39,29 @@ I'm just as God made me, sir.
 
 — Hotel Desk Clerk (_This is Spinal Tap_, 1984)
 
+
+----
+
+
+
 I've been involved in a number of cults — both as a leader and a follower. You have more fun as a follower. But you make more money as a leader.
 
-— Creed Bratton  
+— Creed Bratton (_The Office_)
+
+
+----
+
+
+
+"You are excrement. You can change yourself into gold."
+
+— _The Holy Mountain_ (1973)
+
+
+
+----
+
+
+> At all times keep your crap detector on. If I say something that helps, good. If what I say is of no help, let it go. Don’t start arguments. They are futile and take us away from our purpose.
+
+— Richard Hugo, _The Triggering Town_ (1979)

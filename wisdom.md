@@ -1,4 +1,4 @@
-<!-- hello, world 2022-01-27 20:34:11 -->
+<!-- hello, world 2022-10-11 -->
 
 # Merlin's Wisdom Project
 
@@ -8,7 +8,7 @@ By [Merlin Mann](http://www.MerlinMann.com "Merlin's Website").
 
 It's only advice for you because it **had** to be advice for me.
 
-([Link to this project](https://github.com/merlinmann/wisdom))
+([Link to this project](http://wisdom.limo "wisdom.limo"))
 
 ----
 
@@ -17,16 +17,26 @@ It's only advice for you because it **had** to be advice for me.
 > Yet here, Laertes! aboard, aboard, for shame!  
 > The wind sits in the shoulder of your sail,  
 > And you are stay'd for.
->
-> — *Hamlet*, Act 1, Scene 3.
+
+— *Hamlet*, Act 1, Scene 3.
+
+----
 
 > If a man love to give advice, it is a sure sign that he himself wanteth it.
 >
-> ― George Savile (1912)
+― George Savile (1912)
+
+----
 
 > We are what we pretend to be, so we must be careful about what we pretend to be.
->
-> ― Kurt Vonnegut, Jr. (1962)
+
+― Kurt Vonnegut, Jr. (1962)
+
+----
+
+> At all times keep your crap detector on. If I say something that helps, good. If what I say is of no help, let it go. Don’t start arguments. They are futile and take us away from our purpose.
+
+— Richard Hugo, *The Triggering Town* (1979)
 
 <!-- TODO pick a format and style for quotes. Fiction vs. non-fiction? -->
 
@@ -232,7 +242,8 @@ Some introductory thoughts on the wisdom.
 
 - Summon a memory you dislike, and then consider how you might feel different about it tomorrow if you weren't ashamed about it. Then, consider not feeling ashamed about it.
 - Learn about Chesterton's Fence. Then, actively resist altering a given situation before you understand the reasons why it's remained unchanged for so long. (Thanks, G. K. C.)
-- Relatedly related: always read the room. When entering any new situation, be practically invisible and absolutely non-assertive until you can gauge what happened before you arrived—and how it likely felt.
+- Related: always read the room. When entering any new situation, be practically invisible and absolutely non-assertive until you can gauge what happened before you arrived—and how it likely felt.
+- Relatedly related: try to avoid beginning a sentence with "Why don’t you just…?" It often indicates that you have approximately zero relevant experience with what has made a given problem such a problem.
 - Generally avoid clothing that's more interesting than you are.
 - Any noun can be made a lot funnier by placing the word "prescription" in front of it.
 - Try not to guess too much about other people's motivations. Yes: even when you can easily imagine what they are guessing about yours.
@@ -409,12 +420,29 @@ Some introductory thoughts on the wisdom.
 
 ----
 
+- Kids are unintentionally curious. What happens when I flush this rug? Would my cat enjoy wearing a fancy dress? Could this LEGO head also be a cool hat? Without regard to topic, try not to lose what’s left of your unintentional curiosity.
+- Some people like to tell you what to pay attention to. Many want to determine how you should feel about it. Others specialize in advising exactly what you should do about it. Just be aware that these are each different things, and it's probably wise to avoid people who demand to control all three.
+- Related: being good at one of these things rarely means someone's also great at the others.
+- Unrelated: this also goes for the expertise portfolio of billionaires. Sometimes, perversely so.
+- In the world of independently making stuff, success with an audience can be thought of as a slice of cake that is impossibly slim but improbably deep. Stay focused on delighting the right tiny wedge of the best baked good you can make and there's potentially no limit to how tall it can get.
+- Related: please do not eat your fans. They are not actually cake.
+- Great cities often thrive on the number of options that ordinary people have for getting from Point A to Point B—and for potentially exploring unfamiliar terrain both between and beyond those points. Limit those options to less than a handful, and both your city and its points start to lose a lot of their appeal. (Even if you have a *really* nice car.)
+- Treat recipes like a journey, not a destination. Once you feel like you're mostly nailing the basic instructions, start looking for ways to really make it your own. Remember, you are probably not being scored.
+- Imagine standing on a footbridge and looking down as a fast, choppy stream rushes beneath you. Keep watching the stream—but try not to jump in the water. *There*. You just meditated a little.
+- Related: if it's useful, you might want to think about meditation as regular office hours with yourself.
+- When you're in your 20s, be advisable about accumulating a lot of long-term obligations. If, when, or as your options start to diminish, the sunk costs of theoretical security often become a costly millstone.
+- First, make a hole. Because before you can properly clean, organize, or even *purge* a given area, you'll need to know where the stuff that's not currently where you want it to be will go. Yes, especially the trash.
+- If someone else is doing your dishes, be guarded in how often and loudly your criticize how they do it.
+- Related: This also goes for almost everything else.
+- You may not always get to choose what makes you emotional, but you have more agency than you might think about what makes you *irrational*. Which is really kind of the point when you think about it. Which you should.
+
+----
+([Link to this project](http://wisdom.limo "wisdom.limo"))
+
+****
+
 ## About the Author
 
 [**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and [this bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
-
-## Licensing & Legalese
-
-<p><a href="https://github.com/merlinmann/wisdom">Merlin's Wisdom Project</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://www.merlinmann.com">Merlin D. Mann</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial 4.0 International<br /><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
