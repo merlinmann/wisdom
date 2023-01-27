@@ -435,6 +435,8 @@ Some introductory thoughts on the wisdom.
 - If someone else is doing your dishes, be guarded in how often and loudly your criticize how they do it.
 - Related: This also goes for almost everything else.
 - You may not always get to choose what makes you emotional, but you have more agency than you might think about what makes you *irrational*. Which is really kind of the point when you think about it. Which you should.
+- Some people are really skeptical about the teaching of any topic or thing that they don't personally already know and understand—or more often, something that they *think* they know and understand.
+- Related: You can draw your own conclusions as to what this reveals about those folks' intellectual curiosity. But do understand: the less they know, the less they think _you_ should know.
 
 ----
 ([Link to this project](http://wisdom.limo "wisdom.limo"))
