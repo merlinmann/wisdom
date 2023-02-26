@@ -1,3 +1,7 @@
+---
+Author: Merlin Mann
+---
+
 <!-- hello, world 2022-10-11 -->
 
 # Merlin's Wisdom Project
@@ -436,9 +440,27 @@ Some introductory thoughts on the wisdom.
 - Related: This also goes for almost everything else.
 - You may not always get to choose what makes you emotional, but you have more agency than you might think about what makes you *irrational*. Which is really kind of the point when you think about it. Which you should.
 - Some people are really skeptical about the teaching of any topic or thing that they don't personally already know and understand—or more often, something that they *think* they know and understand.
-- Related: You can draw your own conclusions as to what this reveals about those folks' intellectual curiosity. But do understand: the less they know, the less they think _you_ should know.
+- Related: You can draw your own conclusions as to what this reveals about those folks' intellectual curiosity. But do understand: the less they know, the less they think *you* should know.
 
 ----
+
+- Look for little moments of grace when you can feel gratitude for the gift of having a small place in a world that is much bigger, older, and more interesting than you are.
+- Related: an excellent time to practice this is every time you smile and raise your glass to join a toast.
+- There are Finish-the-Can people and Not-Finish-the-Can people. You know in your heart which kind you are. And so do the people with whom you live.
+- If you think about someone when they're not around and you find yourself wondering if there are ways you could make their life a little better, consider that you might love them.
+- It can be frustrating when someone won't pay attention to the thing you wish they'd be paying more attention to. Consider that other people may be feeling that same frustration about you.
+- Don't say you've lost something if you've only *mislaid* it. "Lost" is a really special word, best reserved for describing the precious things you've accepted you'll never see again.
+- Related: if you *have* mislaid something, it's probably either underneath or inside of something else.
+- Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
+- If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest just starting to frequently notice how you feel about how you feel.
+- Related: if you don't think you sometimes have big feelings about how you feel, please permit me to gently recommend looking into mindfulness.
+- Get a very thin, extremely lightweight rain jacket. Roll it up into a tight and tiny little burrito, secured with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
+- Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already started happening (and which you easily could have anticipated) is generally regarded as a less skillful application of the art.
+- Relatedly related: the use of a rain umbrella should require roughly the same degree of training and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It's not your personal weather sword, and it makes you so much broader and pointier than you realize. Maybe just get a rain jacket.
+- If you can't be a good example, at least try to become an interesting cautionary tale.
+
+----
+
 ([Link to this project](http://wisdom.limo "wisdom.limo"))
 
 ****
