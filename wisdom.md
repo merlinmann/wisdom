@@ -26,11 +26,18 @@ It's only advice for you because it **had** to be advice for me.
 
 ----
 
+<!-- 
+
+TODO needs better citation
+
 > If a man love to give advice, it is a sure sign that he himself wanteth it.
 >
 ― George Savile (1912)
 
 ----
+
+ -->
+
 
 > We are what we pretend to be, so we must be careful about what we pretend to be.
 
@@ -458,6 +465,19 @@ Some introductory thoughts on the wisdom.
 - Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already started happening (and which you easily could have anticipated) is generally regarded as a less skillful application of the art.
 - Relatedly related: the use of a rain umbrella should require roughly the same degree of training and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It's not your personal weather sword, and it makes you so much broader and pointier than you realize. Maybe just get a rain jacket.
 - If you can't be a good example, at least try to become an interesting cautionary tale.
+
+----
+
+## Works Cited
+
+<div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
+  <div class="csl-entry">Hugo, Richard. <i>The Triggering Town: Lectures and Essays on Poetry and Writing</i>. First published as a Norton paperback, W.W. Norton &amp; Company, 1982.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-393-33872-0&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The%20triggering%20town%3A%20lectures%20and%20essays%20on%20poetry%20and%20writing&amp;rft.place=New%20York%20London&amp;rft.publisher=W.W.%20Norton%20%26%20Company&amp;rft.edition=First%20published%20as%20a%20Norton%20paperback&amp;rft.aufirst=Richard&amp;rft.aulast=Hugo&amp;rft.au=Richard%20Hugo&amp;rft.date=1982&amp;rft.tpages=109&amp;rft.isbn=978-0-393-33872-0&amp;rft.language=eng"></span>
+  <div class="csl-entry">Shakespeare, William. <i>The Tragedy of Hamlet, Prince of Denmark</i>. Folio Society, 1954.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The%20tragedy%20of%20Hamlet%2C%20Prince%20of%20Denmark&amp;rft.place=London&amp;rft.publisher=Folio%20Society&amp;rft.series=The%20Folio%20Shakespeare&amp;rft.aufirst=William&amp;rft.aulast=Shakespeare&amp;rft.au=William%20Shakespeare&amp;rft.date=1954&amp;rft.tpages=134&amp;rft.language=eng"></span>
+  <div class="csl-entry">Vonnegut, Kurt. <i>Mother Night</i>. Gold Medal Books, 1962.</div>
+  <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-385-33414-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mother%20night&amp;rft.place=New%20York%2C%20N.Y&amp;rft.publisher=Gold%20Medal%20Books&amp;rft.aufirst=Kurt&amp;rft.aulast=Vonnegut&amp;rft.au=Kurt%20Vonnegut&amp;rft.date=1962&amp;rft.tpages=174&amp;rft.isbn=978-0-385-33414-3"></span>
+</div>
 
 ----
 
