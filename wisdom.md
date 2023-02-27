@@ -64,7 +64,7 @@ Brief introductory remarks regarding the Project:
 - As it happens, many of the ideas have been *very painful* to learn.
 - None of these ideas will be true for every person or for all times. In the event that you ever do identify ideas that are true for every person and for all times, you may wish to start a religion.
 - Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
-- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject idea that reflects any of these undesirable criteria.
+- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any idea that they find undesirable.
 - These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
 - Ideas appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
