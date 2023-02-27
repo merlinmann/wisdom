@@ -40,7 +40,7 @@ TODO needs better citation
 
 > We are what we pretend to be, so we must be careful about what we pretend to be.
 
-― Kurt Vonnegut, Jr., _Mother Night_ (1962)
+― Kurt Vonnegut, Jr., *Mother Night* (1962)
 
 ----
 
@@ -60,18 +60,18 @@ TODO needs better citation
 
 Brief introductory remarks regarding the Project:
 
-- The ideas on offer here are based on my own experiences and sensibilities. They are each and all things that, above all, I have needed to learn. 
-- As it happens, many of the ideas have been _very painful_ to learn.
+- The ideas on offer here are based on my own experiences and sensibilities. They are each and all things that, above all, I have needed to learn.
+- As it happens, many of the ideas have been *very painful* to learn.
 - None of these ideas will be true for every person or for all times. In the event that you ever do identify ideas that are true for every person and for all times, you may wish to start a religion.
 - Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
-- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject items that match any of these unsavory criteria.
+- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject idea that reflects any of these undesirable criteria.
 - These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
 - Ideas appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
 - None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, the Project is provided *as-is*.
-- You should not rely upon this Project or its constituent ideas for *any purpose* without seeking legal, medical, emotional, spiritual, and/or directed career counseling.
-- No glass containers, coolers, or inflammable materials will be permitted. No motorcycles after 3pm. 
+- You should *not* rely upon this Project or its constituent ideas for *any purpose* without seeking legal, medical, emotional, spiritual, and/or directed career counseling.
+- No glass containers, coolers, or inflammable materials will be permitted. No motorcycles after 3pm.
 - The Project is never done.
 
 —*The Management*
@@ -465,7 +465,7 @@ Brief introductory remarks regarding the Project:
 - Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
 - If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
 - Related: if you don't think you sometimes have big feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
-- Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it _will_ rain again someday.
+- Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it *will* rain again someday.
 - Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is not generally regarded as a skillful application of the art.
 - Relatedly related: the use of a rain umbrella should require roughly the same formal testing and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you just *so* much broader and pointier than you realize. Maybe just get a rain jacket.
 - If you can't be a good example, at least try to become an interesting cautionary tale.
