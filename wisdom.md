@@ -421,7 +421,7 @@ Some introductory thoughts on the wisdom.
 ----
 
 - Sometimes, when you're about to ask someone for help, you have a hunch that it might be something you could probably figure out on your own. To test your hunch, *draft* (but do not send) your question as the smartest and most succinct message you can manage. Yes, reading it back to yourself may end up solving your actual problem. But, it nearly always helps to clarify whether it's something you actually *could* figure out on your own.
-- Related: knowing whether a problem is something you can probably figure out on your own is arguably as important as actually "solving" the problem. Just ask anyone who ever assumed they knew how to fix their own brakes or diagnose a weird lump.
+- Related: knowing whether a problem is something you might be able to figure out on your own is arguably as important as actually "solving" the problem. Just ask anyone who's ever assumed they knew how to fix their own brakes or diagnose a weird lump.
 - If you cannot understand why someone was traumatized by an event, maybe ask yourself who that says more about.
 - The second step in almost any project will involve the mindful introduction of *infrastructure*. I don't even need to know what your first step is; I can almost guarantee that there will be no third or fourth step if you aren't canny about getting the proper initial scaffolding in place.
 - Related: a lack of infrastructure is also why nearly all New Year's resolutions fail. Human will is a lot like a new locomotive; it's basically useless without the rails, controls, and signals that make the right thing the easy thing.
@@ -438,7 +438,7 @@ Some introductory thoughts on the wisdom.
 - In the world of independently making stuff, success with an audience can be thought of as a slice of cake that is impossibly slim but improbably deep. Stay focused on delighting the right tiny wedge of the best baked good you can make and there's potentially no limit to how tall it can get.
 - Related: please do not eat your fans. They are not actually cake.
 - Great cities often thrive on the number of options that ordinary people have for getting from Point A to Point B—and for potentially exploring unfamiliar terrain both between and beyond those points. Limit those options to less than a handful, and both your city and its points start to lose a lot of their appeal. (Even if you have a *really* nice car.)
-- Treat recipes like a journey, not a destination. Once you feel like you're mostly nailing the basic instructions, start looking for ways to really make it your own. Remember, you are probably not being scored.
+- Treat recipes like a journey, not a destination. Once you feel like you're mostly nailing the basic instructions, start looking for ways to make it your own. Remember, you are probably not being scored.
 - Imagine standing on a footbridge and looking down as a fast, choppy stream rushes beneath you. Keep watching the stream—but try not to jump in the water. *There*. You just meditated a little.
 - Related: if it's useful, you might want to think about meditation as regular office hours with yourself.
 - When you're in your 20s, be advisable about accumulating a lot of long-term obligations. If, when, or as your options start to diminish, the sunk costs of theoretical security often become a costly millstone.
@@ -446,24 +446,24 @@ Some introductory thoughts on the wisdom.
 - If someone else is doing your dishes, be guarded in how often and loudly your criticize how they do it.
 - Related: This also goes for almost everything else.
 - You may not always get to choose what makes you emotional, but you have more agency than you might think about what makes you *irrational*. Which is really kind of the point when you think about it. Which you should.
-- Some people are really skeptical about the teaching of any topic or thing that they don't personally already know and understand—or more often, something that they *think* they know and understand.
+- Some people are skeptical about the teaching of any topic or thing that they don't personally already know and understand—or more often, something that they *think* they know and understand.
 - Related: You can draw your own conclusions as to what this reveals about those folks' intellectual curiosity. But do understand: the less they know, the less they think *you* should know.
 
 ----
 
 - Look for little moments of grace when you can feel gratitude for the gift of having a small place in a world that is much bigger, older, and more interesting than you are.
-- Related: an excellent time to practice this is every time you smile and raise your glass to join a toast.
-- There are Finish-the-Can people and Not-Finish-the-Can people. You know in your heart which kind you are. And so do the people with whom you live.
-- If you think about someone when they're not around and you find yourself wondering if there are ways you could make their life a little better, consider that you might love them.
-- It can be frustrating when someone won't pay attention to the thing you wish they'd be paying more attention to. Consider that other people may be feeling that same frustration about you.
-- Don't say you've lost something if you've only *mislaid* it. "Lost" is a really special word, best reserved for describing the precious things you've accepted you'll never see again.
+- Related: one excellent opportunity to practice this is every time you smile and raise your glass to join a toast.
+- There are Finish-the-Can people and Not-Finish-the-Can people. You know in your heart which kind you are. As do the people with whom you live.
+- If you think about someone when they're not around and you find yourself wondering whether there are ways you could make their life a little better, consider that you might love them.
+- It can be frustrating when someone won't pay attention to the thing you wish they'd be paying more attention to. Consider that other people may sometimes feel that same frustration about you.
+- Don't say you've lost something if you've merely *mislaid* it. "Lost" is a really special word, best reserved for describing the precious things you've accepted that you'll never see again.
 - Related: if you *have* mislaid something, it's probably either underneath or inside of something else.
 - Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
-- If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest just starting to frequently notice how you feel about how you feel.
+- If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
 - Related: if you don't think you sometimes have big feelings about how you feel, please permit me to gently recommend looking into mindfulness.
-- Get a very thin, extremely lightweight rain jacket. Roll it up into a tight and tiny little burrito, secured with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
-- Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already started happening (and which you easily could have anticipated) is generally regarded as a less skillful application of the art.
-- Relatedly related: the use of a rain umbrella should require roughly the same degree of training and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It's not your personal weather sword, and it makes you so much broader and pointier than you realize. Maybe just get a rain jacket.
+- Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
+- Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is generally regarded as a less skillful application of the art.
+- Relatedly related: the use of a rain umbrella should require roughly the same formal training and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you *so* much broader and pointier than you realize. Maybe just get a rain jacket.
 - If you can't be a good example, at least try to become an interesting cautionary tale.
 
 ----
