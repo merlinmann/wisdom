@@ -62,6 +62,7 @@ Brief introductory remarks regarding the Project:
 
 - The ideas on offer here are based on my own experiences and sensibilities. They are each things that, above all, I have needed to learn.
 - As it happens, many of these ideas have been very painful and difficult for me to learn. 
+- Some of the ideas are just my opinion, man.
 - None of these ideas will be true for every person or for all times. In the event that you ever do identify ideas that are true for every person and for all times, you may wish to start a religion.
 - Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
 - Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any idea that they find undesirable.
@@ -464,7 +465,7 @@ Brief introductory remarks regarding the Project:
 - Related: if you *have* mislaid something, it's probably either underneath or inside of something else.
 - Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
 - If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
-- Related: if you don't think you sometimes have big feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
+- Related: if you don't think you sometimes have _big_ feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
 - Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
 - Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is not generally regarded as a skillful application of the art.
 - Relatedly related: the use of a rain umbrella should require roughly the same formal testing and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you just *so* much broader and pointier than you realize. Maybe just get a rain jacket.
