@@ -185,6 +185,7 @@ Some introductory thoughts on the wisdom.
 - Priorities are like arms. If you think you have more than a couple, you're either lying or crazy.
 - If you're struggling to understand someone's behavior or motivation, understand that it's almost always because of money, fear, or both.
 - If you have cool stickers, use them. Put them on things. Be carelessly joyful about using your stickers. If you die with a collection of dozens of cool stickers that you never used, you did it wrong.
+- Related: food is for eating, heirlooms are for using, champagne is for drinking, and fancy clothes are for wearing. You are not a fucking docent, and the Pope is not coming to your house.
 - Whenever you meet someone new, ask them what they're most excited about right now. Everyone interesting is excited about something right now, and they'd probably love to tell you about it.
 - Related. When you meet a child, ask them if they would share the coolest thing that's happened to them this week. You can also ask them about their favorite food. Kids love food and have many thoughts about it.
 - Whenever you're considering escalating any relationship, ask yourself whether you'd be okay with getting ten times more of them. In other words, consider whether a lot more of "how they are" is a thing you really want to pursue.
