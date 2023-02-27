@@ -460,7 +460,7 @@ Brief introductory remarks regarding the Project:
 - If you think about someone when they're not around and you find yourself wondering whether there are ways you could make their life a little better, consider that you might love them.
 - Hats are like PowerPoint decks. Probably best to just steer clear until you understand why most men are terrible at it.
 - It can be frustrating when someone won't pay attention to the thing you wish they'd be paying more attention to. Consider that other people may sometimes feel that same frustration about you.
-- Don't say you've lost something if you've merely *mislaid* it. "Lost" is a really special word, best reserved for describing the precious things you've accepted that you'll never see again.
+- Don't say you've lost something if you've merely *mislaid* it. "Lost" is a really special word, best reserved for describing a precious thing you've accepted you'll never see again.
 - Related: if you *have* mislaid something, it's probably either underneath or inside of something else.
 - Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
 - If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
