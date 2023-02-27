@@ -40,7 +40,7 @@ TODO needs better citation
 
 > We are what we pretend to be, so we must be careful about what we pretend to be.
 
-― Kurt Vonnegut, Jr. (1962)
+― Kurt Vonnegut, Jr., _Mother Night_ (1962)
 
 ----
 
