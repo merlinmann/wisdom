@@ -69,8 +69,8 @@ Some introductory thoughts on the wisdom.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
 - None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, it is provided *as-is*.
-- You should not rely upon this document or its contents for *any purpose* without seeking legal, medical, mental, spiritual  and/or directed  career counseling.
-- No glass containers, coolers, or inflammable materials are permitted. No motorcycles after 3pm.
+- You should not rely upon this Project or its contents for *any purpose* without seeking legal, medical, mental, spiritual, and/or directed  career counseling.
+- No glass containers, coolers, or inflammable materials will be permitted. No motorcycles after 3pm.
 
 —*The Management*
 
