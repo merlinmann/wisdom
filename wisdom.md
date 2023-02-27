@@ -8,7 +8,7 @@ Author: Merlin Mann
 
 Or: “*Everybody likes being given a glass of water*.”
 
-By [Merlin Mann](http://www.MerlinMann.com "Merlin's Website").
+By [Merlin Mann](http://hotdogsladies.omg.lol "Merlin's Website").
 
 It's only advice for you because it **had** to be advice for me.
 
@@ -463,7 +463,7 @@ Some introductory thoughts on the wisdom.
 - Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
 - If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
 - Related: if you don't think you sometimes have big feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
-- Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
+- Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it _will_ rain again someday.
 - Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is not generally regarded as a skillful application of the art.
 - Relatedly related: the use of a rain umbrella should require roughly the same formal testing and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you just *so* much broader and pointier than you realize. Maybe just get a rain jacket.
 - If you can't be a good example, at least try to become an interesting cautionary tale.
@@ -489,6 +489,6 @@ Some introductory thoughts on the wisdom.
 
 ## About the Author
 
-[**Merlin Mann**](http://www.merlinmann.com/ "Merlin's ancient website") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and [this bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
+[**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and [this bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
