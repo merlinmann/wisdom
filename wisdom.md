@@ -454,7 +454,7 @@ Brief introductory remarks regarding the Project:
 
 ----
 
-- Look for little moments of grace when you can feel gratitude for the gift of having a small place in a world that is much bigger, older, and more interesting than you are.
+- Find moments of grace where you can feel gratitude for the gift of having a small place in a world that is much bigger, older, and more interesting than you are.
 - Related: one excellent opportunity to practice this is every time you smile and raise your glass to join a toast.
 - There are Finish-the-Can people and Not-Finish-the-Can people. You know in your heart which kind you are. As do the people with whom you live.
 - If you think about someone when they're not around and you find yourself wondering whether there are ways you could make their life a little better, consider that you might love them.
