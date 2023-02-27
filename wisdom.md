@@ -38,7 +38,6 @@ TODO needs better citation
 
  -->
 
-
 > We are what we pretend to be, so we must be careful about what we pretend to be.
 
 ― Kurt Vonnegut, Jr. (1962)
@@ -455,6 +454,7 @@ Some introductory thoughts on the wisdom.
 - Related: one excellent opportunity to practice this is every time you smile and raise your glass to join a toast.
 - There are Finish-the-Can people and Not-Finish-the-Can people. You know in your heart which kind you are. As do the people with whom you live.
 - If you think about someone when they're not around and you find yourself wondering whether there are ways you could make their life a little better, consider that you might love them.
+- Hats are like PowerPoint decks. Probably best to just steer clear until you understand why most men are terrible at it.
 - It can be frustrating when someone won't pay attention to the thing you wish they'd be paying more attention to. Consider that other people may sometimes feel that same frustration about you.
 - Don't say you've lost something if you've merely *mislaid* it. "Lost" is a really special word, best reserved for describing the precious things you've accepted that you'll never see again.
 - Related: if you *have* mislaid something, it's probably either underneath or inside of something else.
