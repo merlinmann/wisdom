@@ -58,7 +58,7 @@ TODO needs better citation
 
 ## Voi ch'entrate…
 
-Some introductory thoughts on the wisdom.
+Some brief introductory remarks regarding the Project:
 
 - The thoughts on offer here are based on my own experiences and sensibilities. They are each and all things that, above all, I have needed to learn. 
 - As it happens, many of the thougts have been _very painful_ to learn.
