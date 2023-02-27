@@ -61,11 +61,12 @@ TODO needs better citation
 Brief introductory remarks regarding the Project:
 
 - The ideas on offer here are based on my own experiences and sensibilities. They are mostly things that, above all, I have needed to learn.
-- As it happens, most of these ideas have been painful and difficult for me to learn; many have proven really hard to do well and consistently.
-- Some of the ideas are just my opinion, man.
-- None of these ideas will be true for every person or for all times. In the event that you ever do identify ideas that are true for every person and for all times, you may wish to start a religion.
+- As it happens, most of these ideas have been painful to learn and even more difficult to practice. 
+- Some of the ideas are, admittedly, just my opinion.
+- None of these ideas will be true for every person or for all times. In the event that you ever successfully identify ideas that are true for every person and for all times, you may wish to start a religion.
 - Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
-- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any idea that they find undesirable.
+- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any ideas that they find undesirable.
+- But, bear in mind that sometimes it is the idea that has found you undesirable.
 - These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
 - Ideas appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
@@ -94,7 +95,7 @@ Brief introductory remarks regarding the Project:
 - If the thing you’re cooking doesn’t smell or sound like food yet, it’s probably not food yet.
 - Buy slightly larger shoes.
 - Say hello to every dog.
-- Always wave at children on trains.
+- Always wave back at children and all persons on trains.
 - Flirt with all elderly women.
 - Tip more.
 - Look for the chimneys.
@@ -347,8 +348,8 @@ Brief introductory remarks regarding the Project:
 ----
 
 - Most parents understand it's their job to keep their child from dying. But, as the kid gets older, it also becomes increasingly vital not to prevent them from living. This is very difficult.
-- If you're going to pick a fight online, do it in the late afternoon. That way, you're less likely to blow a perfectly good working day being all mad. Plus, you'll both tire yourselves out eventually, and maybe you'll do better tomorrow.
-- Related: do not pick fights online.
+- If you're going to participate in a dumb fight online, do it in the late afternoon. That way, you're less likely to blow a perfectly good working day being all mad. Plus, you'll both tire yourselves out eventually, and maybe you'll do better tomorrow.
+- Related: do not participate in dumb fights online.
 - Minimize the number of conversations you have through a closed bathroom door. Unless you're outside the door and there's a fire, or you're *inside* the door and you're out of toilet paper. Otherwise, have a little dignity, and wait for the door to open.
 - Don't be too thirsty in your quest for gratitude and acknowledgement. If you want to help someone and have the requisite skills, *just help them*. A person with a problem who also has to graciously manage needy communications about that problem now very much has two problems.
 - Related: if you *really* want to help someone, offer something extremely specific. "I'm here for you! 😬👍" is not nearly as cool as "Can I drop off a lasagna at 4?"
@@ -415,7 +416,7 @@ Brief introductory remarks regarding the Project:
 
 - Remember that, like babies and balls, you can bounce. The extent to which any given event—often an imagined event—might derail or even destroy you is, at least in small ways, still something that's in your control. Especially when you remember that you can bounce.
 - Whenever the start time for a call or similar gets delayed—even for a theoretically specific time in just a few minutes—consider asking your tardy colleague for a "*bump*." "Text me when you're ready—but, then give me 15 minutes" allows your brain to move fully out of "waiting mode" and into "doing stuff mode." If the event ends up starting promptly at the new time? (Which it won't.) Great. And, if it doesn't start on time? (Which it won't). No problem. You will have disappeared into an appropriately-sized task instead of being all mad about transitively wasting time and attention that could have been more skillfully utilized.
-- In considering whether and how often to ingest a source of new or updating information, always try to ask yourself: "What might this make me want to see, think, or do differently—and how might that be beneficial?" Whenever you estimate that your honest answers should be "Nothing important" and "It won't," be cautious about ingesting it at all. I promise, you do not actually need to (theoretically) know everything all the time in real time.
+- In considering whether and how often to ingest a source of new or updating information, always try to ask yourself: "What might this make me want to see, think, or do differently—and how might that be beneficial?" Whenever you estimate that your honest answers should be "Nothing important" and "It won't," be cautious about ingesting it at all. I promise, you do not actually need to know everything all the time.
 - One easy and quick free writing exercise is to pick a word you just heard that tickles your brain. For three minutes and without pausing, write as many associations as you can think of with that word. Weirdly, something will grab you and stimulate your juices, and you may find yourself writing for longer than three minutes.
 - Related: try to avoid saying that you're going to "make yourself" do something. Instead, take a breath, and describe what you hope to *find yourself* doing. Inhabit your intentionality, and quit trying to knock down a fully unlocked door.
 - Relatedly related: a *goal* can be a fine thing that describes a desired outcome defined by a positive change that you desire. On the other hand, think of an *intentionality* as the mindful way you'll choose to conduct and focus yourself on the way to a "goal." Or pretty much anything else for that matter.
@@ -467,8 +468,8 @@ Brief introductory remarks regarding the Project:
 - If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
 - Related: if you don't think you sometimes have _big_ feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
 - Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
-- Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is not generally regarded as a skillful application of the art.
-- Relatedly related: the use of a rain umbrella should require roughly the same formal testing and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you just *so* much broader and pointier than you realize. Maybe just get a rain jacket.
+- Unrelated: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is not generally regarded as a skillful application of the art.
+- Relatedly unrelated: the use of a rain umbrella should require roughly the same formal testing and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you just *so* much broader and pointier than you realize. Maybe just get a rain jacket.
 - If you can't be a good example, at least try to become an interesting cautionary tale.
 
 ----
