@@ -436,8 +436,8 @@ Brief introductory remarks regarding the Project:
 
 - Kids are unintentionally curious. What happens when I flush this rug? Would my cat enjoy wearing a fancy dress? Could this LEGO head also be a cool hat? Without regard to topic, try not to lose what’s left of your unintentional curiosity.
 - Some people like to tell you what to pay attention to. Many want to determine how you should feel about it. Others specialize in advising exactly what you should do as a result. Just be aware that these are each different things, and it's probably wise to avoid people who are adamant about demanding to control all three.
-- Related: being good at one of these things rarely indicated that someone is also great at the others.
-- Unrelated: this also goes for the expertise portfolio of billionaires. Sometimes, perversely so.
+- Related: being good at one of these things rarely means someone's also great at the others.
+- Unrelated: this also goes for the notional expertise portfolio of billionaires. Sometimes, perversely so.
 - In the world of independently making stuff, success with an audience can be thought of as a slice of cake that is impossibly slim but improbably deep. Stay focused on delighting the right tiny wedge of the best baked good you can make and there's potentially no limit to how tall it can get.
 - Related: please do not eat your fans. They are not actually cake.
 - Great cities often thrive on the number of options that ordinary people have for getting from Point A to Point B—and for potentially exploring unfamiliar terrain both between and beyond those points. Limit those options to less than a handful, and both your city and its points start to lose a lot of their appeal. (Even if you have a *really* nice car.)
