@@ -58,19 +58,19 @@ TODO needs better citation
 
 ## Voi ch'entrate…
 
-Some brief introductory remarks regarding the Project:
+Brief introductory remarks regarding the Project:
 
-- The thoughts on offer here are based on my own experiences and sensibilities. They are each and all things that, above all, I have needed to learn. 
-- As it happens, many of the thougts have been _very painful_ to learn.
-- None of these thoughts will be true for every person or for all times. In the event that you ever identify thoughts that are true for every person and for all times, you may wish to start a religion.
-- Also, none of these thoughts is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
-- Related: for any thought here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject items that match any of these unsavory criteria.
-- These are thoughts that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
-- Thoughts appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not *Reader’s Digest*.
+- The ideas on offer here are based on my own experiences and sensibilities. They are each and all things that, above all, I have needed to learn. 
+- As it happens, many of the ideas have been _very painful_ to learn.
+- None of these ideas will be true for every person or for all times. In the event that you ever do identify ideas that are true for every person and for all times, you may wish to start a religion.
+- Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
+- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject items that match any of these unsavory criteria.
+- These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
+- Ideas appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
 - None of this should be interpreted as actual advice of any kind or for any purpose, and, thus, the Project is provided *as-is*.
-- You should not rely upon this Project or its contents for *any purpose* without seeking legal, medical, emotional, spiritual, and/or directed career counseling.
+- You should not rely upon this Project or its constituent ideas for *any purpose* without seeking legal, medical, emotional, spiritual, and/or directed career counseling.
 - No glass containers, coolers, or inflammable materials will be permitted. No motorcycles after 3pm. 
 - The Project is never done.
 
