@@ -61,7 +61,7 @@ TODO needs better citation
 Brief introductory remarks regarding the Project:
 
 - The ideas on offer here are based on my own experiences and sensibilities. They are mostly things that, above all, I have needed to learn.
-- As it happens, many of these ideas have been very painful and difficult for me to learn; an astonishing numer are even more difficult to do.
+- As it happens, many of these ideas have been very painful and difficult for me to learn; an astonishing numer are even more tricky to do well or consistently.
 - Some of the ideas are just my opinion, man.
 - None of these ideas will be true for every person or for all times. In the event that you ever do identify ideas that are true for every person and for all times, you may wish to start a religion.
 - Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
