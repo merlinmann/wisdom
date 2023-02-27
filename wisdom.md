@@ -157,7 +157,7 @@ Some introductory thoughts on the wisdom.
 - Sometimes, people ask you how you're doing when they're especially concerned about how *they’re* doing.
 - Stay focused on the outcome, not your original strategy. Viz.: if you’re looking for *a* USB cable, don't fixate on finding a *specific* box that might contain a *specific* USB cable. Just find *a* goddamned cable.
 - Related: when you get stuck and frustrated about how to solve a problem, stop, take a breath, and ask yourself, “What am I *actually* trying to accomplish here?” Because, that’s the outcome on the other side of a new and less ambiguous strategy.
-- Relatedly related: whenever you catch yourself getting frustrated because you're hung up on some weird implementation detail, please say the following outloud in a firm but friendly tone: "_Just do the thing_."
+- Relatedly related: whenever you catch yourself getting frustrated because you're hung up on some weird implementation detail, please say the following outloud in a firm but friendly tone: "*Just do the thing*."
 - Before you freak out about how you are feeling right now, ask yourself how much (or how little) you're having of sleep, food, sex, water, exercise, alcohol, drugs, sunshine, human touch, family time, and probably some other stuff I don't know of but you definitely will.
 - Whenever you need to carry two seemingly identical things (like, drinks or toothbrushes or what have you), always—*and only*—ever carry the one that’s yours in your right hand. When you pick up the two items, always mutter aloud to yourself, “*I’m always **right***.” Because, now, you are always right.
 - After you’ve had two alcoholic beverages, begin alternating with equal amounts of water. If you have more than five drinks, change that ratio to two-to one in favor of water. (Thanks, Dennis. G.)
@@ -367,7 +367,7 @@ Some introductory thoughts on the wisdom.
 ----
 
 - If you're noticing a new name or phrase being used to refer to something you know by an older or more familiar name, try to keep an open mind. Rather than focusing on your own annoyance or discomfort, ask yourself in which direction the new name is encouraging people to move. If it feels like a good faith step toward inclusion, authenticity, kindness, or greater humanity, maybe set aside your priors and make the effort to take those positive steps right along with it.
-- Related: get skeptical about adopting new jargon from the worlds of business, technology, or journalism. Especially if it's that sort of new jargon that enthusiastically trades clarity and precision for deliberate opacity or cheap novelty. The track record for jargon's longterm contributions to society has been bleak.
+- But: remain skeptical about quickly adopting new jargon from the worlds of business, technology, or journalism. Especially if it's that sort of new jargon that enthusiastically trades clarity and precision for deliberate opacity or cheap novelty. The track record for jargon's longterm contributions to society has been bleak.
 - Be suspicious of people who like being owed a favor. Especially if it's not a favor that you requested. Often, these people are eldritch monsters who thrive on accumulating goodwill for darkly selfish reasons.
 - If the soap in a guest bathroom is new and shaped like anything besides a bar of soap, do not use it. Also, do not eat it. Because I know you kinda want to. Especially those shiny little sea shells.
 - If you're not sure who's doing your emotional labor, it's probably everyone you know.
@@ -390,7 +390,7 @@ Some introductory thoughts on the wisdom.
 - You are using too much dish soap. Use less dish soap but hotter water.
 - Buy some manila file folder jackets, and deploy them for any occasion or destination where random paper kipple is likely to pile up. You know that wad of receipts and boarding passes and theme park maps and whatnot that accumulate every time you travel? Anticipate the wad, and then easily manage it with your new folder friend. It would like to live right next to your room's ad hoc charging station, please.
 - When you get multiple hotel key cards for the multiple people in your party, use stickers or a Sharpie to identify whose card is whose. Seems dumb until you realize too late that one person has left with three cards and two people have left with zero cards.
-- If you're about to depart for an event that requires physical pre-purchased tickets, every person in your party has to hold their own ticket to their own forehead. Then, you don't leave until the entire group agrees that they've all seen each person's ticket.
+- If you're about to depart for an event that requires physical pre-purchased tickets, every person in your party has to hold their own ticket to their own forehead. Then, you don't leave until the entire group agrees that they've all seen each person's ticket. (Thanks, Phil S.)
 - Your ear buds are only allowed to be in one of two places *ever*. They are either in your ears or in their charging case. That's it. Ever. (Thanks, John S.)
 
 ----
@@ -462,9 +462,9 @@ Some introductory thoughts on the wisdom.
 - Related: if you *have* mislaid something, it's probably either underneath or inside of something else.
 - Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
 - If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
-- Related: if you don't think you sometimes have big feelings about how you feel, please permit me to gently recommend looking into mindfulness.
+- Related: if you don't think you sometimes have big feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
 - Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
-- Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is generally regarded as a less skillful application of the art.
+- Related: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is not generally regarded as a skillful application of the art.
 - Relatedly related: the use of a rain umbrella should require roughly the same formal training and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you *so* much broader and pointier than you realize. Maybe just get a rain jacket.
 - If you can't be a good example, at least try to become an interesting cautionary tale.
 
