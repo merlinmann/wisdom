@@ -63,6 +63,7 @@ Brief introductory remarks regarding the Project:
 - The ideas on offer here are based on my own experiences and sensibilities. They are mostly things that, above all, I have needed to learn.
 - As it happens, most of these ideas have been painful to learn and even more difficult to practice.
 - Some of the ideas are, admittedly, just my opinion.
+- Many of these ideas will seem to contradict one other. Unfortunately, that doesn't mean one of them has to be wrong.
 - None of these ideas will be true for every person or for all times. In the event that you ever successfully identify ideas that are true for every person and for all times, you may wish to start a religion.
 - Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
 - Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any ideas that they find undesirable.
