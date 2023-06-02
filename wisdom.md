@@ -479,7 +479,7 @@ Brief introductory remarks regarding the Project:
 - Occasionally silently remind yourself, "Remember you said you wanted this."
 - Avoid telling people they're being scared wrong. Demanding that someone become more or less terrified about something is a dick move, and it usually says more about your hangups than their judgement.
 - Related: start noticing the people in your world who try to motivate you with fear. It's often because they don't have anything more appealing to offer. And, they know it.
-- Relatedly related: whenever you can  manage it, try to reject a fear until you've exhausted your curiosity.
+- Relatedly related: whenever you can  manage it, don't internalize fear until you've exhausted curiosity.
 - You'll almost always eventually regret naming something you made with a pun.
 - Lessons come where you find them. Not necessarily where you looked for them.
 - Try to become someone who's fun to teach things to.
