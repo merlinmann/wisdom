@@ -69,7 +69,7 @@ Brief introductory remarks regarding the Project:
 - Related: for any idea that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any ideas that they find undesirable.
 - But, do bear in mind that often it's the idea that finds *you* undesirable. The better ideas usually have pretty high standards.
 - These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
-- Ideas appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are not “submissions.” Because, alas, I am not *Reader’s Digest*.
+- Ideas appended with a “thanks" are wisdoms that I gratefully learned from that credited person—often many years ago. They are not “submissions.” Because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
 - None of the ideas should be interpreted as actual advice of any kind or for any purpose, and, thus, the Project is provided *as-is*.
@@ -479,9 +479,11 @@ Brief introductory remarks regarding the Project:
 - Occasionally silently remind yourself, "Remember you said you wanted this."
 - Avoid telling people they're being scared wrong. Demanding that someone become more or less terrified about something is a dick move, and it usually says more about your hangups than their judgement.
 - Related: start noticing the people in your world who try to motivate you with fear. It's often because they don't have anything more appealing to offer. And, they know it.
+- Relatedly related: whenever you can  manage it, try to reject fear until you've exhausted your curiosity.
 - You'll almost always eventually regret naming something you made with a pun.
 - Lessons come where you find them. Not necessarily where you looked for them.
 - Try to become someone who's fun to teach things to.
+
 
 ----
 
