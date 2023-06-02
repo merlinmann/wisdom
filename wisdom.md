@@ -61,7 +61,7 @@ TODO needs better citation
 Brief introductory remarks regarding the Project:
 
 - The ideas on offer here are based on my own experiences and sensibilities. They are mostly things that, above all, I have needed to learn.
-- As it happens, most of these ideas have been painful to learn and even more difficult to practice. 
+- As it happens, most of these ideas have been painful to learn and even more difficult to practice.
 - Some of the ideas are, admittedly, just my opinion.
 - None of these ideas will be true for every person or for all times. In the event that you ever successfully identify ideas that are true for every person and for all times, you may wish to start a religion.
 - Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
@@ -402,7 +402,7 @@ Brief introductory remarks regarding the Project:
 - Whenever you switch to having two of something, change is happening, and you need to be aware of that. If you had one lover, but then suddenly find yourself with two, change is afoot. If you recently had one-thousand dollars, but are now down to two? Something big has changed.
 - Related: this also goes for keys, college majors, addictions, indictments, toilet paper rolls, wishes from a genie, and almost everything else. "Two" often means shit is on the precipice of getting extremely weird.
 - Like it or not, you're always practicing *something*. Put another way, whichever muscle you exercise the most can't help but strengthen. Often to the detriment of others.
-- Related: okay, that was mostly an analogy. What I'm saying is that you will eventually _become_ whatever you frequently do. So, be picky about frequently doing only the things that help aid whatever it is you *want* to become.
+- Related: okay, that was mostly an analogy. What I'm saying is that you will eventually *become* whatever you frequently do. So, be picky about frequently doing only the things that help aid whatever it is you *want* to become.
 - No one speaks through a translator; it is we who *listen* through a translator.
 - Your refrigerator is not a library or a hope chest. So, if you decide to save some leftovers, write the current day of the week on them. Then, when you rediscover your treat 3-5 weeks from now and wonder "Now, *which* Sunday was that?" Yeah. Time to deeply curate your odd little food museum.
 - Related: good intentions to reduce waste are best operationalized before acquiring the things that tend to get wasted. Live the rule of the buffet: "Take what you want, but eat what you take."
@@ -466,11 +466,21 @@ Brief introductory remarks regarding the Project:
 - Related: if you *have* mislaid something, it's probably either underneath or inside of something else.
 - Relatedly related: remember to hunt for mislaid items in places where they aren't supposed to be. If a thing was where it's *supposed* to be, then you wouldn't still be looking for it, would you?
 - If I were to pitch somebody on my favorite bit I’ve picked up from mindfulness, I’d suggest starting to frequently notice how you feel about how you feel.
-- Related: if you don't think you sometimes have _big_ feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
+- Related: if you don't think you sometimes have *big* feelings about how you feel, please permit me to gently recommend your looking into mindfulness.
 - Get a thin, lightweight rain jacket. Roll it up into a tight and tiny little burrito, secure it with a couple silicon/rubber bands, and just leave it in your backpack. Because no matter how much it's not raining right now, chances are it will rain again someday.
 - Unrelated: responsible project management is the art of calmly preparing for things that aren't happening right now. A manic dash to survive something that's already happening (and which you probably should have anticipated) is not generally regarded as a skillful application of the art.
 - Relatedly unrelated: the use of a rain umbrella should require roughly the same formal testing and certification as an automobile license. If you are in public and using an umbrella irresponsibly, you should lose your privileges. It is not your personal weather sword, and it makes you just *so* much broader and pointier than you realize. Maybe just get a rain jacket.
 - If you can't be a good example, at least try to become an interesting cautionary tale.
+
+----
+
+- When you need to scoop some ice out of a thing, never use something that could break—especially anything made of glass. Watching someone drunkenly plow a highball glass into an ice bin makes the retired busboy in me wildly uncomfortable.
+- Occasionally silently remind yourself, "Remember you said you wanted this."
+- Avoid telling people they're being scared wrong. Demanding that someone become more or less terrified about something is a dick move, and it usually says more about your hangups than their judgement.
+- Related: start noticing the people in your world who try to motivate you with fear. It's often because they don't have anything more appealing to offer. And, they know it.
+- You'll almost always eventually regret naming something you made with a pun.
+- Lessons come where you find them. Not necessarily where you looked for them.
+- Try to become someone who's fun to teach things to.
 
 ----
 
