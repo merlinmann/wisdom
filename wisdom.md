@@ -61,13 +61,13 @@ TODO needs better citation
 Brief introductory remarks regarding the Project:
 
 - The ideas on offer here are based on my own experiences and sensibilities. They are mostly things that, above all, I have needed to learn.
-- As it happens, most of these ideas have been painful to learn and even more difficult to practice.
+- As it happens, most of the ideas have been painful to learn and even more difficult to practice.
 - Some of the ideas are, admittedly, just my opinion.
-- Many of these ideas will seem to contradict one other. Unfortunately, that doesn't mean one of them has to be wrong.
-- None of these ideas will be true for every person or for all times. In the event that you ever successfully identify ideas that are true for every person and for all times, you may wish to start a religion.
-- Also, none of these ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
-- Related: for any idea here that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any ideas that they find undesirable.
-- But, bear in mind that sometimes it is the idea that has found you undesirable.
+- Many of the ideas will seem to contradict one other. Unfortunately, that doesn't mean one of them has to be wrong.
+- None of the ideas will be true for every person or for all times. In the event that you ever successfully identify ideas that are true for every person and for all times, you may wish to start a religion.
+- Also, none of the ideas is offered with the intention of being unkind, exclusionary, hurtful, or existentially ugly. If any comes across that away, I sincerely apologize in advance.
+- Related: for any idea that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any ideas that they find undesirable.
+- But, do bear in mind that often it's the idea that's found *you* undesirable. The better ideas usually have pretty high standards.
 - These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
 - Ideas appended with a “thanks" are wisdoms that I gratefully learned from that given person—often many years ago. They are *not* “submissions,” because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
