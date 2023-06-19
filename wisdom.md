@@ -396,7 +396,9 @@ Brief introductory remarks regarding the Project:
 - Buy some manila file folder jackets, and deploy them for any occasion or destination where random paper kipple is likely to pile up. You know that wad of receipts and boarding passes and theme park maps and whatnot that accumulate every time you travel? Anticipate the wad, and then easily manage it with your new folder friend. It would like to live right next to your room's ad hoc charging station, please.
 - When you get multiple hotel key cards for the multiple people in your party, use stickers or a Sharpie to identify whose card is whose. Seems dumb until you realize too late that one person has left the room with three cards and two people have left the room with zero cards.
 - If you're about to depart for an event that requires physical pre-purchased tickets, every person in your party has to hold their own ticket to their own forehead. Then, you don't leave until the entire group agrees that they've all seen each person's ticket. (Thanks, Phil S.)
-- Your ear buds are only allowed to be in one of two places *ever*. They are either in your ears or in their charging case. That's it. Ever. (Thanks, John S.)
+- You're either on the bus or off the bus. (thanks Ken K.)
+- related: this also goes for doors, lids, locks, and relationships.
+- relatedly related: your ear buds are only ever allowed to be in one of two places *ever*. They are either in your ears or in their charging case. That is it. Ever. (Thanks, John S.)
 
 ----
 
