@@ -3,6 +3,7 @@ Author: Merlin Mann
 ---
 
 <!-- hello, world 2022-10-11 -->
+<!-- hi again 2023-08-17 -->
 
 # Merlin's Wisdom Project
 
