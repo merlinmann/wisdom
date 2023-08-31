@@ -490,6 +490,21 @@ Brief introductory remarks regarding the Project:
 
 ----
 
+----
+
+
+- Whenever you notice something, consider saying "_thank you_" in your head. Thank you to your world for still being there, and thank you to yourself for noticing it.
+- Related: if this strikes you as corny or emotionally disordered, then you, my friend, are not noticing enough things. Which also means you're definitely not saying "thank you" enough. So, honestly, who's the real weirdo here?
+- Never tell someone they look like someone else. If you're in doubt, recall five times you've done this, it was welcomed, and it all turned out great for everyone. You either sound like a sociopath, a person who puts in women in wells, or, likely, both.
+- All photos are pictures, but not all pictures are photos. If you're talking about a photograph, and you call it a "picture," you sound a little like someone who drinks from a jug.
+- Sometimes, the problem is not that someone lacked the technology to make what they wanted. Often, they had more than enough technology to make what they wanted, but—yikes—just look at…*what they wanted*. (Thanks, Phantom Editor)
+- At least consider the option of not having an opinion.
+- Every time you're tempted to harass your kid about "screen time," mentally imagine that you're actually ranting about, say, "*rectangle time*." Because it makes about as much sense right now. This is not the 12th century, you're not a particularly sagacious elder, and your kid probably doesn't benefit overmuch from adopting your rustic folklore about how concerning machines are.
+- It's okay to plan a meal around dessert. You're an adult, and people who try to tell you how to eat should be offered dietary advice regarding eating a butt.
+
+
+----
+
 ## Works Cited
 
 <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
