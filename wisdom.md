@@ -492,7 +492,7 @@ Brief introductory remarks regarding the Project:
 
 - Whenever you notice something, consider saying "*thank you*" in your head. Even or especially if it's something small or random. You're saying thank you to the world for still being there—and thank you to yourself for noticing it.
 - Related: if this strikes you as corny or emotionally disordered, then you, my friend, are not noticing enough things. Which also means you're definitely not saying "thank you" enough. So, honestly, who's the real weirdo here?
-- Relatedly related: _Thank you_.
+- Relatedly related: *Thank you*.
 - Never tell someone they look like someone else. If you're in doubt, recall five times you've done this, it was welcomed, and it all turned out great for everyone. You either sound like a sociopath, a person who puts in women in wells, or, likely, both.
 - All photos are pictures, but not all pictures are photos. If you're talking about a photograph, and you call it a "picture," you sound a little like someone who drinks from a jug.
 - Sometimes, the problem is not that someone lacked the technology to make what they wanted. Often, they had more than enough technology to make what they wanted, but—yikes—just look at…*what they wanted*. (Thanks, Phantom Editor)
@@ -521,6 +521,6 @@ Brief introductory remarks regarding the Project:
 
 ## About the Author
 
-[**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco. He has a [Twitter](https://twitter.com/hotdogsladies "Merlin's Twitter") and [this bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy").
+[**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco. He has [a bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy") and [other things](http://unwilling.horse "Merlin's Other Things").
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
