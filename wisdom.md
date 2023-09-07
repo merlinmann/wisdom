@@ -89,7 +89,7 @@ Brief introductory remarks regarding the Project:
 - It’s often easier not to be terrible.
 - Whenever you’re not sure what to say, either say nothing, or ask a question.
 - Be sparing in how often you tell someone their negative feelings are wrong; it rarely helps a sad person to be told that they are also a liar.
-- Related: feelings are *real*.
+- Related: feelings are *real*. (Thanks, Jason F.)
 - Never organize anything you should discard.
 - Organizing your email is like alphabetizing your recycling.
 - As you cross the street, notice which car's driver feels most likely to do something stupid or dangerous. Walk a little slower, turn your head, and make direct eye contact. Brains cannot help but notice faces, plus eye contact startles anyone into suddenly remembering they live amongst other actual people.
@@ -490,6 +490,7 @@ Brief introductory remarks regarding the Project:
 
 ----
 
+- Sometimes, your brain decides it’s time to play tennis. So, it starts serving ideas and images at you, each of which seems to require immediate, urgent, and committed volleys in return. Just remember: *it’s your damned head*, and it’s fine if you just want to go sit in the bleachers and watch your brain fire heaters at no one until it tires itself out.
 - Whenever you notice something, consider saying "*thank you*" in your head. Even or especially if it's something small or random. You're saying thank you to the world for still being there—and thank you to yourself for noticing it.
 - Related: if this strikes you as corny or emotionally disordered, then you, my friend, are not noticing enough things. Which also means you're definitely not saying "thank you" enough. So, honestly, who's the real weirdo here?
 - Relatedly related: *Thank you*.
