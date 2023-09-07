@@ -89,7 +89,7 @@ Brief introductory remarks regarding the Project:
 - It’s often easier not to be terrible.
 - Whenever you’re not sure what to say, either say nothing, or ask a question.
 - Be sparing in how often you tell someone their negative feelings are wrong; it rarely helps a sad person to be told that they are also a liar.
-- Related: feelings are *real*. (Thanks, Jason F.)
+- Related: feelings are *real*. (Thanks, Mike S.)
 - Never organize anything you should discard.
 - Organizing your email is like alphabetizing your recycling.
 - As you cross the street, notice which car's driver feels most likely to do something stupid or dangerous. Walk a little slower, turn your head, and make direct eye contact. Brains cannot help but notice faces, plus eye contact startles anyone into suddenly remembering they live amongst other actual people.
