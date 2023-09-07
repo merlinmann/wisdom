@@ -53,7 +53,7 @@ TODO needs better citation
 
 ----
 
-![Tweet Advice](/i/tweet-advice-solution.jpg "'Good advice helps you find the solution to your problem. Great advice helps you find you were solving the wrong problem.'")
+![Something Like Advice](/i/toot-advice.jpg "'Good advice helps you find the solution to your problem. Great advice helps you find you were solving the wrong problem.'")
 
 ----
 
