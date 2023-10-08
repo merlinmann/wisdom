@@ -65,3 +65,11 @@ I've been involved in a number of cults — both as a leader and a follower. You
 > At all times keep your crap detector on. If I say something that helps, good. If what I say is of no help, let it go. Don’t start arguments. They are futile and take us away from our purpose.
 
 — Richard Hugo, _The Triggering Town_ (1979)
+
+----
+
+> Never trust a man in a blue trench coat. Never drive a car when you're dead.
+
+- Tom Waits, _Telephone call from Istanbul_ (1985)
+
+[Tom Waits  - Telephone Call From Istanbul - LIVE (Official Audio/Fan footage on YouTube)](https://www.youtube.com/watch?v=ArC0J94B3Xk)
