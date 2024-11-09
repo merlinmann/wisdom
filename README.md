@@ -6,8 +6,8 @@ By Merlin Mann.
 
 It's only advice for you because it **had** to be advice for me.
 
-([Link to this project](https://github.com/merlinmann/wisdom))
+([Link to this project](http://wisdom.limo))
 
 ----
 
-On to [**the Wisdom »**](wisdom.md)
+On to [**the Wisdom »**](http://wisdom.limo)
