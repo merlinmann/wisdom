@@ -15,5 +15,7 @@ Vonnegut, Kurt. *Slaughterhouse-Five, or The Children's Crusade: A Duty-Dance wi
 
 Wallechinsky, David, et al. *The Book of Lists*. 1977.
 
+Walsh, Peter. *It's All Too Much: An Easy Plan for Living a Richer Life with Less Stuff*. Free Press, 2006.
+
 Watts, Alan W. *The Wisdom of Insecurity: A Message for an Age of Anxiety*. 1951.
 
