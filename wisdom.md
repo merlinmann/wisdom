@@ -514,6 +514,14 @@ Brief introductory remarks regarding the Project:
 
 ----
 
+- Avoid saying things you don’t want to be judged about. You’re already being judged for a shit-ton of things you don’t control, so be cautious about deliberately generating new material.
+- Most of the easy problems have been solved. If a problem still exists, it's probably because either a _really_ hard problem. Or, it's not actually a problem.
+- Never brag about your weather. You had no agency in creating it and deserve no credit for living in it.
+- Lean away from self-pity. Self-pity is also self-basting. Which is gross.
+- When you get hit with a sock full of coins, it doesn’t really matter that much whether they're pennies or quarters.
+
+----
+
 ## Works Cited
 
 <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
