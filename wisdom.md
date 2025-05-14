@@ -3,7 +3,7 @@ Author: Merlin Mann
 ---
 
 <!-- hello, world 2022-10-11 -->
-<!-- hi again 2023-08-17 -->
+<!-- hi again 2024-06-13 -->
 
 # Merlin's Wisdom Project
 
@@ -72,6 +72,7 @@ Brief introductory remarks regarding the Project:
 - These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
 - Ideas appended with a “thanks" are wisdoms that I gratefully learned from that credited person—often many years ago. They are not “submissions.” Because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
+- Wisdom is not a headline.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
 - None of the ideas should be interpreted as actual advice of any kind or for any purpose, and, thus, the Project is provided *as-is*.
 - You should *not* rely upon this Project or its constituent ideas for *any purpose* without seeking legal, medical, emotional, spiritual, and/or directed career counseling.
@@ -500,6 +501,24 @@ Brief introductory remarks regarding the Project:
 - At least consider the option of not having an opinion.
 - Every time you're tempted to harass your kid about "screen time," mentally imagine that you're actually ranting about, say, "*rectangle time*." Because it makes about as much sense right now. This is not the 12th century, you're not a particularly sagacious elder, and your kid probably doesn't benefit overmuch from adopting your rustic folklore about how concerning machines are.
 - It's okay to plan a meal around dessert. You're an adult, and people who try to tell you how to eat should be offered dietary advice regarding eating a butt.
+
+----
+
+- If you want to know what someone really thinks, ask them what they think other people really think. Then, ask how they know what other people really think.
+
+- Every few minutes, try to do something skillful.
+
+- Once you learn something, you can always relearn it. Unless it's something you only *think* you learned. You can't really relearn something you only think you learned.
+
+- Related: Minimize relationships with the sort of person you've learned you really shouldn't have a relationship with.
+
+----
+
+- Avoid saying things you don’t want to be judged about. You’re already being judged for a shit-ton of things you don’t control, so be cautious about deliberately generating new material.
+- Most of the easy problems have been solved. If a problem still exists, it's probably because it's either a _really_ hard problem, or it's not actually a problem.
+- Never brag about your weather. You had no agency in creating it and deserve no credit for living in it.
+- Lean away from self-pity. Self-pity is also self-basting. Which is gross.
+- When you get hit with a sock full of coins, it doesn’t really matter that much whether they're pennies or quarters.
 
 ----
 
