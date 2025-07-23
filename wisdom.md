@@ -517,10 +517,21 @@ Brief introductory remarks regarding the Project:
 ----
 
 - Avoid saying things you don’t want to be judged about. You’re already being judged for a shit-ton of things you don’t control, so be cautious about deliberately generating new material.
-- Most of the easy problems have been solved. If a problem still exists, it's probably because it's either a _really_ hard problem, or it's not actually a problem.
+- Most of the easy problems have been solved. If a problem still exists, it's probably because it's either a *really* hard problem, or it's not actually a problem.
 - Never brag about your weather. You had no agency in creating it and deserve no credit for living in it.
 - Lean away from self-pity. Self-pity is also self-basting. Which is gross.
 - When you get hit with a sock full of coins, it doesn’t really matter that much whether they're pennies or quarters.
+
+----
+
+- Life is a tile puzzle. You're often going to need to move some around a bunch of stuff that seems completely unrelated to your theoretical goal. At least at first it will seem completely unrelated.
+- Avoid using your hand as a tool. Almost always prefer to use your hand to *manipulate* an appropriate tool. You're going to need your hand for other things.
+- Nearly everything that happens in the world doesn't involve you. How often do you think about this?
+- Your photos will get more interesting once you've learned to lie prone on the ground for a surprisingly long time.
+- Sometimes we make things to teach, but often we make things to learn.
+- When you’re trying to help someone, focus on the help that the person needs rather than the help you feel like giving them.
+- At least twice a day, focus on doing something very skillfully.
+- It's not laws that protect you; it's people observing laws that protects you.
 
 ----
 
@@ -543,6 +554,6 @@ Brief introductory remarks regarding the Project:
 
 ## About the Author
 
-[**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco. He has [a bearded dragon](https://twitter.com/bandomanndo "Bando is a very good boy") and [other things](http://unwilling.horse "Merlin's Other Things").
+[**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco.
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
