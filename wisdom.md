@@ -1,13 +1,14 @@
 ---
 Author: Merlin Mann
 ---
-
 <!-- hello, world 2022-10-11 -->
 <!-- hi again 2024-06-13 -->
+<!-- still here 2025-07-07 -->
+
+# Merlin's Wisdom Project
 
 ![Your Author](/i/cover.jpg)
 
-# Merlin's Wisdom Project
 
 Or: “*Everybody likes being given a glass of water*.”
 
