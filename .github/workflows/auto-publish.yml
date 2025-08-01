@@ -1,6 +1,11 @@
 name: GitHub Book Publisher
 run-name: ${{ github.actor }} is publishing using GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'wisdom.md'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
