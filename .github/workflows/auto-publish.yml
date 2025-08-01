@@ -13,11 +13,11 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to build your book."
       - name: Run pandoc to convert markdown to ePub
-        run: cd ebooks && pandoc ../wisdom.md -o wisdom.epub
+        run: pandoc wisdom.md -o ebooks/wisdom.epub
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Adding the new wisdom book'
           committer_name: GitHub Actions
           committer_email: actions@github.com
-          add: 'ebook/wisdom.epub --force'
+          add: '.'
       - run: echo "🍏 This job's status is ${{ job.status }}."
