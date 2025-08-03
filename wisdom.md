@@ -7,7 +7,7 @@ Author: Merlin Mann
 
 # Merlin's Wisdom Project
 
-![Your Author](/i/cover.jpg)
+![Your Author](i/cover.jpg)
 
 
 Or: “*Everybody likes being given a glass of water*.”
@@ -56,7 +56,7 @@ TODO needs better citation
 
 ----
 
-![Something Like Advice](/i/toot-advice.jpg "'Good advice helps you find the solution to your problem. Great advice helps you find you were solving the wrong problem.'")
+![Something Like Advice](i/toot-advice.jpg "'Good advice helps you find the solution to your problem. Great advice helps you find you were solving the wrong problem.'")
 
 ----
 
@@ -557,4 +557,4 @@ Brief introductory remarks regarding the Project:
 
 [**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco.
 
-![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
+![Your Author (detail)](i/MANN-angry-2500.jpg "Your Author")
