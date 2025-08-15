@@ -10,3 +10,6 @@ package-lock.json
 public
 resources
 .codegpt
+
+# Debugging expanded epub files
+ebooks/contents/

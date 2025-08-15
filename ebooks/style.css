@@ -1,0 +1,33 @@
+body {
+  font-family: 'Garamond', serif;
+  font-size: 18px;
+  line-height: 1.5;
+  /* increase the kerning a bit */
+  letter-spacing: 1px;
+}
+/* You could potentially use just CSS instead of a filter to insert page breaks */
+/* hr, li {
+  page-break-before: always;
+} */
+
+li {
+  list-style-type: none;
+}
+
+/* Content Centering on the page.
+  Only one of these should be used at a time.
+*/
+/* body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+} */
+
+/* This is not currently applied to blockquotes and more complex pages. */
+.center-page {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
