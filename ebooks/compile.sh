@@ -18,7 +18,7 @@ DESTINATION="ebooks/wisdom.epub"
 
 ## Pass --debug to Pandoc for verbose output if needed.
 if [[ "$1" == "--debug" ]]; then
-  PANDOC_DEBUG="--debug"
+  PANDOC_DEBUG="--verbose --log=ebooks/pandoc.log"
 else
   PANDOC_DEBUG=""
 fi
@@ -34,14 +34,18 @@ pandoc wisdom.md -o $DESTINATION \
   --shift-heading-level-by=-1 \
   --toc --toc-depth=2 \
   --split-level=2 \
+  --epub-cover-image=ebooks/cover.jpg \
   --lua-filter=ebooks/filters/strip-comments.lua \
   --lua-filter=ebooks/filters/process-md.lua \
-  $PANDOC_DEBUG
-if
+  $PANDOC_DEBUG;
 
+if [[ $? -ne 0 ]]; then
+  echo "Error: pandoc failed to compile wisdom.md."
+  exit 1
+fi
 
 ## If debugging, expand the zip file to inspect its contents.
-[[ "$1" == "--debug" ]]; then
+if [[ "$1" == "--debug" ]]; then
   echo "Debugging enabled. Compiled EPUB will be expanded for inspection."
   unzip -l $DESTINATION
   unzip -d ebooks/contents $DESTINATION
@@ -56,3 +60,5 @@ if command -v open &> /dev/null; then
 else
   echo "Compiled successfully. You can find the EPUB at ebooks/wisdom.epub"
 fi
+
+exit 0

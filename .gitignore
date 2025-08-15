@@ -13,3 +13,4 @@ resources
 
 # Debugging expanded epub files
 ebooks/contents/
+ebooks/pandoc.log

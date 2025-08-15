@@ -5,10 +5,10 @@ body {
   /* increase the kerning a bit */
   letter-spacing: 1px;
 }
-/* You could potentially use just CSS instead of a filter to insert page breaks */
-/* hr, li {
-  page-break-before: always;
-} */
+
+hr, .page-break {
+  page-break-after: always;
+}
 
 li {
   list-style-type: none;
@@ -29,5 +29,12 @@ li {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  max-height: 70ch;
   text-align: center;
+  justify-content: center;
+}
+
+.center-page em,
+.center-page strong {
+  align-self: center;
 }
