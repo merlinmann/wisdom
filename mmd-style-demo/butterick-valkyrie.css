@@ -1,0 +1,187 @@
+/* Butterick Valkyrie.css — MLA-ish defaults */
+
+/* ---------- variables ---------- */
+:root{
+  --font-serif: "Valkyrie A","Valkyrie","Palatino","Georgia","Times New Roman",serif;
+  --font-sans: "Concourse 3","Concourse 3 Tab","Concourse 3 Caps","Helvetica Neue","Helvetica","Arial",ui-sans-serif,system-ui,-apple-system,sans-serif;
+  --font-mono: "Triplicate T4","Triplicate","SF Mono","Menlo","Monaco",ui-monospace,monospace;
+
+  --text: #111;
+  --muted: #555;
+  --bg: #fff;
+  --link: #0a58ca;
+  --link-visited: #6c2bd9;
+  --border: #e2e2e2;
+  --code-bg: #f6f8fa;
+
+  --leading: 1.55;
+  --radius: 8px;
+}
+
+/* ---------- base ---------- */
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+body{
+  margin: 2rem auto;
+  padding: 0 2rem;
+  max-width: 100ch;
+  font: 400 1rem/var(--leading) var(--font-serif);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+p, ul, ol, blockquote, pre, table, figure { margin: 1rem 0; }
+p { hyphens: auto; }
+strong { font-weight: 650; }
+
+/* ---------- headings ---------- */
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-sans);
+  line-height: 1.2;
+  margin: 2rem 0 0.75rem;
+  font-weight: 700;
+}
+h1{ font-size: clamp(1.75rem, 2.5vw + 1rem, 2.5rem); }
+h2{ font-size: clamp(1.5rem, 2vw + 1rem, 2rem); }
+h3{ font-size: clamp(1.25rem, 1.5vw + 1rem, 1.5rem); }
+h4{ font-size: 1.125rem; }
+h5, h6{ font-size: 1rem; letter-spacing: .02em; }
+
+/* ---------- links ---------- */
+a{
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: .15em;
+  text-decoration-thickness: from-font;
+}
+a:visited{ color: var(--link-visited); }
+a:hover{ text-decoration-thickness: .12em; }
+
+/* ---------- lists ---------- */
+ul, ol{
+  margin: .75rem 0;         /* tighter than 1rem */
+  padding-left: 1.25rem;
+}
+
+li{
+  line-height: 1.4;         /* tighter than body’s 1.55 */
+}
+
+li + li{
+  margin-top: .15rem;       /* tighter than .25rem */
+}
+
+/* nested lists tighter */
+ul ul, ul ol, ol ul, ol ol{
+  margin-top: .35rem;
+}
+
+ul ul li + li,
+ul ol li + li,
+ol ul li + li,
+ol ol li + li{
+  margin-top: .1rem;
+}
+
+/* fix extra gaps when list items contain paragraphs */
+li > p{
+  margin: .25rem 0;         /* was 1rem */
+}
+
+/* ---------- blockquotes ---------- */
+blockquote{
+  margin: 1.25rem 0;
+  padding: .5rem 1rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+  font-style: italic;
+  background: color-mix(in srgb, var(--border) 12%, transparent);
+}
+
+/* ---------- code ---------- */
+code, pre, kbd, samp{
+  font-family: var(--font-mono);
+  font-size: .95em;
+}
+code{
+  background: var(--code-bg);
+  padding: .1em .35em;
+  border-radius: .25rem;
+}
+pre{
+  background: var(--code-bg);
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+pre code{
+  background: transparent;
+  padding: 0;
+}
+
+/* ---------- tables ---------- */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+th, td{
+  text-align: left;
+  padding: .5rem .6rem;
+  border-bottom: 1px solid var(--border);
+}
+thead th{
+  border-bottom: 2px solid var(--border);
+}
+tbody tr:nth-child(even){
+  background: color-mix(in srgb, var(--border) 10%, transparent);
+}
+
+/* ---------- images & figures ---------- */
+img, svg, video{ max-width: 100%; height: auto; }
+figure{ margin: 1.25rem 0; }
+figcaption{
+  font-size: .9rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: .5rem;
+}
+
+/* ---------- hr & small text ---------- */
+hr{
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+small{ color: var(--muted); }
+
+/* ---------- footnotes (Pandoc) ---------- */
+.footnotes{
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: .9rem;
+}
+.footnotes ol{ padding-left: 1.25rem; }
+
+/* ---------- print ---------- */
+@media print{
+  body{ margin: 1in; color: #000; background: #fff; }
+  a{ color: inherit; text-decoration: none; }
+  pre{ page-break-inside: avoid; }
+  h1, h2, h3{ page-break-after: avoid; }
+  p, li{ orphans: 3; widows: 3; }
+}
+
+/* ---------- dark mode (optional) ---------- */
+@media (prefers-color-scheme: dark){
+  :root{
+    --text: #eaeaea;
+    --muted: #b6b6b6;
+    --bg: #111;
+    --link: #8ab4f8;
+    --link-visited:
