@@ -536,21 +536,13 @@ Brief introductory remarks regarding the Project:
 ----
 
 - Consider surrounding yourself with people who like you for what you're good at rather than what they wish you were better at.
-
 - Corollary: if someone you love wishes you were better at something, it's probably worth at least looking into.
-
 - Some things are about people, and some things are about ideas. Especially when, for example, you think you're talking about a very general idea and your friend thinks you're talking about a very specific person. Ideas are often the basis for a rubric we apply solely to people we either don't know or whose ideas we don't like.
-
 - Learn how to properly sharpen and hone your kitchen knives. It'll be a huge self-esteem boost, plus you'll be much less likely to filet your fingers or produce unpleasant slices.
-
 - Everything is not everything and not everything is everything. While every thing may be a thing, not every thing is everything.
-
 - Related: remember that related things are not *necessarily* connected things. Yes, even this.
-
 - If you're going to do something, proceed as if it will succeed. If you find yourself simultaneously proceeding at several things you think will not succeed, it's worth at least asking why you're still doing so many of them.
-
 - Stop jamming every space so full of stuff. Leave room both for other stuff and for no stuff at all. Areas without stuff represent areas of possibility.
-
 - Related: Just because an area temporarily has nothing in it does not mean it can be instantly reclaimed for other things. Especially if it's the area in the fridge where only Daddy's seltzer goes. Because nothing else *ever* goes there even when there's "nothing" there.
 
 ----
