@@ -484,7 +484,7 @@ Brief introductory remarks regarding the Project:
 - When you need to scoop some ice out of a thing, never use something that could break—especially anything made of glass. Watching someone drunkenly plow a highball glass into an ice bin makes the retired busboy in me wildly uncomfortable.
 - Occasionally silently remind yourself, "Remember you said you wanted this."
 - Avoid telling people they're being scared wrong. Demanding that someone become more or less terrified about something is a dick move, and it usually says more about your hangups than their judgement.
-- Related: start noticing the people in your world who try to motivate you with fear. It's often because they don't have anything more appealing to offer. And, they know it.
+- Related: start noticing the people in your world who try to motivate you with fear. It's often because they don't have anything more appealing to offer, and, they know it.
 - Relatedly related: whenever you can  manage it, don't internalize fear until you've exhausted curiosity.
 - Anxiety has a way of encouraging you to obsess about a horrible thing your brain just made up. Next time this happens, try to relax and instead just gently acknowledge that sometimes your brain makes up horrible things. Believing these things and obsessing about them is ultimately optional.
 - You'll almost always eventually regret having named something you made with a pun.
@@ -507,18 +507,15 @@ Brief introductory remarks regarding the Project:
 ----
 
 - If you want to know what someone really thinks, ask them what they think other people really think. Then, ask how they know what other people really think.
-
 - Every few minutes, try to do something skillful.
-
 - Once you learn something, you can always relearn it. Unless it's something you only *think* you learned. You can't really relearn something you only think you learned.
-
 - Related: Minimize relationships with the sort of person you've learned you really shouldn't have a relationship with.
 
 ----
 
 - Avoid saying things you don’t want to be judged about. You’re already being judged for a shit-ton of things you don’t control, so be cautious about deliberately generating new material.
 - Most of the easy problems have been solved. If a problem still exists, it's probably because it's either a *really* hard problem, or it's not actually a problem.
-- Never brag about your weather. You had no agency in creating it and deserve no credit for living in it.
+- Never brag about your weather. You had no role in creating it and deserve no credit for currently existing in it.
 - Lean away from self-pity. Self-pity is also self-basting. Which is gross.
 - When you get hit with a sock full of coins, it doesn’t really matter that much whether they're pennies or quarters.
 
