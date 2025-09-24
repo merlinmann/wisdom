@@ -521,7 +521,7 @@ Brief introductory remarks regarding the Project:
 
 ----
 
-- Life is a tile puzzle. You're often going to need to move some around a bunch of stuff that seems completely unrelated to your theoretical goal. At least at first it will seem completely unrelated.
+- Life is a tile puzzle. You're often going to need to move around a bunch of stuff that seems completely unrelated to your theoretical goal. At least at first it will seem completely unrelated.
 - Avoid using your hand as a tool. Almost always prefer to use your hand to *manipulate* an appropriate tool. You're going to need your hand for other things.
 - Nearly everything that happens in the world doesn't involve you. How often do you think about this?
 - Your photos will get more interesting once you've learned to lie prone on the ground for a surprisingly long time.
