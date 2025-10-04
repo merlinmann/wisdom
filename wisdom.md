@@ -1,13 +1,15 @@
 ---
-Author: Merlin Mann
+title: Merlin's Wisdom Project
+author: Merlin Mann
 ---
+
 <!-- hello, world 2022-10-11 -->
 <!-- hi again 2024-06-13 -->
 <!-- still here 2025-07-07 -->
 
 # Merlin's Wisdom Project
 
-![Your Author](/i/cover.jpg)
+![Your Author](i/cover.jpg)
 
 Or: “*Everybody likes being given a glass of water*.”
 
@@ -21,15 +23,15 @@ It's only advice for you because it **had** to be advice for me.
 
 ## Epigraphs
 
-> Yet here, Laertes! aboard, aboard, for shame!  
-> The wind sits in the shoulder of your sail,  
+> Yet here, Laertes! aboard, aboard, for shame!
+> The wind sits in the shoulder of your sail,
 > And you are stay'd for.
 
 — *Hamlet*, Act 1, Scene 3.
 
 ----
 
-<!-- 
+<!--
 
 TODO needs better citation
 
@@ -55,7 +57,7 @@ TODO needs better citation
 
 ----
 
-![Something Like Advice](/i/toot-advice.jpg "'Good advice helps you find the solution to your problem. Great advice helps you find you were solving the wrong problem.'")
+![Something Like Advice](i/toot-advice.jpg "'Good advice helps you find the solution to your problem. Great advice helps you find you were solving the wrong problem.'")
 
 ----
 
@@ -245,7 +247,7 @@ Brief introductory remarks regarding the Project:
 
 ----
 
-- Everybody is doing the best they can each day. Even though what they can do is rarely enough.  
+- Everybody is doing the best they can each day. Even though what they can do is rarely enough.
 - To entertain a child, it helps to know which things delight them and which things terrify them.
 - Related: most kids can be surprisingly entertained by your making them just a little bit terrified.
 - Pay attention to the times of day when you tend to have the most and the least energy. Schedule your future days accordingly.
@@ -565,4 +567,4 @@ Brief introductory remarks regarding the Project:
 
 [**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco.
 
-![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
+![Your Author (detail)](i/MANN-angry-2500.jpg "Your Author")
