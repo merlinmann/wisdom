@@ -11,13 +11,11 @@ public
 resources
 .codegpt
 
-# EPUB generation files (keep private for now)
-fonts/
+# Build files
+assets/
 output/
-epub-style.css
-epub-style-private.css
-html-header.html
+build-*.sh
+epub-*.css
+html-*.html
 metadata.yaml
-build-epub.sh
-build-epub-private.sh
 FONTS.md
