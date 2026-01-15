@@ -10,3 +10,14 @@ package-lock.json
 public
 resources
 .codegpt
+
+# EPUB generation files (keep private for now)
+fonts/
+output/
+epub-style.css
+epub-style-private.css
+html-header.html
+metadata.yaml
+build-epub.sh
+build-epub-private.sh
+FONTS.md
