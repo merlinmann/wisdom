@@ -59,7 +59,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[I'm a relative reference to a repository file](/README.md)
 
 [You can use numbers for reference-style link definitions][1]
 
@@ -73,7 +73,7 @@ Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.themefisher.com
 [1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
+[link text itself]: https://jekyllrb.com/docs/themes/
 
 <hr>
 
@@ -163,7 +163,7 @@ Markdown | Less | Pretty
 
 ##### Image
 
-![image](../../images/blog/post-6.jpg)
+![image](../../../static/images/blog/post-6.jpg)
 
 <hr>
 

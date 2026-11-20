@@ -17,9 +17,11 @@ TOC: true
 
 
 
+<a id="overview"></a>
+
 # Overview [#overview]
 
-This document exercises **MultiMarkdown** and Marked 2 features: metadata, headings, links, images/figures (with captions), tables (with alignment and captions), footnotes,[^fn-intro] definition lists, math, CriticMarkup, and cross-references (e.g., see [Overview](#overview) and jump to [Tables](#tables)).
+This document exercises **MultiMarkdown** and Marked 2 features: metadata, headings, links, images/figures (with captions), tables (with alignment and captions), footnotes,[^fn-intro] definition lists, math, CriticMarkup, and cross-references (e.g., see [Overview](#overview) and jump to [Images and Figures](#figures)).
 
 > Tip: Resize the window and toggle light/dark mode to preview the CSS variables.
 
@@ -74,7 +76,7 @@ Horizontal rule below:
 
 External link: <https://marked2app.com>.  
 Reference link: [Marked Home][marked].  
-Cross-reference to [Tables](#tables).
+Cross-reference to [Images and Figures](#figures).
 
 [marked]: https://marked2app.com "Marked 2"
 
@@ -85,15 +87,21 @@ Abbreviations (Markdown Extra style):
 
 HTML and CSS should render the tooltips when hovered.
 
+<a id="figures"></a>
+
 ## Images and Figures [#figures]
 
 Figure caption via MultiMarkdown:
 
 Figure: A remote image with a caption and width attribute
 
+<a id="figure-1"></a>
+
 ![Placeholder diagram](https://placehold.co/800x400/png)
 
 Remote image with title:
+
+<a id="figure-2"></a>
 
 ![Estelle Getty - Wikipedia](https://upload.wikimedia.org/wikipedia/commons/9/98/EstelleGetty2.jpg "You Look Nice Today may have had a role in Ms. Getty's death.")
 

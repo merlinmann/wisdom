@@ -59,7 +59,7 @@ Durchstreichen verwendet zwei Tilden. ~~Durchstreichen~~.
 
 [Ich bin ein Link im Referenzstil][Beliebiger Referenztext ohne Berücksichtigung der Groß-/Kleinschreibung]
 
-[Ich bin ein relativer Verweis auf eine Repository-Datei](../blob/master/LICENSE)
+[Ich bin ein relativer Verweis auf eine Repository-Datei](/README.md)
 
 [Sie können Zahlen für referenzähnliche Link-Definitionen verwenden][1]
 
@@ -73,7 +73,7 @@ Etwas Text, um zu zeigen, dass die Referenzlinks später folgen können.
 
 [beliebiger Referenztext ohne Berücksichtigung der Groß- und Kleinschreibung]: https://www.themefisher.com
 [1]: https://gethugothemes.com
-[Linktext selbst]: https://www.getjekyllthemes.com
+[Linktext selbst]: https://jekyllrb.com/docs/themes/
 
 <hr>
 
@@ -163,7 +163,7 @@ Markdown | Weniger | Schön
 
 ##### Bilder
 
-![image](../../images/blog/post-6.jpg)
+![image](../../../static/images/blog/post-6.jpg)
 
 <hr>
 

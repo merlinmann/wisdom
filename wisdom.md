@@ -9,11 +9,11 @@ Author: Merlin Mann
 
 Or: “*Everybody likes being given a glass of water*.”
 
-By [Merlin Mann](http://hotdogsladies.omg.lol "Merlin's Website").
+By [Merlin Mann](https://hotdogsladies.omg.lol "Merlin's Website").
 
 It's only advice for you because it **had** to be advice for me.
 
-([Link to this project](http://wisdom.limo "wisdom.limo"))
+([Link to this project](https://wisdom.limo "wisdom.limo"))
 
 ----
 
@@ -102,7 +102,7 @@ Brief introductory remarks regarding the Project:
 - Flirt with all elderly women.
 - Tip more.
 - Look for the chimneys.
-- [Keep moving *and* get out of the way](https://overcast.fm/+BmEPOwtek).
+- [Keep moving *and* get out of the way](https://www.merlinmann.com/roderick/ep-01-keep-moving-and-get-out-of-the-way.html).
 - *Never* give advice to a pregnant person unless they specifically asked for it.
 - *Never* touch a pregnant person unless they specifically asked for it.
 - *Never* tell a pregnant person horror stories about childbirth unless they specifically asked for it.
@@ -555,12 +555,12 @@ Brief introductory remarks regarding the Project:
 
 ----
 
-([Link to this project](http://wisdom.limo "wisdom.limo"))
+([Link to this project](https://wisdom.limo "wisdom.limo"))
 
 ****
 
 ## About the Author
 
-[**Merlin Mann**](http://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco.
+[**Merlin Mann**](https://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco.
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")

@@ -20,12 +20,12 @@ mini - 2022-01-03 11:17:39
 
 ![Your Author (detail)](/i/so_angry_-_960.jpg "Your Author")
 
-![Your Author (detail)](/i/so%20angry%20-%20960.jpg "Your Author")
+![Your Author (detail)](/i/so_angry_-_960.jpg "Your Author")
 
 ![Tux, the Linux mascot](/i/so_angry_-_960.jpg)
 
 
-https://github.com/merlinmann/wisdom/raw/master/i/so%20angry%20-%20960.jpg
+https://github.com/merlinmann/wisdom/raw/master/i/so_angry_-_960.jpg
 
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
