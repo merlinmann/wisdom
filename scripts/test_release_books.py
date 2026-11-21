@@ -1,7 +1,11 @@
 """Exercise edition numbering boundaries and repeat publication decisions."""
 from datetime import date
+import json
+from pathlib import Path
+from tempfile import TemporaryDirectory
 import unittest
-from release_books import choose_version
+from unittest.mock import patch
+from release_books import choose_version, publish
 
 
 class Editions(unittest.TestCase):
@@ -25,6 +29,43 @@ class Editions(unittest.TestCase):
     def test_interrupted_draft_keeps_its_number(self):
         releases = [{"tag_name": "v2026.11", "target_commitish": "a", "draft": True}]
         self.assertEqual(choose_version(releases, ["v2026.11"], "a", date(2026, 12, 1)), ("2026.11", False))
+
+
+class PublicationSafety(unittest.TestCase):
+    def setUp(self):
+        self.temp = TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.folder = Path(self.temp.name)
+        support = self.folder / "Supporting files"
+        support.mkdir()
+        (support / "release-plan.json").write_text(json.dumps({"sha": "source", "version": "2026.11"}))
+        (self.folder / "edition.json").write_text(json.dumps({"source_commit": "source", "version": "2026.11"}))
+
+    @patch("release_books.gh")
+    @patch("release_books.releases")
+    @patch("release_books.api", return_value={"commit": {"sha": "newer"}})
+    def test_stale_build_does_not_write_a_release(self, api, releases, gh):
+        publish("owner/repo", self.folder)
+        releases.assert_not_called()
+        gh.assert_not_called()
+        self.assertEqual(api.call_count, 1)
+
+    @patch("release_books.gh")
+    @patch("release_books.releases", return_value=[])
+    @patch("release_books.api", return_value={"commit": {"sha": "source"}})
+    def test_missing_books_cannot_create_a_draft(self, api, releases, gh):
+        with self.assertRaises(AssertionError):
+            publish("owner/repo", self.folder)
+        gh.assert_not_called()
+        self.assertEqual(api.call_count, 1)
+
+    @patch("release_books.gh")
+    @patch("release_books.releases", return_value=[{"tag_name": "v2026.11", "target_commitish": "source", "draft": False}])
+    @patch("release_books.api", return_value={"commit": {"sha": "source"}})
+    def test_published_edition_is_never_overwritten(self, api, releases, gh):
+        publish("owner/repo", self.folder)
+        gh.assert_not_called()
+        self.assertEqual(api.call_count, 1)
 
 
 if __name__ == "__main__":
