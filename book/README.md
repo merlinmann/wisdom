@@ -12,6 +12,8 @@ Downloadable editions are batched once daily, at approximately **5:17 a.m. Pacif
 
 For an urgent edition, choose **Actions → Publish Books → Run workflow** on `main`. This uses the same change detection and full verification as the daily run. A repeated request with unchanged inputs does not create another edition. Full builds run only from `main`, and publication runs do not overlap.
 
+For a complete review without a new release, uncheck **Publish the verified edition** in that same form. This explicitly requested run builds and validates all seven formats even if the inputs are unchanged, retains the review files as an Actions artifact, and cannot publish them. Routine edits do not request this extra work.
+
 A local save remains an unpublished draft and syncs between Macs. Committing and pushing makes the online manuscript current; the downloadable books wait for the next daily batch or Publish Books request. GitHub may delay scheduled runs, so the time is approximate. Published editions keep their existing immutable URLs and files.
 
 ## Versions

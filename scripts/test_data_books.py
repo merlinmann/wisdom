@@ -12,6 +12,36 @@ from data_books import dataset, write_sqlite, yaml_metadata
 
 @unittest.skipUnless(shutil.which("pandoc"), "Pandoc is installed before building books")
 class DataEditionTests(unittest.TestCase):
+    def test_footnote_stays_with_its_citation(self):
+        source = '''# Book
+
+<div class="csl-entry" id="dante">
+
+Dante's line.[^lowell]
+
+</div>
+
+The final paragraph is separate.
+
+[^lowell]: Learned through Lowell. See [the book](#book).
+'''
+        html = subprocess.check_output(["pandoc", "--from=markdown", "--to=html5"], input=source, text=True)
+        doc = json.loads(subprocess.check_output(["pandoc", "--from=html", "--to=json"], input=html, text=True))
+        data = dataset(doc, {"identifier": "edition:test", "source_commit": "a" * 40})
+        citation = next(row for row in data["entries"] if "dante" in row["source_anchors"])
+        final = next(row for row in data["entries"] if row["text"].startswith("The final"))
+        self.assertIn("Learned through Lowell", citation["text"])
+        self.assertIn("Learned through Lowell", citation["markdown"])
+        self.assertNotIn("Lowell", final["text"])
+        self.assertNotIn("Lowell", final["markdown"])
+        self.assertEqual(citation["links"][0]["target_id"], data["sections"][0]["id"])
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "book.sqlite"
+            write_sqlite(data, path)
+            with sqlite3.connect(path) as db:
+                hits = db.execute("SELECT id FROM entries_fts WHERE entries_fts MATCH 'Lowell'").fetchall()
+                self.assertEqual(hits, [(citation["id"],)])
+
     def test_structure_references_search_and_determinism(self):
         source = '''<section id="book"><h1>The Book</h1><section id="advice"><h2>Advice</h2>
 <ul><li>Drink a glass of <em>water</em>.<ul><li>Related: be kind.</li></ul></li><li>Drink a glass of <em>water</em>.</li></ul>

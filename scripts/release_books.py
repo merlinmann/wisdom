@@ -66,7 +66,7 @@ def choose_version(items, tags, sha, day):
     return f"{day.year}.{sequence}", False
 
 
-def plan(repo, path):
+def plan(repo, path, verify_only=False):
     sha = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
     epoch = int(subprocess.check_output(["git", "show", "-s", "--format=%ct", "HEAD"], text=True))
     day = datetime.fromtimestamp(epoch, timezone.utc).astimezone(ZoneInfo("America/Los_Angeles")).date()
@@ -75,9 +75,10 @@ def plan(repo, path):
     tags = [x["name"] for page in pages for x in page] + [x["tag_name"] for x in items]
     version, exists = choose_version(items, tags, sha, day)
     unchanged = not exists and unchanged_since_publication(repo, sha, items)
-    build = not (exists or unchanged)
+    build = verify_only or not (exists or unchanged)
     result = {"version": version, "sha": sha, "already_published": exists,
-              "unchanged_inputs": unchanged, "build": build, "repository": repo}
+              "unchanged_inputs": unchanged, "build": build,
+              "verify_only": verify_only, "repository": repo}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(result, indent=2) + "\n")
     if os.getenv("GITHUB_OUTPUT"):
@@ -88,6 +89,7 @@ def plan(repo, path):
 
 def publish(repo, folder):
     proposal = json.loads((folder / "Supporting files/release-plan.json").read_text())
+    assert not proposal.get("verify_only", False), "A review-only build must never be published"
     manifest = json.loads((folder / "edition.json").read_text())
     sha, version = proposal["sha"], proposal["version"]
     assert manifest["source_commit"] == sha and manifest["version"] == version
@@ -158,8 +160,9 @@ if __name__ == "__main__":
     parser.add_argument("action", choices=["plan", "publish"])
     parser.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", "merlinmann/wisdom"))
     parser.add_argument("--folder", type=Path, default=Path("builds/ebooks"))
+    parser.add_argument("--verify-only", action="store_true", help="build review copies even if unchanged; forbid publication")
     args = parser.parse_args()
     if args.action == "plan":
-        plan(args.repo, args.folder / "Supporting files/release-plan.json")
+        plan(args.repo, args.folder / "Supporting files/release-plan.json", args.verify_only)
     else:
         publish(args.repo, args.folder)
