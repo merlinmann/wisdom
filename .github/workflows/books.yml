@@ -77,8 +77,8 @@ jobs:
           google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-copyright-narrow.png' --window-size=390,844 "file://$copyright"
           google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-copyright-wide.png' --window-size=820,1000 "file://$copyright"
           html=$(realpath builds/ebooks/wisdom.html)
-          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=3000 --screenshot='builds/ebooks/Supporting files/rendered/html-narrow.png' --window-size=390,1000 "file://$html#copyright-page"
-          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=3000 --screenshot='builds/ebooks/Supporting files/rendered/html-wide.png' --window-size=1000,1100 "file://$html#copyright-page"
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=3000 --screenshot='builds/ebooks/Supporting files/rendered/html-narrow.png' --window-size=390,2600 "file://$html"
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --virtual-time-budget=3000 --screenshot='builds/ebooks/Supporting files/rendered/html-wide.png' --window-size=1000,2400 "file://$html"
           kindle=$(cat 'builds/ebooks/Supporting files/kindle-preview-path.txt')
           google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/kindle-preview.png' --window-size=600,1000 "file://$kindle#copyright-page"
       - name: Preserve books and review evidence
