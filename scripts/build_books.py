@@ -36,12 +36,12 @@ def offline_html(content, metadata, day):
     content = re.sub(r'src="([^"]+)"', image, content)
     css = (ROOT / "book/html.css").read_text()
     css = re.sub(r'url\("([^"]+)"\)', lambda match: 'url("' + data_uri(ROOT / "book" / match[1]) + '")', css)
-    font_license = (ROOT / "book/fonts/LICENSE.md").read_text().replace("--", "—")
+    font_license = html.escape((ROOT / "book/fonts/LICENSE.md").read_text(), quote=True)
     return f'''<!doctype html><html lang="en-US"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(metadata['title'])}</title><meta name="author" content="{html.escape(metadata['author'])}">
 <meta name="dcterms.date" content="{day}"><style>{css}</style>
-<!-- Embedded font license: {font_license} -->
+<meta name="embedded-font-license" content="{font_license}">
 </head><body><main>{content}</main></body></html>'''
 
 
@@ -64,8 +64,7 @@ def split_front_matter(source):
     assert not re.search(r"^## ", title, re.M), "A new front-matter section needs placement review"
     # The title's closing rule is a web separator, not part of the printed title page.
     title = re.sub(r"\n-{3,}\s*\Z", "\n", title)
-    title, count = re.subn(r"^(# .+)$", r'\1 {epub:type=titlepage}', title, count=1, flags=re.M)
-    assert count == 1, "The manuscript needs its title heading"
+    assert len(re.findall(r"^# .+$", title, re.M)) == 1, "The manuscript needs its title heading"
     return title, rest
 
 
@@ -157,7 +156,8 @@ def build(version, output):
     (support / "book.html").write_text(pdf_html)
 
     epub_manuscript = support / "manuscript-epub.md"
-    epub_manuscript.write_text(title_source + '\n\n## Copyright {#copyright-page .copyright-page epub:type=copyright-page}\n\n```{=html}\n' + copyright_epub + '\n```\n\n' + rest + "\n\n" + colophon + "\n")
+    epub_title = re.sub(r"^(# .+)$", r'\1 {epub:type=titlepage}', title_source, count=1, flags=re.M)
+    epub_manuscript.write_text(epub_title + '\n\n## Copyright {#copyright-page .copyright-page epub:type=copyright-page}\n\n```{=html}\n' + copyright_epub + '\n```\n\n' + rest + "\n\n" + colophon + "\n")
     command("pandoc", str(epub_manuscript), "--from=markdown", "--to=epub3", "--standalone", "--strip-comments",
             f"--metadata-file={metadata_path}", "--epub-title-page=false", "--epub-cover-image=i/cover.jpg",
             "--css=book/epub.css", "--toc", "--toc-depth=2", "--split-level=2", "--resource-path=.",
@@ -166,10 +166,14 @@ def build(version, output):
     web_body = f'<div class="cover"><img src="i/cover.jpg" alt="Cover of Merlin’s Wisdom Project"></div>{pdf_body}{colophon}'
     (output / "wisdom.html").write_text(offline_html(web_body, metadata, day))
     markdown = command("pandoc", "--from=html", "--to=gfm-raw_html", "--wrap=none",
-                       "--lua-filter=book/text-only.lua", input=web_body)
+                       "--lua-filter=book/text-only.lua", input=web_body.replace(copyright_print, copyright_epub))
     (output / "wisdom.md").write_text(markdown)
     command("calibre-debug", "-e", "scripts/convert_kindle_book.py", "--",
             str(output / "wisdom.epub"), str(output / "wisdom.azw3"), str(epoch),
+            env={**os.environ, "QT_QPA_PLATFORM": "offscreen"})
+    # Read the completed Kindle file back into browser-viewable pages for checks.
+    command("ebook-convert", str(output / "wisdom.azw3"), str(support / "kindle-preview"),
+            "--disable-font-rescaling", "--chapter", "/", "--page-breaks-before", "/",
             env={**os.environ, "QT_QPA_PLATFORM": "offscreen"})
     from weasyprint import HTML, CSS
     from weasyprint.text.fonts import FontConfiguration

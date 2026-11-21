@@ -1,6 +1,5 @@
 """Run inside the pinned Calibre runtime, with stable IDs and publication time."""
 import hashlib
-import os
 import random
 import sys
 import time
@@ -23,10 +22,9 @@ def main():
     calibre.utils.date.now = lambda: datetime.fromtimestamp(epoch, timezone.utc)
     calibre.utils.date.utcnow = lambda: datetime.fromtimestamp(epoch, timezone.utc)
     from calibre.ebooks.conversion.cli import main as convert
-    preview = Path(destination).parent / "Supporting files/kindle-preview"
     sys.argv = ["ebook-convert", source, destination, "--output-profile", "kindle_pw3",
                 "--no-inline-toc", "--disable-font-rescaling", "--chapter", "/",
-                "--page-breaks-before", "/", "--extract-to", str(preview)]
+                "--page-breaks-before", "/"]
     return convert(sys.argv)
 
 

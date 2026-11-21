@@ -22,7 +22,7 @@ class FrontMatterTests(unittest.TestCase):
         title, body = split_front_matter(source)
         self.assertIn("By Author.", title)
         self.assertNotIn("----", title)
-        self.assertIn("epub:type=titlepage", title)
+        self.assertTrue(title.startswith("# Title\n"))
         self.assertEqual(body, source[source.index("## Epigraphs"):])
         with self.assertRaises(AssertionError):
             split_front_matter(source.replace("## Epigraphs", "## Dedication\n\n## Epigraphs"))
