@@ -5,7 +5,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import patch
-from release_books import choose_version, publish
+from release_books import book_inputs, choose_version, publish, unchanged_since_publication
 
 
 class Editions(unittest.TestCase):
@@ -29,6 +29,54 @@ class Editions(unittest.TestCase):
     def test_interrupted_draft_keeps_its_number(self):
         releases = [{"tag_name": "v2026.11", "target_commitish": "a", "draft": True}]
         self.assertEqual(choose_version(releases, ["v2026.11"], "a", date(2026, 12, 1)), ("2026.11", False))
+
+
+class BatchDecisions(unittest.TestCase):
+    def tree(self, manuscript="text", extra=()):
+        return {"tree": [{"path": "wisdom.md", "mode": "100644", "type": "blob", "sha": manuscript}, *extra]}
+
+    @patch("release_books.api")
+    def test_documentation_only_and_reverted_edits_do_not_rebuild(self, api):
+        doc = {"path": "book/README.md", "mode": "100644", "type": "blob", "sha": "docs"}
+        api.side_effect = [self.tree(), self.tree(extra=[doc])]
+        self.assertEqual(book_inputs("owner/repo", "published"), book_inputs("owner/repo", "new-commit"))
+
+    @patch("release_books.api")
+    def test_manuscript_asset_and_build_changes_require_a_release(self, api):
+        for path in ("i/cover.jpg", "book/print.css", "scripts/build_books.py", ".github/workflows/books.yml"):
+            with self.subTest(path=path):
+                item = {"path": path, "mode": "100644", "type": "blob", "sha": "new"}
+                api.side_effect = [self.tree(), self.tree(extra=[item])]
+                self.assertNotEqual(book_inputs("owner/repo", "a"), book_inputs("owner/repo", "b"))
+        api.side_effect = [self.tree("before"), self.tree("after")]
+        self.assertNotEqual(book_inputs("owner/repo", "a"), book_inputs("owner/repo", "b"))
+
+    @patch("release_books.api")
+    def test_deleting_an_input_is_a_change(self, api):
+        item = {"path": "i/old.jpg", "mode": "100644", "type": "blob", "sha": "old"}
+        api.side_effect = [self.tree(extra=[item]), self.tree()]
+        self.assertNotEqual(book_inputs("owner/repo", "before"), book_inputs("owner/repo", "after"))
+
+    @patch("release_books.api")
+    def test_incomplete_input_comparison_fails_before_a_build(self, api):
+        for tree in ({"truncated": True, **self.tree()}, {"tree": []}):
+            api.return_value = tree
+            with self.assertRaises(RuntimeError):
+                book_inputs("owner/repo", "commit")
+
+    @patch("release_books.book_inputs", return_value="same-inputs")
+    def test_compare_latest_published_edition_not_a_draft(self, inputs):
+        items = [
+            {"tag_name": "v2026.13", "target_commitish": "old", "draft": False},
+            {"tag_name": "v2026.16", "target_commitish": "draft", "draft": True},
+            {"tag_name": "v2026.15", "target_commitish": "latest", "draft": False},
+            {"tag_name": "v2026.17", "target_commitish": "preview", "draft": False, "prerelease": True},
+        ]
+        self.assertTrue(unchanged_since_publication("owner/repo", "current", items))
+        self.assertEqual([call.args[1] for call in inputs.call_args_list], ["current", "latest"])
+        inputs.reset_mock()
+        self.assertFalse(unchanged_since_publication("owner/repo", "first", []))
+        inputs.assert_not_called()
 
 
 class PublicationSafety(unittest.TestCase):

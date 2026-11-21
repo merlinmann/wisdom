@@ -30,6 +30,33 @@ def releases(repo):
     return [item for page in pages for item in page]
 
 
+def book_inputs(repo, sha):
+    """Compare source bytes, including deletions, without rebuilding the books."""
+    tree = api(f"repos/{repo}/git/trees/{sha}?recursive=1")
+    if tree.get("truncated"):
+        raise RuntimeError("Cannot compare an incomplete book input tree")
+    records = []
+    for item in tree["tree"]:
+        path = item["path"]
+        if path in ("book/README.md", "book/data-formats.md"):
+            continue
+        if item["type"] != "tree" and (path in ("wisdom.md", ".github/workflows/books.yml")
+                or path.startswith(("i/", "book/", "scripts/"))):
+            records.append((path, item["mode"], item["type"], item["sha"]))
+    if not any(row[0] == "wisdom.md" for row in records):
+        raise RuntimeError("Cannot compare book inputs without the manuscript")
+    return hashlib.sha256(json.dumps(sorted(records)).encode()).hexdigest()
+
+
+def unchanged_since_publication(repo, sha, items):
+    published = [item for item in items if not item["draft"]
+                 and not item.get("prerelease", False) and VERSION.fullmatch(item["tag_name"])]
+    if not published:
+        return False
+    latest = max(published, key=lambda item: tuple(map(int, VERSION.fullmatch(item["tag_name"]).groups())))
+    return book_inputs(repo, sha) == book_inputs(repo, latest["target_commitish"])
+
+
 def choose_version(items, tags, sha, day):
     for item in items:
         if item["target_commitish"] == sha and VERSION.fullmatch(item["tag_name"]):
@@ -47,12 +74,15 @@ def plan(repo, path):
     pages = json.loads(gh("api", f"repos/{repo}/tags?per_page=100", "--paginate", "--slurp"))
     tags = [x["name"] for page in pages for x in page] + [x["tag_name"] for x in items]
     version, exists = choose_version(items, tags, sha, day)
-    result = {"version": version, "sha": sha, "already_published": exists, "repository": repo}
+    unchanged = not exists and unchanged_since_publication(repo, sha, items)
+    build = not (exists or unchanged)
+    result = {"version": version, "sha": sha, "already_published": exists,
+              "unchanged_inputs": unchanged, "build": build, "repository": repo}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(result, indent=2) + "\n")
     if os.getenv("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as output:
-            output.write(f"version={version}\nbuild={'false' if exists else 'true'}\n")
+            output.write(f"version={version}\nbuild={'true' if build else 'false'}\n")
     print(json.dumps(result))
 
 
