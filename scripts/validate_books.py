@@ -151,7 +151,8 @@ def validate(folder):
     web_reader.feed(web)
     web_text = canonical(' '.join(web_reader.text))
     assert all(unit in web_text for unit in units), "HTML omitted manuscript text"
-    markdown = (folder / "wisdom.md").read_text()
+    assert (folder / "wisdom.md").read_bytes().startswith(b"\xef\xbb\xbf"), "Markdown needs its UTF-8 signature"
+    markdown = (folder / "wisdom.md").read_text(encoding="utf-8-sig")
     assert not re.search(r'!\[|<img\b|data:image/', markdown, re.I), "Markdown must not embed images"
     markdown_html = subprocess.check_output(["pandoc", str(folder / "wisdom.md"), "--from=gfm+yaml_metadata_block", "--to=html5"], text=True)
     markdown_reader = Text()

@@ -131,6 +131,11 @@ def markdown_edition(content):
     return command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", "--reference-location=section", input=json.dumps(parsed))
 
 
+def write_markdown(path, metadata, content):
+    """Identify UTF-8 even when a download preview ignores HTTP charset metadata."""
+    path.write_text(yaml_metadata(metadata) + content, encoding="utf-8-sig")
+
+
 def normalized_zip(path, epoch):
     """Fix ZIP metadata, ordering, and timestamps while retaining the EPUB mimetype rule."""
     with zipfile.ZipFile(path) as archive:
@@ -232,7 +237,7 @@ def build(version, output):
     web_body = f'<div class="cover"><img src="i/cover.jpg" alt="Cover of Merlin’s Wisdom Project"></div>{pdf_body}{colophon}'
     (output / "wisdom.html").write_text(offline_html(web_body, metadata, day))
     markdown = markdown_edition(web_body.replace(copyright_print, copyright_epub))
-    (output / "wisdom.md").write_text(yaml_metadata(data_metadata) + markdown)
+    write_markdown(output / "wisdom.md", data_metadata, markdown)
     command("calibre-debug", "-e", "scripts/convert_kindle_book.py", "--",
             str(output / "wisdom.epub"), str(output / "wisdom.azw3"), str(epoch),
             env={**os.environ, "QT_QPA_PLATFORM": "offscreen"})

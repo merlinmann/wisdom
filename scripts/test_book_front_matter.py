@@ -1,4 +1,5 @@
 """Guard edition rollover and the boundary between authored and generated pages."""
+import json
 import unittest
 import shutil
 import subprocess
@@ -80,6 +81,35 @@ Terms.
         self.assertEqual(body, source[source.index("## Epigraphs"):])
         with self.assertRaises(AssertionError):
             split_front_matter(source.replace("## Epigraphs", "## Dedication\n\n## Epigraphs"))
+
+
+class MarkdownEncoding(unittest.TestCase):
+    @unittest.skipUnless(shutil.which("pandoc"), "Pandoc is installed before building books")
+    def test_download_identifies_utf8_and_preserves_yaml_and_punctuation(self):
+        import codecs
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from build_books import write_markdown
+        from data_books import yaml_metadata
+        metadata = {"title": "Merlin’s Wisdom Project", "edition": "2026.17"}
+        content = '# Merlin’s Wisdom Project\n\n“Water.” © Merlin — café.\n'
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "wisdom.md"
+            write_markdown(path, metadata, content)
+            raw = path.read_bytes()
+            self.assertTrue(raw.startswith(codecs.BOM_UTF8))
+            self.assertEqual(raw.count(codecs.BOM_UTF8), 1)
+            self.assertEqual(raw.decode("utf-8-sig"), yaml_metadata(metadata) + content)
+            # Pandoc reads the actual downloaded bytes, including the signature.
+            document = json.loads(subprocess.check_output([
+                "pandoc", str(path), "--from=gfm+yaml_metadata_block", "--to=json"
+            ], text=True))
+            self.assertEqual(document["meta"]["edition"]["c"][0]["c"], "2026.17")
+            rendered = subprocess.check_output([
+                "pandoc", str(path), "--from=gfm+yaml_metadata_block", "--to=plain"
+            ], text=True)
+            self.assertIn("Merlin’s Wisdom Project", rendered)
+            self.assertIn("“Water.” © Merlin — café.", rendered)
 
 
 if __name__ == "__main__":
