@@ -36,8 +36,12 @@ def offline_html(content, metadata, day):
         # Reserve each image's aspect ratio before it decodes, including when a
         # reader opens a deep link directly into the book.
         if path.suffix.lower() == ".svg":
-            box = ET.parse(path).getroot().get("viewBox").split()
-            width, height = float(box[2]), float(box[3])
+            svg = ET.parse(path).getroot()
+            if svg.get("viewBox"):
+                box = svg.get("viewBox").split()
+                width, height = float(box[2]), float(box[3])
+            else:
+                width, height = (float(re.match(r"[\d.]+", svg.get(key)).group()) for key in ("width", "height"))
         else:
             from PIL import Image
             with Image.open(path) as asset:
