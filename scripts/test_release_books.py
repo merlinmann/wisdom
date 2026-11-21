@@ -89,6 +89,16 @@ class PublicationSafety(unittest.TestCase):
         (support / "release-plan.json").write_text(json.dumps({"sha": "source", "version": "2026.11"}))
         (self.folder / "edition.json").write_text(json.dumps({"source_commit": "source", "version": "2026.11"}))
 
+    @patch("release_books.api")
+    @patch("release_books.gh")
+    def test_review_build_cannot_publish_even_if_called_directly(self, gh, api):
+        path = self.folder / "Supporting files/release-plan.json"
+        path.write_text(json.dumps({"sha": "source", "version": "2026.11", "verify_only": True}))
+        with self.assertRaisesRegex(AssertionError, "review-only"):
+            publish("owner/repo", self.folder)
+        api.assert_not_called()
+        gh.assert_not_called()
+
     @patch("release_books.gh")
     @patch("release_books.releases")
     @patch("release_books.api", return_value={"commit": {"sha": "newer"}})
