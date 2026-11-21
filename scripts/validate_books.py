@@ -123,6 +123,9 @@ def validate(folder):
     markdown_text = canonical(' '.join(markdown_reader.text))
     assert all(unit in markdown_text for unit in units), "Image-free Markdown omitted manuscript text"
     assert not re.search(r'<(?:div|span|p|img|figure)\b', markdown), "Markdown must use Markdown rather than HTML layout"
+    markdown_ids = set(re.findall(r'id="([^"]+)"', markdown_html))
+    markdown_fragments = re.findall(r'href="#([^"]+)"', markdown_html)
+    assert all(target in markdown_ids for target in markdown_fragments), "Markdown has broken internal links"
     kindle_parts = []
     for path in sorted((support / "kindle-preview").rglob("*")):
         if path.suffix.lower() in (".html", ".htm", ".xhtml"):

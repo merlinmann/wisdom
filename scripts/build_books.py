@@ -72,6 +72,41 @@ def command(*args, **kwargs):
     return subprocess.check_output(args, cwd=ROOT, text=True, **kwargs)
 
 
+def ast_nodes(value):
+    if isinstance(value, dict):
+        if "t" in value:
+            yield value
+        for child in value.values():
+            yield from ast_nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from ast_nodes(child)
+
+
+def markdown_edition(content):
+    """Pure GFM, with working heading links even after HTML anchors disappear."""
+    original = json.loads(command("pandoc", "--from=html", "--to=json",
+                                  "--lua-filter=book/text-only.lua", input=content))
+    headings, aliases = [], {}
+    for node in ast_nodes(original["blocks"]):
+        if node["t"] == "Header":
+            headings.append(node)
+            aliases[node["c"][1][0]] = len(headings) - 1
+        elif node["t"] in ("Div", "Span") and node["c"][0][0] and headings:
+            # A bibliography entry's HTML id becomes a link to Works Cited.
+            aliases[node["c"][0][0]] = len(headings) - 1
+    markdown = command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", input=json.dumps(original))
+    parsed = json.loads(command("pandoc", "--from=gfm", "--to=json", input=markdown))
+    heading_ids = [node["c"][1][0] for node in ast_nodes(parsed["blocks"]) if node["t"] == "Header"]
+    assert len(headings) == len(heading_ids), "Markdown headings changed during conversion"
+    for node in ast_nodes(parsed["blocks"]):
+        if node["t"] == "Link":
+            url = node["c"][-1][0]
+            if url.startswith("#") and url[1:] in aliases:
+                node["c"][-1][0] = "#" + heading_ids[aliases[url[1:]]]
+    return command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", input=json.dumps(parsed))
+
+
 def normalized_zip(path, epoch):
     """Fix ZIP metadata, ordering, and timestamps while retaining the EPUB mimetype rule."""
     with zipfile.ZipFile(path) as archive:
@@ -165,8 +200,7 @@ def build(version, output):
     normalized_zip(output / "wisdom.epub", epoch)
     web_body = f'<div class="cover"><img src="i/cover.jpg" alt="Cover of Merlin’s Wisdom Project"></div>{pdf_body}{colophon}'
     (output / "wisdom.html").write_text(offline_html(web_body, metadata, day))
-    markdown = command("pandoc", "--from=html", "--to=gfm-raw_html", "--wrap=none",
-                       "--lua-filter=book/text-only.lua", input=web_body.replace(copyright_print, copyright_epub))
+    markdown = markdown_edition(web_body.replace(copyright_print, copyright_epub))
     (output / "wisdom.md").write_text(markdown)
     command("calibre-debug", "-e", "scripts/convert_kindle_book.py", "--",
             str(output / "wisdom.epub"), str(output / "wisdom.azw3"), str(epoch),
