@@ -36,7 +36,7 @@ def split_front_matter(source):
     assert not re.search(r"^## ", title, re.M), "A new front-matter section needs placement review"
     # The title's closing rule is a web separator, not part of the printed title page.
     title = re.sub(r"\n-{3,}\s*\Z", "\n", title)
-    title, count = re.subn(r"^(# .+)$", r'\1 {.title-page epub:type=titlepage}', title, count=1, flags=re.M)
+    title, count = re.subn(r"^(# .+)$", r'\1 {epub:type=titlepage}', title, count=1, flags=re.M)
     assert count == 1, "The manuscript needs its title heading"
     return title, rest
 
