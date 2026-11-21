@@ -38,7 +38,7 @@ def book_inputs(repo, sha):
     records = []
     for item in tree["tree"]:
         path = item["path"]
-        if path in ("book/README.md", "book/data-formats.md"):
+        if path in ("book/README.md", "book/data-formats.md", "scripts/check_book_links.py", "scripts/sync_legacy.py") or path.startswith("scripts/test_"):
             continue
         if item["type"] != "tree" and (path in ("wisdom.md", ".github/workflows/books.yml")
                 or path.startswith(("i/", "book/", "scripts/"))):
@@ -54,7 +54,22 @@ def unchanged_since_publication(repo, sha, items):
     if not published:
         return False
     latest = max(published, key=lambda item: tuple(map(int, VERSION.fullmatch(item["tag_name"]).groups())))
-    return book_inputs(repo, sha) == book_inputs(repo, latest["target_commitish"])
+    source = latest["target_commitish"]
+    if not re.fullmatch(r"[0-9a-f]{40}", source):
+        raise RuntimeError("Published edition must identify an immutable source commit")
+    return book_inputs(repo, sha) == book_inputs(repo, source)
+
+
+def resume_schedule(repo):
+    """Resume an inactivity-disabled schedule after new checked work arrives."""
+    workflow = f"repos/{repo}/actions/workflows/books.yml"
+    state = api(workflow)["state"]
+    if state == "disabled_inactivity":
+        gh("api", workflow + "/enable", "--method", "PUT")
+        assert api(workflow)["state"] == "active", "Book schedule did not resume"
+        print("Resumed the daily book schedule after repository inactivity.")
+    else:
+        print(f"Book schedule is {state}; its setting was preserved.")
 
 
 def choose_version(items, tags, sha, day):
@@ -157,12 +172,16 @@ All seven formats preserve the manuscript text and identify this edition and its
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("action", choices=["plan", "publish"])
+    parser.add_argument("action", choices=["plan", "publish", "resume-schedule"])
     parser.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", "merlinmann/wisdom"))
     parser.add_argument("--folder", type=Path, default=Path("builds/ebooks"))
     parser.add_argument("--verify-only", action="store_true", help="build review copies even if unchanged; forbid publication")
     args = parser.parse_args()
+    if args.verify_only and args.action != "plan":
+        parser.error("--verify-only applies only to planning a review build")
     if args.action == "plan":
         plan(args.repo, args.folder / "Supporting files/release-plan.json", args.verify_only)
-    else:
+    elif args.action == "publish":
         publish(args.repo, args.folder)
+    else:
+        resume_schedule(args.repo)
