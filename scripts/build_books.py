@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build both books from the same Markdown, date, version, and source commit."""
+"""Build reading and data editions from one manuscript and source commit."""
 import argparse
 import base64
 import hashlib
@@ -9,6 +9,7 @@ import mimetypes
 import os
 from pathlib import Path
 import re
+import sqlite3
 import subprocess
 import time
 import zipfile
@@ -16,9 +17,10 @@ from datetime import datetime, timezone
 from string import Template
 from xml.etree import ElementTree as ET
 from zoneinfo import ZoneInfo
+from data_books import export as export_data, yaml_metadata
 
 ROOT = Path(__file__).resolve().parents[1]
-BOOK_FILES = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md")
+BOOK_FILES = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md", "wisdom.json", "wisdom.sqlite")
 
 
 def data_uri(path):
@@ -175,6 +177,12 @@ def build(version, output):
     day = utc.astimezone(ZoneInfo("America/Los_Angeles")).date().isoformat()
     metadata = json.loads((ROOT / "book/metadata.json").read_text())
     metadata.update(date=day, identifier=f"urn:wisdom.limo:edition:{version}")
+    data_metadata = {"title": metadata["title"], "author": metadata["author"], "language": metadata["lang"],
+                     "edition": version, "date": day, "identifier": metadata["identifier"],
+                     "license": "CC-BY-NC-4.0", "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+                     "rights": metadata["rights"], "project_url": "https://wisdom.limo",
+                     "source_commit": sha, "source_url": f"https://github.com/merlinmann/wisdom/blob/{sha}/wisdom.md",
+                     "id_scope": "edition"}
     metadata_path = support / "metadata.json"
     metadata_path.write_text(json.dumps(metadata, indent=2) + "\n")
 
@@ -187,6 +195,7 @@ def build(version, output):
     manuscript.write_text(source)
     body = command("pandoc", str(manuscript), "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none")
     (support / "source.html").write_text(body)
+    export_data(body, data_metadata, output)
     title_source, rest = split_front_matter(source)
     title_html = command("pandoc", "--from=markdown", "--to=html5", "--strip-comments", "--wrap=none", input=title_source)
     body = command("pandoc", "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none", input=rest)
@@ -223,7 +232,7 @@ def build(version, output):
     web_body = f'<div class="cover"><img src="i/cover.jpg" alt="Cover of Merlin’s Wisdom Project"></div>{pdf_body}{colophon}'
     (output / "wisdom.html").write_text(offline_html(web_body, metadata, day))
     markdown = markdown_edition(web_body.replace(copyright_print, copyright_epub))
-    (output / "wisdom.md").write_text(markdown)
+    (output / "wisdom.md").write_text(yaml_metadata(data_metadata) + markdown)
     command("calibre-debug", "-e", "scripts/convert_kindle_book.py", "--",
             str(output / "wisdom.epub"), str(output / "wisdom.azw3"), str(epoch),
             env={**os.environ, "QT_QPA_PLATFORM": "offscreen"})
@@ -242,6 +251,7 @@ def build(version, output):
         "pandoc": command("pandoc", "--version").splitlines()[0],
         "weasyprint": command("python", "-m", "weasyprint", "--version").strip(),
         "calibre": command("ebook-convert", "--version").strip(),
+        "sqlite": sqlite3.sqlite_version,
         "files": {name: hashlib.sha256((output / name).read_bytes()).hexdigest() for name in BOOK_FILES},
     }
     (output / "edition.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")

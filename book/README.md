@@ -2,7 +2,7 @@
 
 Prepared by Codex for Merlin Mann
 
-`wisdom.md` remains the manuscript. GitHub Actions produces five reading formats from the same source commit: EPUB3, a 6 × 9-inch PDF, offline HTML, Kindle AZW3, and image-free Markdown. All preserve the visible manuscript text. The PDF and HTML use Source Serif 4; the EPUB and AZW3 preserve reader font controls. The Markdown retains headings, emphasis, links, and image captions as text, without HTML layout or embedded images.
+`wisdom.md` remains the manuscript. GitHub Actions produces five reading formats from the same source commit: EPUB3, a 6 × 9-inch PDF, offline HTML, Kindle AZW3, and image-free Markdown. JSON and SQLite provide the same visible manuscript as structured data. All seven preserve the visible manuscript text. The PDF and HTML use Source Serif 4; the EPUB and AZW3 preserve reader font controls. The Markdown retains headings, emphasis, links, and image captions as text, without HTML layout or embedded images, and begins with YAML edition metadata.
 
 ## Publication
 
@@ -22,11 +22,11 @@ The EPUB and PDF place a dedicated copyright page immediately after the authored
 
 The PDF adapts the approved copyright-page layout to the book’s Source Serif 4 type, with small caps, restrained italics, and generous space above. Title and copyright pages have no running header or visible page number; the title starts the interior page count. The EPUB marks these pages as `titlepage` and `copyright-page` front matter, keeps the copyright page in its own reading-order document, and preserves reader font controls. The original licensing section remains at the end of the manuscript.
 
-Every release contains `wisdom.epub`, `wisdom.pdf`, `wisdom.html`, `wisdom.azw3`, `wisdom.md`, `edition.json`, and `SHA256SUMS`. Consistent filenames support stable latest-download URLs; each release also supplies permanent version-specific URLs. The HTML embeds all images, fonts, and styles in one file and needs no internet connection to read.
+Every release contains `wisdom.epub`, `wisdom.pdf`, `wisdom.html`, `wisdom.azw3`, `wisdom.md`, `wisdom.json`, `wisdom.sqlite`, `edition.json`, and `SHA256SUMS`. Consistent filenames support stable latest-download URLs; each release also supplies permanent version-specific URLs. The HTML embeds all images, fonts, and styles in one file and needs no internet connection to read. The [data format guide](data-formats.md) describes JSON, SQLite, full-text search, YAML fields, and the scope of record IDs.
 
 For wireless delivery to Kindle, upload the EPUB through [Send to Kindle](https://www.amazon.com/sendtokindle). The AZW3 is for USB transfer or [Calibre](https://calibre-ebook.com/); it is not a Send to Kindle upload format. Amazon documents its supported upload formats and current Mac USB-transfer options in [Kindle file transfers](https://digprjsurvey.amazon.com/csad/help/node/TCUBEdEkbIhK07ysFu).
 
-The build runs EPUBCheck, verifies source passages in all five formats (including text extracted from the finished AZW3), checks PDF text bounds and bookmarks, and rebuilds all five files to compare their bytes. It also checks copyright placement, edition/date consistency, image-free Markdown, and self-contained HTML assets. Rendered PDF pages, narrow/wide EPUB and HTML screenshots, and an extracted Kindle-page preview are retained with the Actions artifact. Browser previews do not replace device-specific reading-system tests.
+The build runs EPUBCheck, verifies source passages in all seven formats (including text extracted from the finished AZW3), checks PDF text bounds and bookmarks, and rebuilds all seven files to compare their bytes. It also checks copyright placement, edition/date consistency, image-free Markdown, YAML metadata, and self-contained HTML assets. An independent reader compares every SQLite section, entry, link, and metadata value with JSON, checks database integrity and references, and exercises full-text search. Rendered PDF pages, narrow/wide EPUB and HTML screenshots, and an extracted Kindle-page preview are retained with the Actions artifact. Browser previews do not replace device-specific reading-system tests.
 
 GitHub artifact attestations identify the workflow and source that produced the books. Verify a downloaded EPUB with:
 
@@ -34,7 +34,7 @@ GitHub artifact attestations identify the workflow and source that produced the 
 gh attestation verify wisdom.epub --repo merlinmann/wisdom
 ```
 
-After downloading all four release files, verify their checksums with:
+After downloading all release files, verify their checksums with:
 
 ```sh
 shasum -a 256 -c SHA256SUMS
@@ -52,6 +52,8 @@ shasum -a 256 -c SHA256SUMS
 - `scripts/build_books.py`: conversion and deterministic ZIP metadata.
 - `scripts/convert_kindle_book.py`: Calibre conversion with edition-derived IDs and timestamps for reproducible AZW3 output.
 - `scripts/validate_books.py`: content checks and review renders.
+- `scripts/data_books.py`: structured JSON, SQLite, and YAML metadata.
+- `scripts/validate_data_books.py`: independent data-file and search checks.
 - `scripts/release_books.py`: version allocation and verified publication.
 - `.github/workflows/books.yml`: remote execution with separate read-only build and write-enabled publication jobs.
 
