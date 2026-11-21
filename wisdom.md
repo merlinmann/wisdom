@@ -70,7 +70,7 @@ Brief introductory remarks regarding the Project:
 - Related: for any idea that strikes you as irrelevant or dumb or wrong or antithetical to your own experiences and sensibilities, please consider that it may not be, as we say, *for* you. The reader is encouraged to ignore or reject any ideas that they find undesirable.
 - But, do bear in mind that often it's the idea that finds *you* undesirable. The better ideas usually have pretty high standards.
 - These are ideas that I have believed to be true for myself at the time of composition. They are not immutable truths about The Universe, and I am open to changing my mind about any of them at any time.
-- Ideas appended with a “thanks" are wisdoms that I gratefully learned from that credited person—often many years ago. They are not “submissions.” Because, alas, I am not *Reader’s Digest*.
+- Ideas appended with a “thanks” are wisdoms that I gratefully learned from that credited person—often many years ago. They are not “submissions.” Because, alas, I am not *Reader’s Digest*.
 - If you believe that it is possible to grow without change, you are probably neither growing nor changing.
 - Wisdom is not a headline.
 - Bulleted lists are a useful way to collect items that are either unrelated or may not benefit from being puffed into actual fancy prose. <!-- HELLO Also, embedded comments are good for saying hello to curious geeks. Hello. Welcome! -->
@@ -272,7 +272,7 @@ Brief introductory remarks regarding the Project:
 - If you feel like you have to ask a second person to smell the milk, just throw it away.
 - If you can afford the dinner, you can afford the tip.
 - If you have time to check email, you have time to *do* something about it.
-- There are no "bad words." Apart from "moist, "succulent," and "craveable."
+- There are no “bad words.” Apart from “moist,” “succulent,” and “craveable.”
 - No one has ever died wishing they'd spent more time documenting their "minimalist desk."
 - Negative feelings are like cockroaches. You can chase them away for a few minutes, but they'll always come back as soon as you look someplace else.
 - Related: being chased makes feelings a lot stronger.
