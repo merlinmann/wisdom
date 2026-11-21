@@ -12,6 +12,10 @@ It's only advice for you because it **had** to be advice for me.
 
 [EPUB](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.epub) · [PDF](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.pdf)
 
+- [**HTML — read offline in a browser**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.html)
+- [**Kindle AZW3 — transfer with USB or Calibre**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.azw3)
+- [**Markdown — the text without images**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.md)
+
 EPUB offers adjustable text in reading apps and e-readers, including Kindle through [Send to Kindle](https://www.amazon.com/sendtokindle). PDF preserves the book’s designed pages.
 
 [Older editions](https://github.com/merlinmann/wisdom/releases) · [License](LICENSE.md) · [How the books are made](book/README.md)

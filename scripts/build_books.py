@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Build both books from the same Markdown, date, version, and source commit."""
 import argparse
+import base64
 import hashlib
 import html
 import json
+import mimetypes
 import os
 from pathlib import Path
 import re
@@ -11,19 +13,145 @@ import subprocess
 import time
 import zipfile
 from datetime import datetime, timezone
+from string import Template
+from xml.etree import ElementTree as ET
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
+BOOK_FILES = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md")
+
+
+def data_uri(path):
+    media_type = mimetypes.guess_type(path.name)[0] or "application/octet-stream"
+    return f"data:{media_type};base64," + base64.b64encode(path.read_bytes()).decode("ascii")
+
+
+def offline_html(content, metadata, day):
+    """Embed the project's images, fonts, and CSS; no network is needed to read it."""
+    def image(match):
+        tag, source = match[0], match[1]
+        path = (ROOT / html.unescape(source)).resolve()
+        if not path.is_relative_to(ROOT) or not path.is_file():
+            raise ValueError(f"Offline HTML requires a repository image: {source}")
+        # Reserve each image's aspect ratio before it decodes, including when a
+        # reader opens a deep link directly into the book.
+        if path.suffix.lower() == ".svg":
+            svg = ET.parse(path).getroot()
+            if svg.get("viewBox"):
+                box = svg.get("viewBox").split()
+                width, height = float(box[2]), float(box[3])
+            else:
+                width, height = (float(re.match(r"[\d.]+", svg.get(key)).group()) for key in ("width", "height"))
+        else:
+            from PIL import Image
+            with Image.open(path) as asset:
+                width, height = asset.size
+        if not re.search(r'\b(?:width|height)=', tag):
+            tag = tag.replace("<img", f'<img width="{width:g}" height="{height:g}"', 1)
+        return tag.replace('src="' + source + '"', 'src="' + data_uri(path) + '"', 1)
+    content = re.sub(r'<img\b[^>]*\bsrc="([^"]+)"[^>]*>', image, content)
+    css = (ROOT / "book/html.css").read_text()
+    css = re.sub(r'url\("([^"]+)"\)', lambda match: 'url("' + data_uri(ROOT / "book" / match[1]) + '")', css)
+    font_license = html.escape((ROOT / "book/fonts/LICENSE.md").read_text(), quote=True)
+    return f'''<!doctype html><html lang="en-US"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(metadata['title'])}</title><meta name="author" content="{html.escape(metadata['author'])}">
+<meta name="dcterms.date" content="{day}"><style>{css}</style>
+<meta name="embedded-font-license" content="{font_license}">
+</head><body><main>{content}</main></body></html>'''
+
+
+def copyright_page(metadata, version, day, *, print_edition):
+    """One text template; edition and date come from the release's own metadata."""
+    date = datetime.strptime(day, "%Y-%m-%d")
+    fields = {"title": metadata["title"], "author": metadata["author"],
+              "version": version, "iso_date": day,
+              "display_date": f"{date:%B} {date.day}, {date.year}"}
+    fields = {key: html.escape(value) for key, value in fields.items()}
+    fields["type_credit"] = "Set in Source Serif 4.<br />" if print_edition else ""
+    return Template((ROOT / "book/copyright.html").read_text()).substitute(fields)
+
+
+def split_front_matter(source):
+    """Keep the authored title text together, ahead of the copyright and epigraphs."""
+    first_section = re.search(r"^## Epigraphs\s*$", source, re.M)
+    assert first_section, "Expected Epigraphs as the first manuscript section"
+    title, rest = source[:first_section.start()], source[first_section.start():]
+    assert not re.search(r"^## ", title, re.M), "A new front-matter section needs placement review"
+    # The title's closing rule is a web separator, not part of the printed title page.
+    title = re.sub(r"\n-{3,}\s*\Z", "\n", title)
+    assert len(re.findall(r"^# .+$", title, re.M)) == 1, "The manuscript needs its title heading"
+    return title, rest
 
 
 def command(*args, **kwargs):
     return subprocess.check_output(args, cwd=ROOT, text=True, **kwargs)
 
 
+def ast_nodes(value):
+    if isinstance(value, dict):
+        if "t" in value:
+            yield value
+        for child in value.values():
+            yield from ast_nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from ast_nodes(child)
+
+
+def markdown_edition(content):
+    """Pure GFM, with working heading links even after HTML anchors disappear."""
+    original = json.loads(command("pandoc", "--from=html", "--to=json",
+                                  "--lua-filter=book/text-only.lua", input=content))
+    headings = [node for node in ast_nodes(original["blocks"]) if node["t"] == "Header"]
+    positions = {id(node): index for index, node in enumerate(headings)}
+    aliases, previous_heading = {}, None
+    for node in ast_nodes(original["blocks"]):
+        if node["t"] == "Header":
+            previous_heading = positions[id(node)]
+            if node["c"][1][0]:
+                aliases[node["c"][1][0]] = previous_heading
+        elif node["t"] in ("Div", "Span") and node["c"][0][0]:
+            # Section wrappers precede their headings; bibliography anchors do not.
+            nested = next((child for child in ast_nodes(node["c"][1]) if child["t"] == "Header"), None)
+            target = positions[id(nested)] if nested is not None else previous_heading
+            if target is not None:
+                aliases[node["c"][0][0]] = target
+    markdown = command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", input=json.dumps(original))
+    parsed = json.loads(command("pandoc", "--from=gfm", "--to=json", input=markdown))
+    heading_ids = [node["c"][1][0] for node in ast_nodes(parsed["blocks"]) if node["t"] == "Header"]
+    assert len(headings) == len(heading_ids), "Markdown headings changed during conversion"
+    for node in ast_nodes(parsed["blocks"]):
+        if node["t"] == "Link":
+            url = node["c"][-1][0]
+            if url.startswith("#") and url[1:] in aliases:
+                node["c"][-1][0] = "#" + heading_ids[aliases[url[1:]]]
+    return command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", input=json.dumps(parsed))
+
+
 def normalized_zip(path, epoch):
     """Fix ZIP metadata, ordering, and timestamps while retaining the EPUB mimetype rule."""
     with zipfile.ZipFile(path) as archive:
         files = {name: archive.read(name) for name in archive.namelist()}
+    # Pandoc puts the visible contents ahead of the authored title by default.
+    # Keep the title/copyright pair together, then show the contents.
+    opf_path = "EPUB/content.opf"
+    opf_ns = "http://www.idpf.org/2007/opf"
+    ns = {"o": opf_ns}
+    opf = ET.fromstring(files[opf_path])
+    items = opf.findall("o:manifest/o:item", ns)
+    nav_id = next(item.get("id") for item in items if "nav" in item.get("properties", "").split())
+    copyright_id = next(item.get("id") for item in items
+                        if item.get("media-type") == "application/xhtml+xml"
+                        and b'epub:type="copyright-page"' in files["EPUB/" + item.get("href")])
+    spine = opf.find("o:spine", ns)
+    nav_ref = next(item for item in spine if item.get("idref") == nav_id)
+    spine.remove(nav_ref)
+    position = next(i for i, item in enumerate(spine) if item.get("idref") == copyright_id)
+    spine.insert(position + 1, nav_ref)
+    ET.register_namespace("", opf_ns)
+    ET.register_namespace("dc", "http://purl.org/dc/elements/1.1/")
+    files[opf_path] = ET.tostring(opf, encoding="utf-8", xml_declaration=True)
     stamp = time.gmtime(max(epoch, 315532800))[:6]
     with zipfile.ZipFile(path, "w") as archive:
         for name in ["mimetype", *sorted(set(files) - {"mimetype"})]:
@@ -59,6 +187,9 @@ def build(version, output):
     manuscript.write_text(source)
     body = command("pandoc", str(manuscript), "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none")
     (support / "source.html").write_text(body)
+    title_source, rest = split_front_matter(source)
+    title_html = command("pandoc", "--from=markdown", "--to=html5", "--strip-comments", "--wrap=none", input=title_source)
+    body = command("pandoc", "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none", input=rest)
     headings = re.findall(r'<h2[^>]*id="([^"]+)"[^>]*>(.*?)</h2>', body, re.S)
     if not headings:
         headings = re.findall(r'<section id="([^"]+)" class="level2">\s*<h2[^>]*>(.*?)</h2>', body, re.S)
@@ -71,9 +202,10 @@ def build(version, output):
 <p>Source: <a href="https://github.com/merlinmann/wisdom/commit/{sha}"><code>{sha}</code></a></p>
 <p>Copyright Merlin Mann.</p></section>'''
     (support / "colophon.html").write_text(colophon)
-    first_section = f'<section id="{headings[0][0]}"'
-    pdf_body = body.replace(first_section, toc + first_section, 1)
-    assert pdf_body != body
+    copyright_print = copyright_page(metadata, version, day, print_edition=True)
+    copyright_epub = copyright_page(metadata, version, day, print_edition=False)
+    (support / "copyright.html").write_text(copyright_print)
+    pdf_body = f'<section class="title-page">{title_html}</section><section class="copyright-page" id="copyright-page" aria-label="Copyright">{copyright_print}</section>{toc}{body}'
     pdf_html = f'''<!doctype html><html lang="en-US"><head><meta charset="utf-8">
 <title>{html.escape(metadata['title'])}</title><meta name="author" content="Merlin Mann">
 <meta name="dcterms.created" content="{utc.isoformat()}"><meta name="dcterms.modified" content="{utc.isoformat()}">
@@ -81,12 +213,24 @@ def build(version, output):
     (support / "book.html").write_text(pdf_html)
 
     epub_manuscript = support / "manuscript-epub.md"
-    epub_manuscript.write_text(source + "\n\n" + colophon + "\n")
+    epub_title = re.sub(r"^(# .+)$", r'\1 {epub:type=titlepage}', title_source, count=1, flags=re.M)
+    epub_manuscript.write_text(epub_title + '\n\n## Copyright {#copyright-page .copyright-page epub:type=copyright-page}\n\n```{=html}\n' + copyright_epub + '\n```\n\n' + rest + "\n\n" + colophon + "\n")
     command("pandoc", str(epub_manuscript), "--from=markdown", "--to=epub3", "--standalone", "--strip-comments",
             f"--metadata-file={metadata_path}", "--epub-title-page=false", "--epub-cover-image=i/cover.jpg",
             "--css=book/epub.css", "--toc", "--toc-depth=2", "--split-level=2", "--resource-path=.",
             f"--output={output / 'wisdom.epub'}")
     normalized_zip(output / "wisdom.epub", epoch)
+    web_body = f'<div class="cover"><img src="i/cover.jpg" alt="Cover of Merlin’s Wisdom Project"></div>{pdf_body}{colophon}'
+    (output / "wisdom.html").write_text(offline_html(web_body, metadata, day))
+    markdown = markdown_edition(web_body.replace(copyright_print, copyright_epub))
+    (output / "wisdom.md").write_text(markdown)
+    command("calibre-debug", "-e", "scripts/convert_kindle_book.py", "--",
+            str(output / "wisdom.epub"), str(output / "wisdom.azw3"), str(epoch),
+            env={**os.environ, "QT_QPA_PLATFORM": "offscreen"})
+    # Read the completed Kindle file back into browser-viewable pages for checks.
+    command("ebook-convert", str(output / "wisdom.azw3"), str(support / "kindle-preview"),
+            "--disable-font-rescaling", "--chapter", "/", "--page-breaks-before", "/",
+            env={**os.environ, "QT_QPA_PLATFORM": "offscreen"})
     from weasyprint import HTML, CSS
     from weasyprint.text.fonts import FontConfiguration
     fonts = FontConfiguration()
@@ -97,10 +241,11 @@ def build(version, output):
         "source_date_epoch": epoch, "source_sha256": hashlib.sha256((ROOT / "wisdom.md").read_bytes()).hexdigest(),
         "pandoc": command("pandoc", "--version").splitlines()[0],
         "weasyprint": command("python", "-m", "weasyprint", "--version").strip(),
-        "files": {name: hashlib.sha256((output / name).read_bytes()).hexdigest() for name in ("wisdom.epub", "wisdom.pdf")},
+        "calibre": command("ebook-convert", "--version").strip(),
+        "files": {name: hashlib.sha256((output / name).read_bytes()).hexdigest() for name in BOOK_FILES},
     }
     (output / "edition.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
-    names = ["wisdom.epub", "wisdom.pdf", "edition.json"]
+    names = [*BOOK_FILES, "edition.json"]
     (output / "SHA256SUMS").write_text(''.join(f"{hashlib.sha256((output / name).read_bytes()).hexdigest()}  {name}\n" for name in names))
     print(json.dumps(manifest, indent=2))
 
