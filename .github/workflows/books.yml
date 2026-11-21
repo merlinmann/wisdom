@@ -2,6 +2,7 @@ name: Books
 
 on:
   push:
+    branches: [master]
     paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/*book*', '.github/workflows/books.yml']
   pull_request:
     paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/*book*', '.github/workflows/books.yml']
@@ -21,7 +22,6 @@ env:
 
 jobs:
   build:
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     outputs:

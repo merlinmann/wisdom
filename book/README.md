@@ -6,7 +6,7 @@ Prepared by Codex for Merlin Mann
 
 ## Publication
 
-A push that changes the manuscript, its images, or the book tooling runs the Books workflow. Branch builds produce downloadable review artifacts. A successful build on `master` publishes a GitHub Release. Pull requests from forks receive read-only builds. README-only changes do not create editions. The Actions “Run workflow” button provides a manual retry.
+A pull request that changes the manuscript, its images, or the book tooling receives a read-only build with downloadable review artifacts. A push of those changes to `master` builds and publishes a GitHub Release. README-only changes do not create editions. The Actions “Run workflow” button provides a manual retry.
 
 A local save does not publish the book. Publication starts when the relevant changes reach GitHub.
 
@@ -14,7 +14,7 @@ A local save does not publish the book. Publication starts when the relevant cha
 
 Versions follow the year-and-sequence approach demonstrated for this project. The first November 2026 edition is `2026.11`; another edition that November becomes `2026.12`. Within a year, the next sequence is the larger of the current month and the previous sequence plus one. A new year starts a new sequence. Versions are calculated from the source commit date in America/Los_Angeles.
 
-Tags have a `v` prefix and identify exact source commits. Existing tags and draft releases reserve their numbers. A retry reuses the same draft; a published source commit produces no new edition. Newer source commits prevent older builds from replacing the latest edition. Published assets are never overwritten by this workflow.
+Tags have a `v` prefix and identify exact source commits. Existing tags and draft releases reserve their numbers. A retry reuses the same draft; a published source commit produces no new edition. Newer source commits prevent older builds from replacing the latest edition. Published assets are never overwritten by this workflow. GitHub release immutability is enabled, so published assets and their source tags are protected from replacement.
 
 ## Files and Verification
 

@@ -113,7 +113,7 @@ def validate(folder):
     (support / "validation.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
     assert not empty_pages, f"Unexpected empty pages: {empty_pages}"
-    assert any("SourceSerif" in name for name in report["pdf_fonts"]), "The book font was not embedded"
+    assert any("sourceserif" in canonical(name) for name in report["pdf_fonts"]), "The book font was not embedded"
 
 
 if __name__ == "__main__":
