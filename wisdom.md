@@ -545,16 +545,25 @@ Brief introductory remarks regarding the Project:
 ## Works Cited
 
 <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
-  <div class="csl-entry" id="source-dante">Dante Alighieri. <i>Inferno</i>, canto III, line 9. The source of the heading “Voi ch’entrate…”: <a href="https://divinacommedia.dante.global/inferno/testo/inf03.htm">Italian text</a>.</div>
+
+<div class="csl-entry" id="source-dante">
+
+Dante Alighieri. _Inferno_, canto III, line 9. The source of the heading “Voi ch’entrate…”: [Italian text](https://divinacommedia.dante.global/inferno/testo/inf03.htm).[^lowell]
+
+</div>
+
   <div class="csl-entry" id="source-chesterton">Chesterton, G. K. “The Drift from Domesticity.” <i>The Thing</i>. The source of Chesterton’s Fence: <a href="https://catholiclibrary.org/library/view?chunk.id=00000011&amp;docId=/Contemporary-EN/XCT.165.html">full essay</a>.</div>
   <div class="csl-entry">Hugo, Richard. <i>The Triggering Town: Lectures and Essays on Poetry and Writing</i>. First published as a Norton paperback, W.W. Norton &amp; Company, 1982.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-393-33872-0&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The%20triggering%20town%3A%20lectures%20and%20essays%20on%20poetry%20and%20writing&amp;rft.place=New%20York%20London&amp;rft.publisher=W.W.%20Norton%20%26%20Company&amp;rft.edition=First%20published%20as%20a%20Norton%20paperback&amp;rft.aufirst=Richard&amp;rft.aulast=Hugo&amp;rft.au=Richard%20Hugo&amp;rft.date=1982&amp;rft.tpages=109&amp;rft.isbn=978-0-393-33872-0&amp;rft.language=eng"></span>
+  <div class="csl-entry" id="source-lowell">Lowell, Robert. “The Exile’s Return.” <i>Lord Weary’s Castle</i>. Harcourt, Brace and Company, 1946.</div>
   <div class="csl-entry">Shakespeare, William. <i>The Tragedy of Hamlet, Prince of Denmark</i>. Folio Society, 1954.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The%20tragedy%20of%20Hamlet%2C%20Prince%20of%20Denmark&amp;rft.place=London&amp;rft.publisher=Folio%20Society&amp;rft.series=The%20Folio%20Shakespeare&amp;rft.aufirst=William&amp;rft.aulast=Shakespeare&amp;rft.au=William%20Shakespeare&amp;rft.date=1954&amp;rft.tpages=134&amp;rft.language=eng"></span>
   <div class="csl-entry">Vonnegut, Kurt. <i>Mother Night</i>. Gold Medal Books, 1962.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-385-33414-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mother%20night&amp;rft.place=New%20York%2C%20N.Y&amp;rft.publisher=Gold%20Medal%20Books&amp;rft.aufirst=Kurt&amp;rft.aulast=Vonnegut&amp;rft.au=Kurt%20Vonnegut&amp;rft.date=1962&amp;rft.tpages=174&amp;rft.isbn=978-0-385-33414-3"></span>
   <div class="csl-entry" id="source-wolfe">Wolfe, Tom. <i>The Electric Kool-Aid Acid Test</i>. 1968. Ken Kesey’s remarks about being on or off the bus: <a href="https://web.cs.ndsu.nodak.edu/~slator/html/private/prankster-logic.html">quoted passage</a>.</div>
 </div>
+
+[^lowell]: I learned about this line from Robert Lowell’s “The Exile’s Return,” in _Lord Weary’s Castle_ (Harcourt, Brace and Company, 1946). See [Lowell in Works Cited](#source-lowell).
 
 ----
 

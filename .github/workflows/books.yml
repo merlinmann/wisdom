@@ -1,18 +1,16 @@
-name: Books
+name: Publish Books
 
 on:
-  push:
-    branches: [main]
-    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/**', '.github/workflows/books.yml']
-  pull_request:
-    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/**', '.github/workflows/books.yml']
+  schedule:
+    - cron: '17 5 * * *'
+      timezone: America/Los_Angeles
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: books-${{ github.ref }}
+  group: books-publication
   cancel-in-progress: false
 
 env:
@@ -22,6 +20,7 @@ env:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     outputs:
@@ -92,6 +91,9 @@ jobs:
 
   compatibility:
     needs: build
+    concurrency:
+      group: wisdom-compatibility
+      cancel-in-progress: false
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
