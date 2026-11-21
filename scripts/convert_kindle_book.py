@@ -21,6 +21,11 @@ def main():
     import calibre.utils.date
     calibre.utils.date.now = lambda: datetime.fromtimestamp(epoch, timezone.utc)
     calibre.utils.date.utcnow = lambda: datetime.fromtimestamp(epoch, timezone.utc)
+    # Calibre keeps manifest items in an identity-hashed set. Stable traversal
+    # prevents image record numbers (and their references) changing per process.
+    from calibre.ebooks.oeb.base import Manifest
+    Manifest.values = lambda self: sorted(self.items, key=lambda item: item.href)
+    Manifest.__iter__ = lambda self: iter(self.values())
     from calibre.ebooks.conversion.cli import main as convert
     sys.argv = ["ebook-convert", source, destination, "--output-profile", "kindle_pw3",
                 "--no-inline-toc", "--disable-font-rescaling", "--chapter", "/",
