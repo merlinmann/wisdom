@@ -8,6 +8,8 @@ It's only advice for you because it **had** to be advice for me.
 
 ## [Read the Book →](https://wisdom.limo)
 
+<a id="download-the-book"></a>
+
 ### Download a Copy
 
 [EPUB](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.epub) · [PDF](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.pdf) · [HTML](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.html) · [Kindle AZW3](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.azw3) · [Markdown](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.md)
