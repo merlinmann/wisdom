@@ -1,21 +1,7 @@
-Thumbs.db
 .DS_Store
-.dist
-.tmp
-.sass-cache
-npm-debug.log
-node_modules
-builds
-package-lock.json
-public
-resources
-.codegpt
-
-# Build files
-assets/
-output/
-build-*.sh
-epub-*.css
-html-*.html
-metadata.yaml
-FONTS.md
+Thumbs.db
+.codegpt/
+.nova/
+node_modules/
+/builds/
+/Supporting files/

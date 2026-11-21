@@ -260,7 +260,7 @@ Brief introductory remarks regarding the Project:
 ----
 
 - Summon a memory you dislike, and then consider how you might feel different about it tomorrow if you weren't ashamed about it. Then, consider not feeling ashamed about it.
-- Learn about Chesterton's Fence. Then, actively resist altering a given situation before you understand the reasons why it's remained unchanged for so long. (Thanks, G. K. C.)
+- Learn about Chesterton's Fence. Then, actively resist altering a given situation before you understand the reasons why it's remained unchanged for so long. (Thanks, [G. K. C.](#source-chesterton).)
 - Related: always read the room. When entering any new situation, be practically invisible and absolutely non-assertive until you can gauge what happened before you arrived—and how it likely felt.
 - Relatedly related: try to avoid beginning a sentence with "Why don’t you just…?" It often indicates that you have approximately zero relevant experience with what has made a given problem such a problem.
 - Generally avoid clothing that's more interesting than you are.
@@ -398,7 +398,7 @@ Brief introductory remarks regarding the Project:
 - Buy some manila file folder jackets, and deploy them for any occasion or destination where random paper kipple is likely to pile up. You know that wad of receipts and boarding passes and theme park maps and whatnot that accumulate every time you travel? Anticipate the wad, and then easily manage it with your new folder friend. It would like to live right next to your room's ad hoc charging station, please.
 - When you get multiple hotel key cards for the multiple people in your party, use stickers or a Sharpie to identify whose card is whose. Seems dumb until you realize too late that one person has left the room with three cards and two people have left the room with zero cards.
 - If you're about to depart for an event that requires physical pre-purchased tickets, every person in your party has to hold their own ticket to their own forehead. Then, you don't leave until the entire group agrees that they've all seen each person's ticket. (Thanks, Phil S.)
-- You're either on the bus or off the bus. (thanks Ken K.)
+- You're either on the bus or off the bus. (thanks [Ken K.](#source-wolfe).)
 - related: this also goes for doors, lids, locks, and relationships.
 - relatedly related: your ear buds are only ever allowed to be in one of two places *ever*. They are either in your ears or in their charging case. That is it. Ever. (Thanks, John S.)
 
@@ -545,12 +545,15 @@ Brief introductory remarks regarding the Project:
 ## Works Cited
 
 <div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
+  <div class="csl-entry" id="source-dante">Dante Alighieri. <i>Inferno</i>, canto III, line 9. The source of the heading “Voi ch’entrate…”: <a href="https://divinacommedia.dante.global/inferno/testo/inf03.htm">Italian text</a>.</div>
+  <div class="csl-entry" id="source-chesterton">Chesterton, G. K. “The Drift from Domesticity.” <i>The Thing</i>. The source of Chesterton’s Fence: <a href="https://catholiclibrary.org/library/view?chunk.id=00000011&amp;docId=/Contemporary-EN/XCT.165.html">full essay</a>.</div>
   <div class="csl-entry">Hugo, Richard. <i>The Triggering Town: Lectures and Essays on Poetry and Writing</i>. First published as a Norton paperback, W.W. Norton &amp; Company, 1982.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-393-33872-0&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The%20triggering%20town%3A%20lectures%20and%20essays%20on%20poetry%20and%20writing&amp;rft.place=New%20York%20London&amp;rft.publisher=W.W.%20Norton%20%26%20Company&amp;rft.edition=First%20published%20as%20a%20Norton%20paperback&amp;rft.aufirst=Richard&amp;rft.aulast=Hugo&amp;rft.au=Richard%20Hugo&amp;rft.date=1982&amp;rft.tpages=109&amp;rft.isbn=978-0-393-33872-0&amp;rft.language=eng"></span>
   <div class="csl-entry">Shakespeare, William. <i>The Tragedy of Hamlet, Prince of Denmark</i>. Folio Society, 1954.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The%20tragedy%20of%20Hamlet%2C%20Prince%20of%20Denmark&amp;rft.place=London&amp;rft.publisher=Folio%20Society&amp;rft.series=The%20Folio%20Shakespeare&amp;rft.aufirst=William&amp;rft.aulast=Shakespeare&amp;rft.au=William%20Shakespeare&amp;rft.date=1954&amp;rft.tpages=134&amp;rft.language=eng"></span>
   <div class="csl-entry">Vonnegut, Kurt. <i>Mother Night</i>. Gold Medal Books, 1962.</div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-0-385-33414-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mother%20night&amp;rft.place=New%20York%2C%20N.Y&amp;rft.publisher=Gold%20Medal%20Books&amp;rft.aufirst=Kurt&amp;rft.aulast=Vonnegut&amp;rft.au=Kurt%20Vonnegut&amp;rft.date=1962&amp;rft.tpages=174&amp;rft.isbn=978-0-385-33414-3"></span>
+  <div class="csl-entry" id="source-wolfe">Wolfe, Tom. <i>The Electric Kool-Aid Acid Test</i>. 1968. Ken Kesey’s remarks about being on or off the bus: <a href="https://web.cs.ndsu.nodak.edu/~slator/html/private/prankster-logic.html">quoted passage</a>.</div>
 </div>
 
 ----

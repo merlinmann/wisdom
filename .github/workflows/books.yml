@@ -2,10 +2,10 @@ name: Books
 
 on:
   push:
-    branches: [master]
-    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/*book*', '.github/workflows/books.yml']
+    branches: [main]
+    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/**', '.github/workflows/books.yml']
   pull_request:
-    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/*book*', '.github/workflows/books.yml']
+    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/**', '.github/workflows/books.yml']
   workflow_dispatch:
 
 permissions:
@@ -56,6 +56,7 @@ jobs:
         run: |
           java -jar 'builds/tools/Supporting files/epubcheck-5.4.0/epubcheck.jar' builds/ebooks/wisdom.epub --failonwarnings
           python scripts/validate_books.py
+          python scripts/check_book_links.py
       - name: Verify reproducible books
         if: steps.edition.outputs.build == 'true'
         env:
@@ -80,9 +81,25 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
-  publish:
+  compatibility:
     needs: build
-    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request' && needs.build.outputs.build == 'true'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Preserve existing public URLs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/sync_legacy.py
+
+  publish:
+    needs: [build, compatibility]
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.build.outputs.build == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
