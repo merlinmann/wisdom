@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 from string import Template
 from xml.etree import ElementTree as ET
 from zoneinfo import ZoneInfo
-from data_books import export as export_data, yaml_metadata
+from data_books import export as export_data, html_for_pandoc, yaml_metadata
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_FILES = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md", "wisdom.json", "wisdom.sqlite")
@@ -104,7 +104,7 @@ def ast_nodes(value):
 def markdown_edition(content):
     """Pure GFM, with working heading links even after HTML anchors disappear."""
     original = json.loads(command("pandoc", "--from=html", "--to=json",
-                                  "--lua-filter=book/text-only.lua", input=content))
+                                  "--lua-filter=book/text-only.lua", input=html_for_pandoc(content)))
     headings = [node for node in ast_nodes(original["blocks"]) if node["t"] == "Header"]
     positions = {id(node): index for index, node in enumerate(headings)}
     aliases, previous_heading = {}, None
@@ -119,7 +119,7 @@ def markdown_edition(content):
             target = positions[id(nested)] if nested is not None else previous_heading
             if target is not None:
                 aliases[node["c"][0][0]] = target
-    markdown = command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", input=json.dumps(original))
+    markdown = command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", "--reference-location=section", input=json.dumps(original))
     parsed = json.loads(command("pandoc", "--from=gfm", "--to=json", input=markdown))
     heading_ids = [node["c"][1][0] for node in ast_nodes(parsed["blocks"]) if node["t"] == "Header"]
     assert len(headings) == len(heading_ids), "Markdown headings changed during conversion"
@@ -128,7 +128,7 @@ def markdown_edition(content):
             url = node["c"][-1][0]
             if url.startswith("#") and url[1:] in aliases:
                 node["c"][-1][0] = "#" + heading_ids[aliases[url[1:]]]
-    return command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", input=json.dumps(parsed))
+    return command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", "--reference-location=section", input=json.dumps(parsed))
 
 
 def normalized_zip(path, epoch):
@@ -198,7 +198,7 @@ def build(version, output):
     export_data(body, data_metadata, output)
     title_source, rest = split_front_matter(source)
     title_html = command("pandoc", "--from=markdown", "--to=html5", "--strip-comments", "--wrap=none", input=title_source)
-    body = command("pandoc", "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none", input=rest)
+    body = command("pandoc", "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none", "--reference-location=section", input=rest)
     headings = re.findall(r'<h2[^>]*id="([^"]+)"[^>]*>(.*?)</h2>', body, re.S)
     if not headings:
         headings = re.findall(r'<section id="([^"]+)" class="level2">\s*<h2[^>]*>(.*?)</h2>', body, re.S)

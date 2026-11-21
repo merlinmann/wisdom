@@ -1,5 +1,6 @@
 """Check structural preservation, cross-references, and portable data files."""
 import json
+import copy
 from pathlib import Path
 import shutil
 import sqlite3
@@ -7,11 +8,42 @@ import subprocess
 import tempfile
 import unittest
 
-from data_books import dataset, write_sqlite, yaml_metadata
+from data_books import dataset, export, write_sqlite, yaml_metadata
+from validate_books import canonical
+from validate_data_books import validate_source_structure
 
 
 @unittest.skipUnless(shutil.which("pandoc"), "Pandoc is installed before building books")
 class DataEditionTests(unittest.TestCase):
+    def test_separator_anchors_and_list_validation(self):
+        source = '''<h1 id="book">Book</h1><ul><li>One.</li><li>Two.</li><li>One.</li></ul>
+<hr id="old-point" /><p>See <a href="#old-point">the old point</a>.</p>
+<span class="Z3988" title="bibliography"></span>'''
+        with tempfile.TemporaryDirectory() as folder:
+            data = export(source, {"identifier": "edition:test", "source_commit": "a" * 40}, Path(folder))
+            separator = next(row for row in data["entries"] if "old-point" in row["source_anchors"])
+            self.assertEqual(separator["kind"], "separator")
+            link = next(link for row in data["entries"] for link in row["links"] if link["url"] == "#old-point")
+            self.assertEqual(link["target_id"], separator["id"])
+            result = validate_source_structure(data, source, canonical)
+            self.assertEqual(result["source_list_items_checked"], 3)
+            self.assertEqual(result["data_nonprinting_metadata_records"], 1)
+            for mutation in ("drop", "reorder", "replace"):
+                broken = copy.deepcopy(data)
+                items = [row for row in broken["entries"] if row["kind"] == "list_item"]
+                if mutation == "drop":
+                    broken["entries"].remove(items[-1])
+                elif mutation == "reorder":
+                    items[0]["markdown"], items[1]["markdown"] = items[1]["markdown"], items[0]["markdown"]
+                else:
+                    items[2]["markdown"] = items[1]["markdown"]
+                with self.subTest(mutation=mutation), self.assertRaisesRegex(AssertionError, "Data list"):
+                    validate_source_structure(broken, source, canonical)
+            broken = copy.deepcopy(data)
+            next(row for row in broken["entries"] if "old-point" in row["source_anchors"])["source_anchors"] = []
+            with self.assertRaisesRegex(AssertionError, "separator anchor"):
+                validate_source_structure(broken, source, canonical)
+
     def test_footnote_stays_with_its_citation(self):
         source = '''# Book
 
@@ -35,6 +67,11 @@ The final paragraph is separate.
         self.assertNotIn("Lowell", final["text"])
         self.assertNotIn("Lowell", final["markdown"])
         self.assertEqual(citation["links"][0]["target_id"], data["sections"][0]["id"])
+        self.assertEqual(validate_source_structure(data, html, canonical)["citation_footnotes_checked"], 1)
+        broken = copy.deepcopy(data)
+        next(row for row in broken["entries"] if "dante" in row["source_anchors"])["text"] = "Dante's line."
+        with self.assertRaisesRegex(AssertionError, "footnote moved"):
+            validate_source_structure(broken, html, canonical)
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "book.sqlite"
             write_sqlite(data, path)
