@@ -24,6 +24,15 @@ def pandoc(document, writer):
 
 
 def render_units(document, units, writer):
+    noted = {index for index, unit in enumerate(units)
+             if any(node["t"] == "Note" for node in nodes(unit))}
+    if noted:
+        # Pandoc places notes after the whole document. Render their owning
+        # records separately so notes cannot move into the final export record.
+        ordinary = iter(render_units(document, [unit for index, unit in enumerate(units)
+                                               if index not in noted], writer))
+        return [pandoc({**document, "meta": {}, "blocks": unit}, writer).strip()
+                if index in noted else next(ordinary) for index, unit in enumerate(units)]
     # Markers delimit whole blocks, so punctuation and authored newlines survive.
     marker = "WISDOMEXPORTBOUNDARY8DB6F82DB702"
     assert marker not in json.dumps(document), "Export separator occurs in manuscript"

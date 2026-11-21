@@ -5,6 +5,11 @@ on:
     - cron: '17 5 * * *'
       timezone: America/Los_Angeles
   workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish the verified edition (uncheck for a full review only)
+        type: boolean
+        default: true
 
 permissions:
   contents: read
@@ -37,7 +42,13 @@ jobs:
         id: edition
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python scripts/release_books.py plan
+          VERIFY_ONLY: ${{ github.event_name == 'workflow_dispatch' && !inputs.publish }}
+        run: |
+          if [[ "$VERIFY_ONLY" == 'true' ]]; then
+            python scripts/release_books.py plan --verify-only
+          else
+            python scripts/release_books.py plan
+          fi
       - name: Install pinned tools
         if: steps.edition.outputs.build == 'true'
         run: bash scripts/install_book_tools.sh
@@ -110,7 +121,7 @@ jobs:
 
   publish:
     needs: [build, compatibility]
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.build.outputs.build == 'true'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.build.outputs.build == 'true' && (github.event_name != 'workflow_dispatch' || inputs.publish)
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
