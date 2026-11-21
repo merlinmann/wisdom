@@ -21,4 +21,4 @@ On to [**the Wisdom »**](https://wisdom.limo)
 
 Kindle readers can upload the EPUB through [Send to Kindle](https://www.amazon.com/sendtokindle).
 
-Each edition identifies its version and source commit. Releases also include checksums and build metadata. See [how the books are made](book/README.md).
+Each edition identifies its version and source commit. The latest [checksums](https://github.com/merlinmann/wisdom/releases/latest/download/SHA256SUMS) and [build metadata](https://github.com/merlinmann/wisdom/releases/latest/download/edition.json) are available alongside the books. See [how the books are made](book/README.md).
