@@ -6,9 +6,13 @@ Prepared by Codex for Merlin Mann
 
 ## Publication
 
-A pull request that changes the manuscript, its images, or the book tooling receives a read-only build with downloadable review artifacts. A push of those changes to `main` builds and publishes a GitHub Release. README-only changes do not create editions. The Actions “Run workflow” button provides a manual retry.
+A pull request or push receives quick structure, link, and publication-rule checks. These checks install only Pandoc; they do not build ebooks, install Calibre, render pages, or produce release artifacts. Successful pushes also update the compatibility branch, keeping the online manuscript and old links current.
 
-A local save does not publish the book. Publication starts when the relevant changes reach GitHub.
+Downloadable editions are batched once daily, at approximately **5:17 a.m. Pacific**, using GitHub’s timezone-aware schedule. The job compares the actual book inputs against the last published edition before installing conversion tools. No changed inputs means no rebuild and no new edition. README and data-guide changes alone do not count; a changed manuscript, image, design file, or build tool does. An edit followed by a complete revert also leaves the published inputs unchanged.
+
+For an urgent edition, choose **Actions → Publish Books → Run workflow** on `main`. This uses the same change detection and full verification as the daily run. A repeated request with unchanged inputs does not create another edition. Full builds run only from `main`, and publication runs do not overlap.
+
+A local save remains an unpublished draft and syncs between Macs. Committing and pushing makes the online manuscript current; the downloadable books wait for the next daily batch or Publish Books request. GitHub may delay scheduled runs, so the time is approximate. Published editions keep their existing immutable URLs and files.
 
 ## Versions
 
@@ -55,7 +59,8 @@ shasum -a 256 -c SHA256SUMS
 - `scripts/data_books.py`: structured JSON, SQLite, and YAML metadata.
 - `scripts/validate_data_books.py`: independent data-file and search checks.
 - `scripts/release_books.py`: version allocation and verified publication.
-- `.github/workflows/books.yml`: remote execution with separate read-only build and write-enabled publication jobs.
+- `.github/workflows/checks.yml`: quick checks for edits and compatibility updates for existing reading links.
+- `.github/workflows/books.yml`: daily or manually requested editions, with separate read-only build and write-enabled publication jobs.
 
 Pandoc 3.14 and EPUBCheck 5.4.0 downloads are checked against pinned SHA-256 digests. Calibre 9.18.0 uses its official Linux binary with a pinned SHA-512 digest. GitHub actions are pinned to full commit SHAs. Builds use Python 3.12.12 on Ubuntu 24.04. The workflow checks byte-for-byte reproducibility within that environment; future operating-system updates may change rendering, so the recorded source and tool versions remain part of each edition’s provenance.
 
@@ -67,7 +72,7 @@ Source Serif 4, release 4.005R, comes from Adobe’s [source-serif repository](h
 
 ## Existing Links and Earlier Work
 
-`main` is the default authoring and release branch. The former `master` branch preserves earlier public paths. After a successful book build, GitHub Actions copies the current maintained files to `master` without removing historical files or copying workflows. This keeps `wisdom.limo`, old Markdown links, image URLs, and historical downloads available. Work on `main`; `master` is maintained by the compatibility job.
+`main` is the default authoring and release branch. The former `master` branch preserves earlier public paths. After successful quick checks on a push, GitHub Actions copies the current maintained files to `master` without removing historical files or copying workflows. The publication workflow also verifies compatibility before releasing an edition. This keeps `wisdom.limo`, old Markdown links, image URLs, and historical downloads available. Work on `main`; `master` is maintained by the compatibility job.
 
 The [pre-cleanup archive](https://github.com/merlinmann/wisdom/tree/archive/pre-cleanup-2026-11-20) preserves the former tree and its history. The old site experiments, typography demos, side works, and sync tests are outside the current working branch. Private local build files are preserved in the private Wisdom project store.
 
