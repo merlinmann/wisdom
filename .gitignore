@@ -5,3 +5,12 @@ Thumbs.db
 node_modules/
 /builds/
 /Supporting files/
+
+# Keep private files in older checkouts excluded from public commits.
+/assets/
+/output/
+/build-*.sh
+/epub-*.css
+/html-*.html
+/metadata.yaml
+/FONTS.md
