@@ -10,7 +10,7 @@ import re
 import subprocess
 from zoneinfo import ZoneInfo
 
-ASSETS = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md", "edition.json", "SHA256SUMS")
+ASSETS = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md", "wisdom.json", "wisdom.sqlite", "edition.json", "SHA256SUMS")
 VERSION = re.compile(r"^v(20\d{2})\.([1-9]\d*)$")
 
 
@@ -87,13 +87,15 @@ def publish(repo, folder):
 - **PDF:** a typeset edition with fixed pages.
 - **HTML:** a complete offline edition with its images and fonts included.
 - **AZW3:** a Kindle edition for USB transfer or Calibre. For Amazon’s Send to Kindle service, use the EPUB.
-- **Markdown:** image-free text with headings, emphasis, and links.
+- **Markdown:** image-free text with headings, emphasis, links, and YAML edition metadata.
+- **JSON:** ordered sections and entries with text, Markdown, citations, links, and edition metadata.
+- **SQLite:** the same structured data in one portable database, with full-text search.
 
-All five formats preserve the manuscript text. Their copyright section identifies this edition and its date; the colophon links to the exact source commit.
+All seven formats preserve the manuscript text and identify this edition and its exact source commit. Data-record IDs are specific to this edition; permanent cross-edition IDs remain a separate design decision.
 
 [Changes in this edition]({compare}) · [Source commit](https://github.com/{repo}/commit/{sha})
 
-`SHA256SUMS` verifies the downloads. `edition.json` records the source and build tools. GitHub’s artifact attestations establish the provenance of all five formats.
+`SHA256SUMS` verifies the downloads. `edition.json` records the source and build tools. GitHub’s artifact attestations establish the provenance of all seven formats.
 '''
     if existing is None:
         existing = api(f"repos/{repo}/releases", "POST", {"tag_name": tag, "target_commitish": sha, "name": f"Wisdom — {version}", "body": notes, "draft": True, "prerelease": False})
