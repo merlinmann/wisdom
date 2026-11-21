@@ -53,14 +53,15 @@ def validate(folder):
         spine = [items[x.attrib["idref"]] for x in opf.findall("o:spine/o:itemref", ns)]
         epub_text = []
         chapter = None
+        longest = 0
         for item in spine:
             path = str(Path(opf_path).parent / item)
             body = archive.read(path).decode()
             reader = Text()
             reader.feed(body)
             epub_text.extend(reader.text)
-            if "The Wisdom So Far" in body:
-                chapter = path
+            if len("".join(reader.text)) > longest:
+                chapter, longest = path, len("".join(reader.text))
         epub = canonical(' '.join(epub_text))
         missing = [unit for unit in units if unit not in epub]
         assert not missing, f"EPUB omitted {len(missing)} source passages: {missing[:2]}"
@@ -84,7 +85,7 @@ def validate(folder):
     missing = [unit for unit in units if unit not in pdf]
     assert not missing, f"PDF omitted {len(missing)} source passages: {missing[:3]}"
     assert not clipped, f"Text outside page bounds: {clipped}"
-    assert all(len(page.strip()) > 12 for page in pages[1:]), "Unexpected empty text page"
+    empty_pages = [n + 1 for n, text in enumerate(pages) if n > 0 and len(text.strip()) <= 12 and not doc[n].get_images()]
     assert doc.get_toc(), "PDF bookmarks are missing"
 
     renders = support / "rendered"
@@ -108,9 +109,10 @@ def validate(folder):
         doc[number].get_pixmap(matrix=pymupdf.Matrix(1.5, 1.5), alpha=False).save(renders / f"page-{number+1:03}.png")
     report = {"source_passages_checked": len(units), "epub_content_preserved": True,
               "pdf_content_preserved": True, "pdf_pages": len(doc), "pdf_bookmarks": len(doc.get_toc()),
-              "text_outside_pages": clipped, "pdf_fonts": sorted({font[3] for page in doc for font in page.get_fonts()})}
+              "empty_pages": empty_pages, "text_outside_pages": clipped, "pdf_fonts": sorted({font[3] for page in doc for font in page.get_fonts()})}
     (support / "validation.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
+    assert not empty_pages, f"Unexpected empty pages: {empty_pages}"
 
 
 if __name__ == "__main__":

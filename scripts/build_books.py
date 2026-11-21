@@ -62,7 +62,7 @@ def build(version, output):
     headings = re.findall(r'<h2[^>]*id="([^"]+)"[^>]*>(.*?)</h2>', body, re.S)
     if not headings:
         headings = re.findall(r'<section id="([^"]+)" class="level2">\s*<h2[^>]*>(.*?)</h2>', body, re.S)
-    assert len(headings) == 5, f"Unexpected chapter count: {len(headings)}"
+    assert headings, "The manuscript needs section headings for navigation"
     toc = '<section class="contents"><h1>Contents</h1><ol>' + ''.join(f'<li><a href="#{anchor}">{label}</a></li>' for anchor, label in headings) + '</ol></section>'
     colophon = f'''<section class="edition" id="edition"><h2>About This Edition</h2>
 <p>Merlin’s Wisdom Project<br />Merlin Mann</p>
@@ -71,7 +71,8 @@ def build(version, output):
 <p>Source: <a href="https://github.com/merlinmann/wisdom/commit/{sha}"><code>{sha}</code></a></p>
 <p>Copyright Merlin Mann.</p></section>'''
     (support / "colophon.html").write_text(colophon)
-    pdf_body = body.replace('<section id="epigraphs"', toc + '<section id="epigraphs"', 1)
+    first_section = f'<section id="{headings[0][0]}"'
+    pdf_body = body.replace(first_section, toc + first_section, 1)
     assert pdf_body != body
     pdf_html = f'''<!doctype html><html lang="en-US"><head><meta charset="utf-8">
 <title>{html.escape(metadata['title'])}</title><meta name="author" content="Merlin Mann">
