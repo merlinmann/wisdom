@@ -15,4 +15,14 @@ figure { margin: 1.5em 0; text-align: center; }
 figcaption { font-size: .8em; font-style: italic; }
 .csl-entry { margin-bottom: .8em; }
 .edition { margin-top: 3em; font-size: .85em; }
+.copyright-page { margin: 2em 0; font-size: .9em; line-height: 1.45; }
+.copyright-page > h2 { display: none; }
+.copyright-text p { margin: 0 0 1.3em; }
+.copyright-text .book-name { font-variant: small-caps; letter-spacing: .035em; margin-bottom: 1.7em; }
+.copyright-text .license img { display: block; width: 5.5em; max-width: 100%; margin-bottom: 1em; }
+.copyright-text .license p { margin-bottom: .6em; }
+.copyright-text .scope { font-size: .9em; margin-bottom: 1.5em; }
+.copyright-text .typesetting { margin-top: 1.7em; }
+.copyright-text .project-motto { margin-top: 1.9em; }
+.copyright-text a { overflow-wrap: anywhere; }
 .Z3988 { display: none; }
