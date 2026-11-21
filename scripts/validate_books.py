@@ -5,6 +5,7 @@ from datetime import date
 from html.parser import HTMLParser
 import json
 from pathlib import Path
+import posixpath
 import re
 import subprocess
 import unicodedata
@@ -82,11 +83,10 @@ def validate(folder):
         assert copyright_index == 2, "EPUB must open with cover, title page, then copyright"
         assert any(node.get(epub_type) == "titlepage" for node in documents[1][1].iter()), "The preceding EPUB document must be the title page"
         assert copyright_root.find(xhtml + "body").get(epub_type) == "frontmatter", "Copyright is EPUB front matter"
-        assert edition_label.replace(" ", "").casefold() in copyright_text, "EPUB edition differs from release"
+        assert canonical(edition_label) in copyright_text, "EPUB edition differs from release"
         assert canonical(display_date) in copyright_text, "EPUB copyright date differs from release"
         assert any(node.get("href") == license_url for node in copyright_root.iter(xhtml + "a")), "EPUB license link missing"
         badge = next(node for node in copyright_root.iter(xhtml + "img") if "Creative Commons" in node.get("alt", ""))
-        import posixpath
         badge_path = posixpath.normpath(posixpath.join(posixpath.dirname(copyright_path), badge.get("src")))
         assert archive.read(badge_path).strip(), "The official CC badge must be embedded"
         assert "epigraphs" in documents[3][2], "Epigraphs must follow the copyright page"
