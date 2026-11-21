@@ -6,9 +6,11 @@ By Merlin Mann.
 
 It's only advice for you because it **had** to be advice for me.
 
-## Download the Book
+## [Read the Book →](https://wisdom.limo)
 
-**[Read the book](https://wisdom.limo)** · **[Download EPUB](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.epub)** · **[Download PDF](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.pdf)**
+### Download a Copy
+
+[EPUB](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.epub) · [PDF](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.pdf)
 
 EPUB offers adjustable text in reading apps and e-readers, including Kindle through [Send to Kindle](https://www.amazon.com/sendtokindle). PDF preserves the book’s designed pages.
 
