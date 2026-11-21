@@ -144,7 +144,7 @@ def validate_data(folder, edition, canonical, source_units):
     assert all(row["id"].startswith(metadata["identifier"] + ":") for row in records)
     text = canonical("\n".join(row["text"] for row in records))
     assert all(unit in text for unit in source_units), "Data editions omitted manuscript text"
-    header = (folder / "wisdom.md").read_text().split("---\n", 2)
+    header = (folder / "wisdom.md").read_text(encoding="utf-8-sig").split("---\n", 2)
     assert len(header) == 3 and not header[0], "Markdown needs YAML metadata"
     yaml_values = {key: json.loads(value.strip()) for key, value in (line.split(":", 1) for line in header[1].splitlines())}
     assert yaml_values == metadata, "Markdown metadata differs from data editions"
