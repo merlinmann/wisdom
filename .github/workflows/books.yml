@@ -71,6 +71,9 @@ jobs:
           chapter=$(cat 'builds/ebooks/Supporting files/epub-preview-path.txt')
           google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-narrow.png' --window-size=390,844 "file://$chapter"
           google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-wide.png' --window-size=820,1000 "file://$chapter"
+          copyright=$(cat 'builds/ebooks/Supporting files/epub-copyright-path.txt')
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-copyright-narrow.png' --window-size=390,844 "file://$copyright"
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-copyright-wide.png' --window-size=820,1000 "file://$copyright"
       - name: Preserve books and review evidence
         if: always() && steps.edition.outputs.build == 'true'
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2

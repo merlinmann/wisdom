@@ -86,7 +86,7 @@ def publish(repo, folder):
 - **EPUB:** adjustable text for e-readers and reading apps; Kindle readers can use [Send to Kindle](https://www.amazon.com/sendtokindle).
 - **PDF:** a typeset edition with fixed pages.
 
-Both books contain the same text and identify this edition in their colophon.
+Both books contain the same text. Their copyright page identifies this edition and its date; the colophon links to the exact source commit.
 
 [Changes in this edition]({compare}) · [Source commit](https://github.com/{repo}/commit/{sha})
 

@@ -11,9 +11,34 @@ import subprocess
 import time
 import zipfile
 from datetime import datetime, timezone
+from string import Template
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def copyright_page(metadata, version, day, *, print_edition):
+    """One text template; edition and date come from the release's own metadata."""
+    date = datetime.strptime(day, "%Y-%m-%d")
+    fields = {"title": metadata["title"], "author": metadata["author"],
+              "version": version, "iso_date": day,
+              "display_date": f"{date:%B} {date.day}, {date.year}"}
+    fields = {key: html.escape(value) for key, value in fields.items()}
+    fields["type_credit"] = "Set in Source Serif 4.<br />" if print_edition else ""
+    return Template((ROOT / "book/copyright.html").read_text()).substitute(fields)
+
+
+def split_front_matter(source):
+    """Keep the authored title text together, ahead of the copyright and epigraphs."""
+    first_section = re.search(r"^## Epigraphs\s*$", source, re.M)
+    assert first_section, "Expected Epigraphs as the first manuscript section"
+    title, rest = source[:first_section.start()], source[first_section.start():]
+    assert not re.search(r"^## ", title, re.M), "A new front-matter section needs placement review"
+    # The title's closing rule is a web separator, not part of the printed title page.
+    title = re.sub(r"\n-{3,}\s*\Z", "\n", title)
+    title, count = re.subn(r"^(# .+)$", r'\1 {.title-page epub:type=titlepage}', title, count=1, flags=re.M)
+    assert count == 1, "The manuscript needs its title heading"
+    return title, rest
 
 
 def command(*args, **kwargs):
@@ -59,6 +84,9 @@ def build(version, output):
     manuscript.write_text(source)
     body = command("pandoc", str(manuscript), "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none")
     (support / "source.html").write_text(body)
+    title_source, rest = split_front_matter(source)
+    title_html = command("pandoc", "--from=markdown", "--to=html5", "--strip-comments", "--wrap=none", input=title_source)
+    body = command("pandoc", "--from=markdown", "--to=html5", "--section-divs", "--strip-comments", "--wrap=none", input=rest)
     headings = re.findall(r'<h2[^>]*id="([^"]+)"[^>]*>(.*?)</h2>', body, re.S)
     if not headings:
         headings = re.findall(r'<section id="([^"]+)" class="level2">\s*<h2[^>]*>(.*?)</h2>', body, re.S)
@@ -71,9 +99,10 @@ def build(version, output):
 <p>Source: <a href="https://github.com/merlinmann/wisdom/commit/{sha}"><code>{sha}</code></a></p>
 <p>Copyright Merlin Mann.</p></section>'''
     (support / "colophon.html").write_text(colophon)
-    first_section = f'<section id="{headings[0][0]}"'
-    pdf_body = body.replace(first_section, toc + first_section, 1)
-    assert pdf_body != body
+    copyright_print = copyright_page(metadata, version, day, print_edition=True)
+    copyright_epub = copyright_page(metadata, version, day, print_edition=False)
+    (support / "copyright.html").write_text(copyright_print)
+    pdf_body = f'<section class="title-page">{title_html}</section><section class="copyright-page" id="copyright-page" aria-label="Copyright">{copyright_print}</section>{toc}{body}'
     pdf_html = f'''<!doctype html><html lang="en-US"><head><meta charset="utf-8">
 <title>{html.escape(metadata['title'])}</title><meta name="author" content="Merlin Mann">
 <meta name="dcterms.created" content="{utc.isoformat()}"><meta name="dcterms.modified" content="{utc.isoformat()}">
@@ -81,7 +110,7 @@ def build(version, output):
     (support / "book.html").write_text(pdf_html)
 
     epub_manuscript = support / "manuscript-epub.md"
-    epub_manuscript.write_text(source + "\n\n" + colophon + "\n")
+    epub_manuscript.write_text(title_source + '\n\n## Copyright {#copyright-page .copyright-page epub:type=copyright-page}\n\n' + copyright_epub + '\n\n' + rest + "\n\n" + colophon + "\n")
     command("pandoc", str(epub_manuscript), "--from=markdown", "--to=epub3", "--standalone", "--strip-comments",
             f"--metadata-file={metadata_path}", "--epub-title-page=false", "--epub-cover-image=i/cover.jpg",
             "--css=book/epub.css", "--toc", "--toc-depth=2", "--split-level=2", "--resource-path=.",

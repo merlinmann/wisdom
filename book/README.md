@@ -18,6 +18,10 @@ Tags have a `v` prefix and identify exact source commits. Existing tags and draf
 
 ## Files and Verification
 
+Both formats place a dedicated copyright page immediately after the authored title page, before the epigraphs. The PDF keeps its contents page between copyright and epigraphs. The page includes the official CC BY-NC 4.0 badge, linked license terms, the publisher, and an automatically filled edition number and date. `book/copyright.html` supplies the shared text; the version and America/Los_Angeles source date are the same values recorded in `edition.json`. Retries retain that date instead of using the rebuild time.
+
+The PDF adapts the approved copyright-page layout to the book’s Source Serif 4 type, with small caps, restrained italics, and generous space above. Title and copyright pages have no running header or visible page number; the title starts the interior page count. The EPUB marks these pages as `titlepage` and `copyright-page` front matter, keeps the copyright page in its own reading-order document, and preserves reader font controls. The original licensing section remains at the end of the manuscript.
+
 Every release contains `wisdom.epub`, `wisdom.pdf`, `edition.json`, and `SHA256SUMS`. Consistent filenames support stable latest-download URLs; each release also supplies permanent version-specific URLs.
 
 The build runs EPUBCheck, verifies that source passages appear in both formats, checks PDF text bounds and bookmarks, and rebuilds both books to compare their bytes. Rendered PDF pages and narrow/wide EPUB chapter screenshots are retained with the Actions artifact for review. These browser screenshots check EPUB layout; they do not replace device-specific reading-system tests.
@@ -37,6 +41,7 @@ shasum -a 256 -c SHA256SUMS
 ## Build Inputs
 
 - `book/metadata.json`: shared title, author, and publication metadata. Dates and edition identifiers are generated per source commit.
+- `book/copyright.html`: shared copyright-page text and release metadata placeholders.
 - `book/epub.css`: reflowable ebook styling, without fixed text colors or embedded fonts.
 - `book/print.css`: page design and embedded PDF fonts.
 - `book/requirements.txt`: pinned Python dependencies.

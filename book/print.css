@@ -10,11 +10,29 @@
 }
 @page :left { margin-left: .63in; margin-right: .72in; }
 @page cover { margin: 0; @top-center { content: none; } @bottom-center { content: none; } }
-@page title { @top-center { content: none; } }
+@page title { counter-reset: page 1; @top-center { content: none; } @bottom-center { content: none; } }
+@page copyright { margin: 0; @top-center { content: none; } @bottom-center { content: none; } }
 html { font-family: "Source Serif", serif; font-size: 11pt; line-height: 1.4; color: #201b18; }
 body { margin: 0; }
 .cover { page: cover; height: 9in; break-after: page; }
 .cover img { width: 6in; height: 9in; object-fit: cover; }
+.title-page { page: title; break-after: page; }
+.copyright-page {
+  page: copyright; break-before: page; break-after: page;
+  position: relative; width: 6in; height: 9in;
+  font-size: 10.25pt; line-height: 14pt; text-align: left; hyphens: none;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
+.copyright-text { position: absolute; left: .85in; right: .95in; bottom: .92in; }
+.copyright-text p { margin: 0 0 15pt; orphans: 2; widows: 2; }
+.copyright-text .book-name { font-variant-caps: small-caps; letter-spacing: .035em; margin-bottom: 21pt; }
+.copyright-text .license { margin-bottom: 15pt; }
+.copyright-text .license img { display: block; width: 66pt; height: auto; margin-bottom: 10pt; }
+.copyright-text .license p { margin-bottom: 7pt; }
+.copyright-text .scope { font-size: 9pt; line-height: 12pt; margin: 8pt 0 0; }
+.copyright-text .typesetting { margin-top: 21pt; }
+.copyright-text .project-motto { margin: 23pt 0 0; }
+.copyright-text a { text-decoration: none; }
 h1, h2 { line-height: 1.12; font-weight: normal; break-after: avoid; }
 h1 { font-size: 30pt; margin: 1.05in 0 .4in; letter-spacing: -.025em; }
 h2 { font-size: 23pt; margin: .22in 0 .35in; }
