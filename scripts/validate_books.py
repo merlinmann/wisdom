@@ -126,6 +126,16 @@ def validate(folder):
     markdown_ids = set(re.findall(r'id="([^"]+)"', markdown_html))
     markdown_fragments = re.findall(r'href="#([^"]+)"', markdown_html)
     assert all(target in markdown_ids for target in markdown_fragments), "Markdown has broken internal links"
+    def label_text(markup):
+        reader = Text()
+        reader.feed(markup)
+        return canonical(' '.join(reader.text))
+    markdown_headings = {identifier: label_text(label) for identifier, label in re.findall(
+        r'<h[1-6]\b[^>]*\bid="([^"]+)"[^>]*>(.*?)</h[1-6]>', markdown_html, re.S)}
+    for target, label in re.findall(r'<a\b[^>]*href="#([^"]+)"[^>]*>(.*?)</a>', markdown_html, re.S):
+        label = label_text(label)
+        if label in markdown_headings.values():
+            assert markdown_headings.get(target) == label, "Markdown contents link reaches the wrong section"
     kindle_parts = []
     for path in sorted((support / "kindle-preview").rglob("*")):
         if path.suffix.lower() in (".html", ".htm", ".xhtml"):
