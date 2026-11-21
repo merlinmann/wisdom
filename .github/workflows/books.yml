@@ -63,7 +63,7 @@ jobs:
           EDITION: ${{ steps.edition.outputs.version }}
         run: |
           python scripts/build_books.py --version "$EDITION" --output 'builds/ebooks/Supporting files/rebuild'
-          for format in epub pdf html azw3 md; do
+          for format in epub pdf html azw3 md json sqlite; do
             cmp "builds/ebooks/wisdom.$format" "builds/ebooks/Supporting files/rebuild/wisdom.$format"
           done
           rm -r 'builds/ebooks/Supporting files/rebuild'
@@ -132,6 +132,8 @@ jobs:
             builds/ebooks/wisdom.html
             builds/ebooks/wisdom.azw3
             builds/ebooks/wisdom.md
+            builds/ebooks/wisdom.json
+            builds/ebooks/wisdom.sqlite
       - name: Publish the complete edition
         env:
           GH_TOKEN: ${{ github.token }}

@@ -11,6 +11,7 @@ import subprocess
 import unicodedata
 import zipfile
 from xml.etree import ElementTree as ET
+from validate_data_books import validate_data
 
 
 def canonical(text):
@@ -117,7 +118,7 @@ def validate(folder):
     assert all(unit in web_text for unit in units), "HTML omitted manuscript text"
     markdown = (folder / "wisdom.md").read_text()
     assert not re.search(r'!\[|<img\b|data:image/', markdown, re.I), "Markdown must not embed images"
-    markdown_html = subprocess.check_output(["pandoc", str(folder / "wisdom.md"), "--from=gfm", "--to=html5"], text=True)
+    markdown_html = subprocess.check_output(["pandoc", str(folder / "wisdom.md"), "--from=gfm+yaml_metadata_block", "--to=html5"], text=True)
     markdown_reader = Text()
     markdown_reader.feed(markdown_html)
     markdown_text = canonical(' '.join(markdown_reader.text))
@@ -202,6 +203,7 @@ def validate(folder):
                                  "edition": edition["version"], "date": display_date, "license": "CC BY-NC 4.0"},
               "html_self_contained": True, "markdown_image_free": True,
               "html_content_preserved": True, "markdown_content_preserved": True, "azw3_content_preserved": True}
+    report.update(validate_data(folder, edition, canonical, units))
     (support / "validation.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
     assert not empty_pages, f"Unexpected empty pages: {empty_pages}"
