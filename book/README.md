@@ -2,7 +2,7 @@
 
 Prepared by Codex for Merlin Mann
 
-`wisdom.md` remains the manuscript. GitHub Actions produces five reading formats from the same source commit: EPUB3, a 6 × 9-inch PDF, offline HTML, Kindle AZW3, and image-free Markdown. JSON and SQLite provide the same visible manuscript as structured data. All seven preserve the visible manuscript text. The PDF and HTML use Source Serif 4; the EPUB and AZW3 preserve reader font controls. The Markdown retains headings, emphasis, links, and image captions as text, without HTML layout or embedded images, and begins with YAML edition metadata.
+`wisdom.md` remains the manuscript. GitHub Actions produces five reading formats from the same source commit: EPUB3, a 6 × 9-inch PDF, offline HTML, Kindle AZW3, and image-free Markdown. JSON and SQLite provide the same visible manuscript as structured data. All seven preserve the visible manuscript text. The PDF and HTML use Source Serif 4; the EPUB and AZW3 preserve reader font controls. The Markdown retains headings, emphasis, links, and image captions as text, without HTML layout or embedded images, and begins with YAML edition metadata. The downloadable Markdown uses a UTF-8 signature so download previews recognize its curly quotes, accented letters, and copyright symbols.
 
 ## Publication
 
