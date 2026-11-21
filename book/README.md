@@ -6,7 +6,7 @@ Prepared by Codex for Merlin Mann
 
 ## Publication
 
-A pull request that changes the manuscript, its images, or the book tooling receives a read-only build with downloadable review artifacts. A push of those changes to `master` builds and publishes a GitHub Release. README-only changes do not create editions. The Actions “Run workflow” button provides a manual retry.
+A pull request that changes the manuscript, its images, or the book tooling receives a read-only build with downloadable review artifacts. A push of those changes to `main` builds and publishes a GitHub Release. README-only changes do not create editions. The Actions “Run workflow” button provides a manual retry.
 
 A local save does not publish the book. Publication starts when the relevant changes reach GitHub.
 
@@ -62,3 +62,11 @@ Generated books and supporting files live in the ignored `builds/ebooks/` direct
 ## Font Source
 
 Source Serif 4, release 4.005R, comes from Adobe’s [source-serif repository](https://github.com/adobe-fonts/source-serif/tree/2823e993c53fca27c5c8749f529b56a5a7c77b6b), under the accompanying [SIL Open Font License](fonts/LICENSE.md). The PDF embeds subsets of the supplied fonts. The HTML embeds the fonts and includes their license in its source. The existing private font setup is separate from this public build.
+
+## Existing Links and Earlier Work
+
+`main` is the default authoring and release branch. The former `master` branch preserves earlier public paths. After a successful book build, GitHub Actions copies the current maintained files to `master` without removing historical files or copying workflows. This keeps `wisdom.limo`, old Markdown links, image URLs, and historical downloads available. Work on `main`; `master` is maintained by the compatibility job.
+
+The [pre-cleanup archive](https://github.com/merlinmann/wisdom/tree/archive/pre-cleanup-2026-11-20) preserves the former tree and its history. The old site experiments, typography demos, side works, and sync tests are outside the current working branch. Private local build files are preserved in the private Wisdom project store.
+
+The compatibility job is idempotent, refuses stale source commits, and uses a non-forced update with the existing `master` commit as its parent. The publication job waits for it to succeed. The old branch does not publish editions.

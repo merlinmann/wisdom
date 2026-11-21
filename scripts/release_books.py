@@ -62,7 +62,7 @@ def publish(repo, folder):
     sha, version = proposal["sha"], proposal["version"]
     assert manifest["source_commit"] == sha and manifest["version"] == version
     tag = "v" + version
-    head = api(f"repos/{repo}/branches/master")["commit"]["sha"]
+    head = api(f"repos/{repo}/branches/main")["commit"]["sha"]
     if head != sha:
         print("A newer source commit exists; this build will not replace the current edition.")
         return
@@ -103,7 +103,7 @@ All five formats preserve the manuscript text. Their copyright section identifie
     gh("release", "download", tag, "--repo", repo, "--dir", str(verify), "--clobber")
     for name in ASSETS:
         assert (verify / name).read_bytes() == (folder / name).read_bytes(), f"Uploaded asset differs: {name}"
-    current = api(f"repos/{repo}/branches/master")["commit"]["sha"]
+    current = api(f"repos/{repo}/branches/main")["commit"]["sha"]
     if current != sha:
         print("A newer commit arrived during upload; the verified draft remains unpublished.")
         return
