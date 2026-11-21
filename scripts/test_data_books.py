@@ -72,6 +72,34 @@ The final paragraph is separate.
         next(row for row in broken["entries"] if "dante" in row["source_anchors"])["text"] = "Dante's line."
         with self.assertRaisesRegex(AssertionError, "footnote moved"):
             validate_source_structure(broken, html, canonical)
+        for mutation in ("orphan", "duplicate", "plain-text"):
+            broken = copy.deepcopy(data)
+            extra = next(row for row in broken["entries"] if row["text"].startswith("The final"))
+            if mutation == "orphan":
+                extra["markdown"] += "\n\n[^1]: Learned through Lowell. See [the book](#book)."
+            elif mutation == "duplicate":
+                extra["markdown"] += "[^1]\n\n[^1]: Learned through Lowell. See [the book](#book)."
+            else:
+                extra["text"] += "\nLearned through Lowell. See the book."
+            with self.subTest(mutation=mutation), self.assertRaisesRegex(AssertionError, "footnote"):
+                validate_source_structure(broken, html, canonical)
+
+        # Identical note wording may legitimately recur, including in citations
+        # without anchors. Moving one to a different paragraph still fails.
+        repeated = source.replace(' id="dante"', '').replace("The final paragraph is separate.",
+            '<div class="csl-entry">\n\nAnother citation.[^lowell]\n\n</div>\n\nThe final paragraph is separate.')
+        repeated_html = subprocess.check_output(["pandoc", "--from=markdown", "--to=html5"], input=repeated, text=True)
+        repeated_doc = json.loads(subprocess.check_output(["pandoc", "--from=html", "--to=json"], input=repeated_html, text=True))
+        repeated_data = dataset(repeated_doc, {"identifier": "edition:test", "source_commit": "a" * 40})
+        validate_source_structure(repeated_data, repeated_html, canonical)
+        broken = copy.deepcopy(repeated_data)
+        citation_without_anchor = next(row for row in broken["entries"] if row["kind"] == "citation")
+        recipient = next(row for row in broken["entries"] if row["text"].startswith("The final"))
+        citation_without_anchor["markdown"], recipient["markdown"] = (
+            citation_without_anchor["markdown"].split("[^1]")[0],
+            recipient["markdown"] + "[^1]\n\n[^1]: Learned through Lowell. See [the book](#book).")
+        with self.assertRaisesRegex(AssertionError, "ownership"):
+            validate_source_structure(broken, repeated_html, canonical)
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "book.sqlite"
             write_sqlite(data, path)
