@@ -1,0 +1,109 @@
+name: Books
+
+on:
+  push:
+    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/*book*', '.github/workflows/books.yml']
+  pull_request:
+    paths: ['wisdom.md', 'i/**', 'book/**', 'scripts/*book*', '.github/workflows/books.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: books-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  TZ: UTC
+  PYTHONHASHSEED: '0'
+  PYTHONDONTWRITEBYTECODE: '1'
+
+jobs:
+  build:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    outputs:
+      build: ${{ steps.edition.outputs.build }}
+      version: ${{ steps.edition.outputs.version }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.12'
+      - name: Check version rules
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Plan edition
+        id: edition
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/release_books.py plan
+      - name: Install pinned tools
+        if: steps.edition.outputs.build == 'true'
+        run: bash scripts/install_book_tools.sh
+      - name: Build EPUB and PDF
+        if: steps.edition.outputs.build == 'true'
+        env:
+          EDITION: ${{ steps.edition.outputs.version }}
+        run: |
+          python scripts/build_books.py --version "$EDITION"
+          python -m pip freeze > 'builds/ebooks/Supporting files/requirements.resolved.txt'
+      - name: Validate EPUB and preserve manuscript content
+        if: steps.edition.outputs.build == 'true'
+        run: |
+          java -jar 'builds/tools/Supporting files/epubcheck-5.4.0/epubcheck.jar' builds/ebooks/wisdom.epub --failonwarnings
+          python scripts/validate_books.py
+      - name: Verify reproducible books
+        if: steps.edition.outputs.build == 'true'
+        env:
+          EDITION: ${{ steps.edition.outputs.version }}
+        run: |
+          python scripts/build_books.py --version "$EDITION" --output 'builds/ebooks/Supporting files/rebuild'
+          cmp builds/ebooks/wisdom.epub 'builds/ebooks/Supporting files/rebuild/wisdom.epub'
+          cmp builds/ebooks/wisdom.pdf 'builds/ebooks/Supporting files/rebuild/wisdom.pdf'
+          rm -r 'builds/ebooks/Supporting files/rebuild'
+      - name: Render actual EPUB chapter at reading widths
+        if: steps.edition.outputs.build == 'true'
+        run: |
+          chapter=$(cat 'builds/ebooks/Supporting files/epub-preview-path.txt')
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-narrow.png' --window-size=390,844 "file://$chapter"
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-wide.png' --window-size=820,1000 "file://$chapter"
+      - name: Preserve books and review evidence
+        if: always() && steps.edition.outputs.build == 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: wisdom-books-${{ github.sha }}
+          path: builds/ebooks/
+          if-no-files-found: error
+          retention-days: 30
+
+  publish:
+    needs: build
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request' && needs.build.outputs.build == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: wisdom-books-${{ github.sha }}
+          path: builds/ebooks/
+      - name: Attest the verified books
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4
+        with:
+          subject-path: |
+            builds/ebooks/wisdom.epub
+            builds/ebooks/wisdom.pdf
+      - name: Publish the complete edition
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/release_books.py publish

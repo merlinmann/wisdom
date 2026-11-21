@@ -1,0 +1,45 @@
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Regular.ttf"); }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-It.ttf"); font-style: italic; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Bold.ttf"); font-weight: bold; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-BoldIt.ttf"); font-weight: bold; font-style: italic; }
+@page {
+  size: 6in 9in;
+  margin: .67in .63in .7in .72in;
+  @top-center { content: "MERLIN’S WISDOM PROJECT"; font: 7.5pt "Source Serif"; letter-spacing: .12em; color: #666; }
+  @bottom-center { content: counter(page); font: 9pt "Source Serif"; color: #555; }
+}
+@page :left { margin-left: .63in; margin-right: .72in; }
+@page cover { margin: 0; @top-center { content: none; } @bottom-center { content: none; } }
+@page title { @top-center { content: none; } }
+html { font-family: "Source Serif", serif; font-size: 11pt; line-height: 1.4; color: #201b18; }
+body { margin: 0; }
+.cover { page: cover; height: 9in; break-after: page; }
+.cover img { width: 6in; height: 9in; object-fit: cover; }
+h1, h2 { line-height: 1.12; font-weight: normal; break-after: avoid; }
+h1 { font-size: 30pt; margin: 1.05in 0 .4in; letter-spacing: -.025em; }
+h2 { font-size: 23pt; margin: .22in 0 .35in; }
+
+section.level2 { break-before: page; }
+p { margin: 0 0 .8em; orphans: 3; widows: 3; }
+ul, ol { padding-left: 1.1em; margin: .7em 0; }
+li { padding-left: .15em; margin-bottom: .7em; break-inside: avoid; orphans: 3; widows: 3; }
+li > p { margin-bottom: .35em; }
+blockquote { margin: 1.25em .35in; break-inside: avoid; }
+hr { border: 0; border-top: .5pt solid #9d8e81; width: .35in; margin: .24in auto; }
+a { color: inherit; text-decoration: underline; text-decoration-thickness: .5pt; }
+img { max-width: 100%; max-height: 5.7in; object-fit: contain; }
+.cover img { max-height: none; max-width: none; }
+figure { margin: .25in 0; text-align: center; break-inside: avoid; }
+figcaption { font-size: 8.5pt; font-style: italic; color: #666; margin-top: .1in; }
+.csl-bib-body { line-height: 1.4 !important; margin-left: 1em !important; text-indent: -1em !important; font-size: 10pt; }
+.csl-entry { margin-bottom: 1em; }
+.Z3988 { display: none; }
+.contents { break-before: page; break-after: page; }
+.contents h1 { font-size: 25pt; margin-top: .4in; }
+.contents ol { padding: 0; list-style: none; }
+.contents li { margin-bottom: .23in; padding: 0; }
+.contents a { text-decoration: none; }
+.contents a::after { content: leader(".") target-counter(attr(href), page); }
+.edition { break-before: page; font-size: 9.5pt; line-height: 1.5; }
+.edition h2 { margin-top: .6in; }
+.edition code { font: 8.5pt "Source Serif"; overflow-wrap: anywhere; }
