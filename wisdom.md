@@ -564,3 +564,15 @@ Brief introductory remarks regarding the Project:
 [**Merlin Mann**](https://hotdogsladies.omg.lol "Merlin's current place for places") is a podcaster and retired project manager who lives in San Francisco.
 
 ![Your Author (detail)](/i/MANN-angry-2500.jpg "Your Author")
+
+----
+
+## Licensing & Legalese
+
+[![Creative Commons Attribution-NonCommercial 4.0 International](/i/cc-by-nc.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+[_Merlin’s Wisdom Project_](https://wisdom.limo) by [Merlin Mann](https://hotdogsladies.omg.lol) is licensed under a **[Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/)**.
+
+Share and adapt the original work for noncommercial purposes, with appropriate credit, a link to the license, and an indication of any changes. Third-party material retains its own rights and is excluded from this license.
+
+[License summary](https://creativecommons.org/licenses/by-nc/4.0/) · [Full license terms](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
