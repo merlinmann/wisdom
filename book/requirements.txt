@@ -1,3 +1,15 @@
-weasyprint==70.0
+# Resolved by the remote Python 3.12.12 book build.
+brotli==1.2.1
+cffi==2.1.1
+cssselect2==0.10.1
+fonttools==4.68.0
+pillow==13.0.0
+pycparser==3.12
+pydyf==0.13.0
 PyMuPDF==1.26.7
-Pillow==13.0.0
+pyphen==0.18.1
+tinycss2==1.5.1
+tinyhtml5==2.1.0
+weasyprint==70.0
+webencodings==0.6.1
+zopfli==0.4.3

@@ -65,8 +65,8 @@ def build(version, output):
     assert len(headings) == 5, f"Unexpected chapter count: {len(headings)}"
     toc = '<section class="contents"><h1>Contents</h1><ol>' + ''.join(f'<li><a href="#{anchor}">{label}</a></li>' for anchor, label in headings) + '</ol></section>'
     colophon = f'''<section class="edition" id="edition"><h2>About This Edition</h2>
-<p>Merlin’s Wisdom Project<br>Merlin Mann</p>
-<p>Edition {version}<br>{day}</p>
+<p>Merlin’s Wisdom Project<br />Merlin Mann</p>
+<p>Edition {version}<br />{day}</p>
 <p>Published editions: <a href="https://github.com/merlinmann/wisdom/releases">github.com/merlinmann/wisdom/releases</a></p>
 <p>Source: <a href="https://github.com/merlinmann/wisdom/commit/{sha}"><code>{sha}</code></a></p>
 <p>Copyright Merlin Mann.</p></section>'''
@@ -79,10 +79,12 @@ def build(version, output):
 </head><body><div class="cover"><img src="i/cover.jpg" alt="Cover of Merlin’s Wisdom Project"></div>{pdf_body}{colophon}</body></html>'''
     (support / "book.html").write_text(pdf_html)
 
-    command("pandoc", str(manuscript), "--from=markdown", "--to=epub3", "--standalone", "--strip-comments",
+    epub_manuscript = support / "manuscript-epub.md"
+    epub_manuscript.write_text(source + "\n\n" + colophon + "\n")
+    command("pandoc", str(epub_manuscript), "--from=markdown", "--to=epub3", "--standalone", "--strip-comments",
             f"--metadata-file={metadata_path}", "--epub-title-page=false", "--epub-cover-image=i/cover.jpg",
             "--css=book/epub.css", "--toc", "--toc-depth=2", "--split-level=2", "--resource-path=.",
-            f"--include-after-body={support / 'colophon.html'}", f"--output={output / 'wisdom.epub'}")
+            f"--output={output / 'wisdom.epub'}")
     normalized_zip(output / "wisdom.epub", epoch)
     from weasyprint import HTML, CSS
     HTML(string=pdf_html, base_url=str(ROOT) + "/").write_pdf(output / "wisdom.pdf", stylesheets=[CSS(filename=ROOT / "book/print.css")])
