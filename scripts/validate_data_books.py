@@ -1,5 +1,6 @@
 """Read both finished data files independently and compare their public records."""
 import json
+from collections import Counter
 from html.parser import HTMLParser
 import re
 import sqlite3
@@ -17,18 +18,18 @@ def ast_nodes(value):
             yield from ast_nodes(child)
 
 
-def semantic_text(value):
+def semantic_text(value, include_notes=False):
     if isinstance(value, dict):
         kind = value.get("t")
         if kind == "Note":
-            return ""
+            return semantic_text(value["c"], True) if include_notes else ""
         if kind == "Str":
             return value["c"]
         if kind in ("Code", "CodeBlock", "Math"):
             return value["c"][-1]
-        return " ".join(semantic_text(child) for child in value.values())
+        return " ".join(semantic_text(child, include_notes) for child in value.values())
     if isinstance(value, list):
-        return " ".join(semantic_text(child) for child in value)
+        return " ".join(semantic_text(child, include_notes) for child in value)
     return ""
 
 
@@ -79,10 +80,34 @@ def validate_source_structure(data, source_html, canonical):
             assert len(owners) == 1, "Citation footnote has no unique data owner"
             assert all(note in canonical(owners[0]["text"]) for note in notes), "Citation footnote moved to another record"
             footnotes += len(notes)
-    for entry in data["entries"]:
+    def note_occurrences(value, owner=""):
+        if isinstance(value, dict):
+            if value.get("t") in ("Para", "Plain", "Header"):
+                owner = canonical(semantic_text(value))
+            if value.get("t") == "Note":
+                yield owner, canonical(semantic_text(value["c"], True))
+                return
+            for child in value.values():
+                yield from note_occurrences(child, owner)
+        elif isinstance(value, list):
+            for child in value:
+                yield from note_occurrences(child, owner)
+
+    expected_notes = Counter(note_occurrences(source["blocks"]))
+    actual_notes = Counter()
+    for entry in [*data["sections"], *data["entries"]]:
         references = set(re.findall(r"\[\^([^\]]+)\](?!:)", entry["markdown"]))
-        definitions = set(re.findall(r"(?m)^\[\^([^\]]+)\]:", entry["markdown"]))
-        assert references <= definitions, "A data record references a footnote defined in another record"
+        definitions = re.findall(r"(?m)^\[\^([^\]]+)\]:", entry["markdown"])
+        assert references == set(definitions), "A data record has an orphan footnote reference or definition"
+        assert len(definitions) == len(set(definitions)), "A data record duplicates a footnote definition"
+        if references:
+            parsed = json.loads(subprocess.check_output(["pandoc", "--from=gfm", "--to=json"], input=entry["markdown"], text=True))
+            actual_notes.update(note_occurrences(parsed["blocks"]))
+    assert actual_notes == expected_notes, "Data footnote ownership or occurrence count differs from the source"
+    source_text = canonical(semantic_text(source["blocks"], True))
+    exported_text = " ".join(canonical(row["text"]) for row in [*data["sections"], *data["entries"]])
+    for note in {text for _, text in expected_notes if text}:
+        assert exported_text.count(note) == source_text.count(note), "Data plain text duplicates or omits a footnote"
 
     class Rules(HTMLParser):
         def __init__(self):
