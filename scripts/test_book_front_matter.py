@@ -1,11 +1,49 @@
 """Guard edition rollover and the boundary between authored and generated pages."""
 import unittest
 import shutil
+import subprocess
 
 from build_books import copyright_page, split_front_matter, markdown_edition
+from validate_books import validate_html_links
 
 
 class FrontMatterTests(unittest.TestCase):
+    @unittest.skipUnless(shutil.which("pandoc"), "Pandoc is installed before building books")
+    def test_section_footnote_and_separator_link_survive_markdown_conversion(self):
+        source = '''## Works Cited
+
+Dante's line.[^lowell]
+
+<hr id="old-separator" />
+
+Read [that point](#old-separator).
+
+## License
+
+Terms.
+
+[^lowell]: Learned through Lowell.
+'''
+        html = subprocess.check_output(["pandoc", "--from=markdown", "--to=html5", "--section-divs", "--reference-location=section"], input=source, text=True)
+        self.assertLess(html.index("Learned through Lowell"), html.index('<section id="license"'))
+        validate_html_links(html)
+        result = markdown_edition(html)
+        self.assertIn("[^1]: Learned through Lowell.", result)
+        self.assertLess(result.index("[^1]:"), result.index("## License"))
+        self.assertIn("[that point](#works-cited)", result)
+        self.assertNotIn("#fnref", result)
+        rendered = subprocess.check_output(["pandoc", "--from=gfm", "--to=html5"], input=result, text=True)
+        self.assertIn('role="doc-noteref"', rendered)
+        self.assertEqual(result.count("Learned through Lowell"), 1)
+
+    def test_offline_html_links_and_note_owners_are_checked(self):
+        good = '<section id="cited"><a href="#fn%201" role="doc-noteref">1</a><p id="fn 1">Note</p></section>'
+        self.assertEqual(validate_html_links(good)["html_internal_links_checked"], 1)
+        with self.assertRaisesRegex(AssertionError, "broken internal"):
+            validate_html_links('<a href="#missing">Link</a>')
+        with self.assertRaisesRegex(AssertionError, "referring section"):
+            validate_html_links('<section id="cited"><a href="#fn1" role="doc-noteref">1</a></section><section id="license"><p id="fn1">Note</p></section>')
+
     @unittest.skipUnless(shutil.which("pandoc"), "Pandoc is installed before building books")
     def test_markdown_contents_reaches_the_named_section(self):
         source = '''<h1>Title</h1><h2>Contents</h2>

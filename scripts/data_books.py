@@ -1,7 +1,9 @@
 """Export the visible manuscript as JSON and a searchable SQLite document."""
 import copy
+import html
 import json
 from pathlib import Path
+import re
 import sqlite3
 import subprocess
 from urllib.parse import urljoin
@@ -16,6 +18,27 @@ def nodes(value):
     elif isinstance(value, list):
         for child in value:
             yield from nodes(child)
+
+
+def preserve_rule_anchors(source):
+    """Give Pandoc a container for IDs its HorizontalRule node cannot carry."""
+    def replace(match):
+        tag = match[0]
+        identifier = re.search(r'\s+id\s*=\s*([\"\'])(.*?)\1', tag, re.I | re.S)
+        if not identifier:
+            return tag
+        anchor = html.escape(html.unescape(identifier[2]), quote=True)
+        rule = tag[:identifier.start()] + tag[identifier.end():]
+        return f'<div id="{anchor}">{rule}</div>'
+    return re.sub(r'<hr\b[^>]*>', replace, source, flags=re.I)
+
+
+def html_for_pandoc(source):
+    # Pandoc 3.14 writes section notes with doc-footnote but its HTML reader
+    # recognizes their definitions only as doc-endnotes. Normalize for reading;
+    # the browser and PDF markup keep the original section-note semantics.
+    source = re.sub(r'(<aside\b[^>]*\brole=)"doc-footnote"', r'\1"doc-endnotes"', source, flags=re.I)
+    return preserve_rule_anchors(source)
 
 
 def pandoc(document, writer):
@@ -160,7 +183,7 @@ def write_sqlite(data, path):
 
 
 def export(source_html, metadata, output):
-    document = json.loads(subprocess.check_output(["pandoc", "--from=html", "--to=json"], input=source_html, text=True))
+    document = json.loads(subprocess.check_output(["pandoc", "--from=html", "--to=json"], input=html_for_pandoc(source_html), text=True))
     data = dataset(document, metadata)
     (output / "wisdom.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     write_sqlite(data, output / "wisdom.sqlite")

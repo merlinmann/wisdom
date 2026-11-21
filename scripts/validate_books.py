@@ -11,6 +11,7 @@ import subprocess
 import unicodedata
 import zipfile
 from xml.etree import ElementTree as ET
+from urllib.parse import unquote
 from validate_data_books import validate_data
 
 
@@ -47,6 +48,39 @@ class Text(HTMLParser):
         self.text.append(value)
         for _, parts in self.active:
             parts.append(value)
+
+
+def validate_html_links(markup):
+    class Links(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.ids, self.fragments, self.sections, self.note_refs = {}, [], [], []
+
+        def handle_starttag(self, tag, attrs):
+            attrs = dict(attrs)
+            if tag == "section":
+                self.sections.append(attrs.get("id"))
+            owner = next((item for item in reversed(self.sections) if item), None)
+            if attrs.get("id"):
+                assert attrs["id"] not in self.ids, f"Duplicate HTML anchor: {attrs['id']}"
+                self.ids[attrs["id"]] = owner
+            href = attrs.get("href", "")
+            if href.startswith("#") and len(href) > 1:
+                target = unquote(href[1:])
+                self.fragments.append(target)
+                if attrs.get("role") == "doc-noteref":
+                    self.note_refs.append((target, owner))
+
+        def handle_endtag(self, tag):
+            if tag == "section":
+                self.sections.pop()
+
+    links = Links()
+    links.feed(markup)
+    missing = sorted(set(links.fragments) - links.ids.keys())
+    assert not missing, f"HTML has broken internal links: {missing}"
+    assert all(links.ids[target] == owner for target, owner in links.note_refs if owner is not None), "HTML footnote left its referring section"
+    return {"html_internal_links_checked": len(links.fragments), "html_notes_in_referring_sections": True}
 
 
 def validate(folder):
@@ -110,6 +144,7 @@ def validate(folder):
         (support / "epub-copyright-path.txt").write_text(str((preview / copyright_path).resolve()))
 
     web = (folder / "wisdom.html").read_text()
+    html_links = validate_html_links(web)
     assert all(src.startswith("data:") for src in re.findall(r'src="([^"]+)"', web)), "HTML images must work offline"
     assert all(url.startswith("data:") for url in re.findall(r'url\("([^"]+)"\)', web)), "HTML fonts must work offline"
     web_reader = Text()
@@ -204,6 +239,7 @@ def validate(folder):
               "html_self_contained": True, "markdown_image_free": True,
               "html_content_preserved": True, "markdown_content_preserved": True, "azw3_content_preserved": True}
     report.update(validate_data(folder, edition, canonical, units))
+    report.update(html_links)
     (support / "validation.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
     assert not empty_pages, f"Unexpected empty pages: {empty_pages}"

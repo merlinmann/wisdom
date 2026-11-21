@@ -8,19 +8,23 @@ Prepared by Codex for Merlin Mann
 
 A pull request or push receives quick structure, link, and publication-rule checks. These checks install only Pandoc; they do not build ebooks, install Calibre, render pages, or produce release artifacts. Successful pushes also update the compatibility branch, keeping the online manuscript and old links current.
 
-Downloadable editions are batched once daily, at approximately **5:17 a.m. Pacific**, using GitHub’s timezone-aware schedule. The job compares the actual book inputs against the last published edition before installing conversion tools. No changed inputs means no rebuild and no new edition. README and data-guide changes alone do not count; a changed manuscript, image, design file, or build tool does. An edit followed by a complete revert also leaves the published inputs unchanged.
+Downloadable editions are batched once daily, at approximately **5:17 a.m. Pacific**, using GitHub’s timezone-aware schedule. The job compares the actual book inputs against the last published edition before installing conversion tools. No changed inputs means no rebuild and no new edition. README, data-guide, test, quick-check, and compatibility-helper changes alone do not count; a changed manuscript, image, design file, conversion tool, or format validator does. An edit followed by a complete revert also leaves the published inputs unchanged.
 
 For an urgent edition, choose **Actions → Publish Books → Run workflow** on `main`. This uses the same change detection and full verification as the daily run. A repeated request with unchanged inputs does not create another edition. Full builds run only from `main`, and publication runs do not overlap.
 
-For a complete review without a new release, uncheck **Publish the verified edition** in that same form. This explicitly requested run builds and validates all seven formats even if the inputs are unchanged, retains the review files as an Actions artifact, and cannot publish them. Routine edits do not request this extra work.
+For a complete review without a new release, uncheck **Publish the verified edition** in that same form. This explicitly requested run builds and validates all seven formats even if the inputs are unchanged, retains the review files as an Actions artifact, and cannot publish them or update the compatibility branch. Reviews use separate concurrency groups, so they cannot displace a waiting publication. Routine edits do not request this extra work.
 
 A local save remains an unpublished draft and syncs between Macs. Committing and pushing makes the online manuscript current; the downloadable books wait for the next daily batch or Publish Books request. GitHub may delay scheduled runs, so the time is approximate. Published editions keep their existing immutable URLs and files.
+
+If GitHub disables the schedule after 60 days without repository activity, the next successful checks on a push resume it. An intentionally disabled schedule is left disabled.
 
 ## Versions
 
 Versions follow the year-and-sequence approach demonstrated for this project. The first November 2026 edition is `2026.11`; another edition that November becomes `2026.12`. Within a year, the next sequence is the larger of the current month and the previous sequence plus one. A new year starts a new sequence. Versions are calculated from the source commit date in America/Los_Angeles.
 
 Tags have a `v` prefix and identify exact source commits. Existing tags and draft releases reserve their numbers. A retry reuses the same draft; a published source commit produces no new edition. Newer source commits prevent older builds from replacing the latest edition. Published assets are never overwritten by this workflow. GitHub release immutability is enabled, so published assets and their source tags are protected from replacement.
+
+A small planning job reads publication metadata with the repository permission required to see unpublished drafts. It performs no repository or release writes. The plan and version then pass to a separate build job with read-only repository permissions. Third-party conversion tools never receive a write-enabled token. A superseded draft remains preserved and reserves its number, so the next source commit can receive a new number without colliding with it. Published editions must name an immutable source commit; a moving branch name is rejected before comparison.
 
 ## Files and Verification
 
@@ -62,7 +66,7 @@ shasum -a 256 -c SHA256SUMS
 - `scripts/validate_data_books.py`: independent data-file and search checks.
 - `scripts/release_books.py`: version allocation and verified publication.
 - `.github/workflows/checks.yml`: quick checks for edits and compatibility updates for existing reading links.
-- `.github/workflows/books.yml`: daily or manually requested editions, with separate read-only build and write-enabled publication jobs.
+- `.github/workflows/books.yml`: daily or manually requested editions, with separate metadata planning, read-only conversion, compatibility, and publication jobs.
 
 Pandoc 3.14 and EPUBCheck 5.4.0 downloads are checked against pinned SHA-256 digests. Calibre 9.18.0 uses its official Linux binary with a pinned SHA-512 digest. GitHub actions are pinned to full commit SHAs. Builds use Python 3.12.12 on Ubuntu 24.04. The workflow checks byte-for-byte reproducibility within that environment; future operating-system updates may change rendering, so the recorded source and tool versions remain part of each edition’s provenance.
 
@@ -78,4 +82,4 @@ Source Serif 4, release 4.005R, comes from Adobe’s [source-serif repository](h
 
 The [pre-cleanup archive](https://github.com/merlinmann/wisdom/tree/archive/pre-cleanup-2026-11-20) preserves the former tree and its history. The old site experiments, typography demos, side works, and sync tests are outside the current working branch. Private local build files are preserved in the private Wisdom project store.
 
-The compatibility job is idempotent, refuses stale source commits, and uses a non-forced update with the existing `master` commit as its parent. The publication job waits for it to succeed. The old branch does not publish editions.
+The compatibility job is idempotent, refuses stale source commits, and uses a non-forced update with the existing `master` commit as its parent. The publication job waits for it to succeed. A no-change daily run and a review-only run do not invoke compatibility; ordinary pushes reach it only after quick checks pass. The old branch does not publish editions.

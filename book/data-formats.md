@@ -23,6 +23,8 @@ The root object has `schema_version`, `metadata`, `sections`, and `entries`. Sch
 
 Sort combined sections and entries by `position` to reconstruct reading order. Filter `entries` by a section ID and `kind == "list_item"` to retrieve its authored bullets. Labels such as “Related” remain in the text; they do not create inferred relationships. Internal fragment links retain their original URL and include a `target_id` pointing to the exported section or entry.
 
+Footnotes belong to the record containing their reference; their text and Markdown definition travel with that record. Anchors on horizontal rules are retained on `separator` records. The image-free Markdown edition maps those internal links to the containing heading because it does not retain HTML anchor markup. Empty paragraph records correspond to the source’s nonprinting bibliography metadata; separators and those existing positions remain in the data. Applications displaying prose can skip records whose `text` is empty.
+
 ## SQLite
 
 The database uses `metadata`, `sections`, `entries`, and `links` tables, with an FTS5 `entries_fts` search index. `metadata.value_json` contains a JSON scalar. `source_anchors_json` contains a JSON array. The remaining record fields use ordinary columns; entry links are rows in `links`, ordered by their per-entry `position`. The SQLite `user_version` equals the JSON schema version.
