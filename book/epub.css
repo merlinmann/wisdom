@@ -1,0 +1,18 @@
+/* Reader settings supply the type size, colors, and background. */
+body { font-family: serif; line-height: 1.45; margin: 0 4%; }
+h1, h2 { line-height: 1.15; font-weight: bold; text-align: left; }
+h1 { font-size: 1.8em; margin: 1.8em 0 1em; }
+h2 { font-size: 1.45em; margin: 1.8em 0 1em; }
+p { margin: 0 0 .85em; }
+ul, ol { padding-left: 1.3em; }
+li { margin: 0 0 .7em; }
+li > p { margin-bottom: .3em; }
+blockquote { margin: 1.2em 1em; }
+hr { border: 0; border-top: 1px solid; width: 22%; margin: 1.8em auto; }
+a { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+figure { margin: 1.5em 0; text-align: center; }
+figcaption { font-size: .8em; font-style: italic; }
+.csl-entry { margin-bottom: .8em; }
+.edition { margin-top: 3em; font-size: .85em; }
+.Z3988 { display: none; }
