@@ -44,7 +44,7 @@ jobs:
       - name: Install pinned tools
         if: steps.edition.outputs.build == 'true'
         run: bash scripts/install_book_tools.sh
-      - name: Build EPUB and PDF
+      - name: Build all book formats
         if: steps.edition.outputs.build == 'true'
         env:
           EDITION: ${{ steps.edition.outputs.version }}
@@ -62,8 +62,9 @@ jobs:
           EDITION: ${{ steps.edition.outputs.version }}
         run: |
           python scripts/build_books.py --version "$EDITION" --output 'builds/ebooks/Supporting files/rebuild'
-          cmp builds/ebooks/wisdom.epub 'builds/ebooks/Supporting files/rebuild/wisdom.epub'
-          cmp builds/ebooks/wisdom.pdf 'builds/ebooks/Supporting files/rebuild/wisdom.pdf'
+          for format in epub pdf html azw3 md; do
+            cmp "builds/ebooks/wisdom.$format" "builds/ebooks/Supporting files/rebuild/wisdom.$format"
+          done
           rm -r 'builds/ebooks/Supporting files/rebuild'
       - name: Render actual EPUB chapter at reading widths
         if: steps.edition.outputs.build == 'true'
@@ -74,6 +75,11 @@ jobs:
           copyright=$(cat 'builds/ebooks/Supporting files/epub-copyright-path.txt')
           google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-copyright-narrow.png' --window-size=390,844 "file://$copyright"
           google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/epub-copyright-wide.png' --window-size=820,1000 "file://$copyright"
+          html=$(realpath builds/ebooks/wisdom.html)
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/html-narrow.png' --window-size=390,1000 "file://$html#copyright-page"
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/html-wide.png' --window-size=1000,1100 "file://$html#copyright-page"
+          kindle=$(cat 'builds/ebooks/Supporting files/kindle-preview-path.txt')
+          google-chrome --headless --no-sandbox --disable-gpu --hide-scrollbars --screenshot='builds/ebooks/Supporting files/rendered/kindle-preview.png' --window-size=600,1000 "file://$kindle#copyright-page"
       - name: Preserve books and review evidence
         if: always() && steps.edition.outputs.build == 'true'
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -106,6 +112,9 @@ jobs:
           subject-path: |
             builds/ebooks/wisdom.epub
             builds/ebooks/wisdom.pdf
+            builds/ebooks/wisdom.html
+            builds/ebooks/wisdom.azw3
+            builds/ebooks/wisdom.md
       - name: Publish the complete edition
         env:
           GH_TOKEN: ${{ github.token }}

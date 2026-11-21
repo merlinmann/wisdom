@@ -1,0 +1,39 @@
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Regular.ttf"); }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-It.ttf"); font-style: italic; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Bold.ttf"); font-weight: bold; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-BoldIt.ttf"); font-weight: bold; font-style: italic; }
+html { color: #201b18; background: #fffdf8; font: 20px/1.5 "Source Serif", serif; }
+body { max-width: 36rem; padding: 0 1.1rem; margin: 3rem auto; }
+h1, h2 { font-weight: normal; line-height: 1.15; }
+h1 { font-size: 2.2rem; letter-spacing: -.025em; }
+h2 { font-size: 1.65rem; margin-top: 3rem; }
+p { margin: 0 0 1em; }
+li { margin-bottom: .8em; padding-left: .15em; }
+ul, ol { padding-left: 1.2em; }
+blockquote { margin: 1.5em 1em; }
+a { color: inherit; text-underline-offset: .14em; overflow-wrap: anywhere; }
+a:focus-visible { outline: 2px solid; outline-offset: 3px; }
+img { max-width: 100%; height: auto; }
+.cover { max-width: 22rem; margin: 0 auto 3rem; }
+.title-page { margin: 4rem 0; }
+.copyright-page { margin: 4rem 0; max-width: 29rem; font-size: .9rem; line-height: 1.5; }
+.copyright-text p { margin-bottom: 1.4em; }
+.copyright-text .book-name { font-variant-caps: small-caps; letter-spacing: .035em; }
+.copyright-text .license img { display: block; width: 5.5em; margin-bottom: 1em; }
+.copyright-text .license p { margin-bottom: .6em; }
+.copyright-text .scope { font-size: .9em; margin-bottom: 1.5em; }
+.copyright-text .typesetting, .copyright-text .project-motto { margin-top: 1.8em; }
+.contents { margin: 4rem 0; }
+.contents h1 { font-size: 1.65rem; }
+.contents ol { list-style: none; padding: 0; }
+.contents li { margin-bottom: .5em; }
+hr { width: 2rem; border: 0; border-top: 1px solid #9d8e81; margin: 2rem auto; }
+figure { margin: 2rem 0; text-align: center; }
+figcaption { font-size: .85em; font-style: italic; }
+.csl-bib-body { line-height: 1.5 !important; margin-left: 1em !important; text-indent: -1em !important; }
+.csl-entry { margin-bottom: 1em; }
+.Z3988 { display: none; }
+.edition { font-size: .85rem; }
+.edition code { font: inherit; overflow-wrap: anywhere; }
+@media (max-width: 480px) { html { font-size: 18px; } body { margin: 1.5rem auto; } }
+@media print { html { background: white; font-size: 11pt; } body { max-width: none; margin: 0; } .cover, .title-page, .copyright-page, .contents { break-after: page; } }

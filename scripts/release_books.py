@@ -10,7 +10,7 @@ import re
 import subprocess
 from zoneinfo import ZoneInfo
 
-ASSETS = ("wisdom.epub", "wisdom.pdf", "edition.json", "SHA256SUMS")
+ASSETS = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md", "edition.json", "SHA256SUMS")
 VERSION = re.compile(r"^v(20\d{2})\.([1-9]\d*)$")
 
 
@@ -85,12 +85,15 @@ def publish(repo, folder):
 
 - **EPUB:** adjustable text for e-readers and reading apps; Kindle readers can use [Send to Kindle](https://www.amazon.com/sendtokindle).
 - **PDF:** a typeset edition with fixed pages.
+- **HTML:** a complete offline edition with its images and fonts included.
+- **AZW3:** a Kindle edition for USB transfer or Calibre. For Amazon’s Send to Kindle service, use the EPUB.
+- **Markdown:** image-free text with headings, emphasis, and links.
 
-Both books contain the same text. Their copyright page identifies this edition and its date; the colophon links to the exact source commit.
+All five formats preserve the manuscript text. Their copyright section identifies this edition and its date; the colophon links to the exact source commit.
 
 [Changes in this edition]({compare}) · [Source commit](https://github.com/{repo}/commit/{sha})
 
-`SHA256SUMS` verifies the downloads. `edition.json` records the source and build tools. GitHub’s artifact attestations establish the provenance of both books.
+`SHA256SUMS` verifies the downloads. `edition.json` records the source and build tools. GitHub’s artifact attestations establish the provenance of all five formats.
 '''
     if existing is None:
         existing = api(f"repos/{repo}/releases", "POST", {"tag_name": tag, "target_commitish": sha, "name": f"Wisdom — {version}", "body": notes, "draft": True, "prerelease": False})

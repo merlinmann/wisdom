@@ -17,6 +17,9 @@ On to [**the Wisdom »**](https://wisdom.limo)
 
 - [**EPUB — for e-readers and reading apps**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.epub)
 - [**PDF — the typeset edition**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.pdf)
+- [**HTML — read offline in a browser**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.html)
+- [**Kindle AZW3 — transfer with USB or Calibre**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.azw3)
+- [**Markdown — the text without images**](https://github.com/merlinmann/wisdom/releases/latest/download/wisdom.md)
 - [All editions and release notes](https://github.com/merlinmann/wisdom/releases)
 
 Kindle readers can upload the EPUB through [Send to Kindle](https://www.amazon.com/sendtokindle).

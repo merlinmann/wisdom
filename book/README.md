@@ -2,7 +2,7 @@
 
 Prepared by Codex for Merlin Mann
 
-`wisdom.md` remains the manuscript. GitHub Actions produces an EPUB3 and a 6 × 9-inch PDF from the same source commit. The existing cover and all visible manuscript text are retained. The PDF uses Source Serif 4; the EPUB respects reader font and size preferences.
+`wisdom.md` remains the manuscript. GitHub Actions produces five reading formats from the same source commit: EPUB3, a 6 × 9-inch PDF, offline HTML, Kindle AZW3, and image-free Markdown. All preserve the visible manuscript text. The PDF and HTML use Source Serif 4; the EPUB and AZW3 preserve reader font controls. The Markdown retains headings, emphasis, links, and image captions as text, without HTML layout or embedded images.
 
 ## Publication
 
@@ -18,13 +18,15 @@ Tags have a `v` prefix and identify exact source commits. Existing tags and draf
 
 ## Files and Verification
 
-Both formats place a dedicated copyright page immediately after the authored title page, before the epigraphs. The PDF keeps its contents page between copyright and epigraphs. The page includes the official CC BY-NC 4.0 badge, linked license terms, the publisher, and an automatically filled edition number and date. `book/copyright.html` supplies the shared text; the version and America/Los_Angeles source date are the same values recorded in `edition.json`. Retries retain that date instead of using the rebuild time.
+The EPUB and PDF place a dedicated copyright page immediately after the authored title page, followed by contents and epigraphs. The HTML, AZW3, and Markdown carry the same copyright text near the beginning. The page includes the official CC BY-NC 4.0 badge (omitted with all other images in Markdown), linked license terms, the publisher, and an automatically filled edition number and date. `book/copyright.html` supplies the shared text; the version and America/Los_Angeles source date are the same values recorded in `edition.json`. Retries retain that date instead of using the rebuild time.
 
 The PDF adapts the approved copyright-page layout to the book’s Source Serif 4 type, with small caps, restrained italics, and generous space above. Title and copyright pages have no running header or visible page number; the title starts the interior page count. The EPUB marks these pages as `titlepage` and `copyright-page` front matter, keeps the copyright page in its own reading-order document, and preserves reader font controls. The original licensing section remains at the end of the manuscript.
 
-Every release contains `wisdom.epub`, `wisdom.pdf`, `edition.json`, and `SHA256SUMS`. Consistent filenames support stable latest-download URLs; each release also supplies permanent version-specific URLs.
+Every release contains `wisdom.epub`, `wisdom.pdf`, `wisdom.html`, `wisdom.azw3`, `wisdom.md`, `edition.json`, and `SHA256SUMS`. Consistent filenames support stable latest-download URLs; each release also supplies permanent version-specific URLs. The HTML embeds all images, fonts, and styles in one file and needs no internet connection to read.
 
-The build runs EPUBCheck, verifies that source passages appear in both formats, checks PDF text bounds and bookmarks, and rebuilds both books to compare their bytes. Rendered PDF pages and narrow/wide EPUB chapter screenshots are retained with the Actions artifact for review. These browser screenshots check EPUB layout; they do not replace device-specific reading-system tests.
+For wireless delivery to Kindle, upload the EPUB through [Send to Kindle](https://www.amazon.com/sendtokindle). The AZW3 is for USB transfer or [Calibre](https://calibre-ebook.com/); it is not a Send to Kindle upload format. Amazon documents its supported upload formats and current Mac USB-transfer options in [Kindle file transfers](https://digprjsurvey.amazon.com/csad/help/node/TCUBEdEkbIhK07ysFu).
+
+The build runs EPUBCheck, verifies source passages in all five formats (including text extracted from the finished AZW3), checks PDF text bounds and bookmarks, and rebuilds all five files to compare their bytes. It also checks copyright placement, edition/date consistency, image-free Markdown, and self-contained HTML assets. Rendered PDF pages, narrow/wide EPUB and HTML screenshots, and an extracted Kindle-page preview are retained with the Actions artifact. Browser previews do not replace device-specific reading-system tests.
 
 GitHub artifact attestations identify the workflow and source that produced the books. Verify a downloaded EPUB with:
 
@@ -44,16 +46,19 @@ shasum -a 256 -c SHA256SUMS
 - `book/copyright.html`: shared copyright-page text and release metadata placeholders.
 - `book/epub.css`: reflowable ebook styling, without fixed text colors or embedded fonts.
 - `book/print.css`: page design and embedded PDF fonts.
+- `book/html.css`: offline browser-edition layout and embedded fonts.
+- `book/text-only.lua`: removes images while retaining readable text and captions for Markdown.
 - `book/requirements.txt`: pinned Python dependencies.
 - `scripts/build_books.py`: conversion and deterministic ZIP metadata.
+- `scripts/convert_kindle_book.py`: Calibre conversion with edition-derived IDs and timestamps for reproducible AZW3 output.
 - `scripts/validate_books.py`: content checks and review renders.
 - `scripts/release_books.py`: version allocation and verified publication.
 - `.github/workflows/books.yml`: remote execution with separate read-only build and write-enabled publication jobs.
 
-Pandoc 3.14 and EPUBCheck 5.4.0 downloads are checked against pinned SHA-256 digests. GitHub actions are pinned to full commit SHAs. Builds use Python 3.12.12 on Ubuntu 24.04. The workflow checks byte-for-byte reproducibility within that environment; future operating-system updates may change rendering, so the recorded source and tool versions remain part of each edition’s provenance.
+Pandoc 3.14 and EPUBCheck 5.4.0 downloads are checked against pinned SHA-256 digests. Calibre 9.18.0 uses its official Linux binary with a pinned SHA-512 digest. GitHub actions are pinned to full commit SHAs. Builds use Python 3.12.12 on Ubuntu 24.04. The workflow checks byte-for-byte reproducibility within that environment; future operating-system updates may change rendering, so the recorded source and tool versions remain part of each edition’s provenance.
 
 Generated books and supporting files live in the ignored `builds/ebooks/` directory. Releases hold the public downloads; generated books are not committed to the source branch.
 
 ## Font Source
 
-Source Serif 4, release 4.005R, comes from Adobe’s [source-serif repository](https://github.com/adobe-fonts/source-serif/tree/2823e993c53fca27c5c8749f529b56a5a7c77b6b), under the accompanying [SIL Open Font License](fonts/LICENSE.md). The PDF embeds subsets of the supplied fonts. The existing private font setup is separate from this public build.
+Source Serif 4, release 4.005R, comes from Adobe’s [source-serif repository](https://github.com/adobe-fonts/source-serif/tree/2823e993c53fca27c5c8749f529b56a5a7c77b6b), under the accompanying [SIL Open Font License](fonts/LICENSE.md). The PDF embeds subsets of the supplied fonts. The HTML embeds the fonts and includes their license in its source. The existing private font setup is separate from this public build.

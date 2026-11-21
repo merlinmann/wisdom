@@ -23,17 +23,26 @@ class Text(HTMLParser):
         self.text = []
         self.units = []
         self.active = []
+        self.ignored = 0
 
     def handle_starttag(self, tag, attrs):
+        if tag in ("style", "script"):
+            self.ignored += 1
+            return
         attrs = dict(attrs)
         if tag in ("p", "li", "h1", "h2") or (tag == "div" and attrs.get("class") == "csl-entry"):
             self.active.append([tag, []])
 
     def handle_endtag(self, tag):
+        if tag in ("style", "script"):
+            self.ignored -= 1
+            return
         if self.active and self.active[-1][0] == tag:
             self.units.append(''.join(self.active.pop()[1]))
 
     def handle_data(self, value):
+        if self.ignored:
+            return
         self.text.append(value)
         for _, parts in self.active:
             parts.append(value)
@@ -89,7 +98,8 @@ def validate(folder):
         badge = next(node for node in copyright_root.iter(xhtml + "img") if "Creative Commons" in node.get("alt", ""))
         badge_path = posixpath.normpath(posixpath.join(posixpath.dirname(copyright_path), badge.get("src")))
         assert archive.read(badge_path).strip(), "The official CC badge must be embedded"
-        assert "epigraphs" in documents[3][2], "Epigraphs must follow the copyright page"
+        assert any(node.get(epub_type) == "toc" for node in documents[3][1].iter()), "Contents must follow copyright"
+        assert "epigraphs" in documents[4][2], "Epigraphs must follow the front matter"
         preview = support / "epub-preview"
         for item in archive.infolist():
             assert not Path(item.filename).is_absolute() and '..' not in Path(item.filename).parts
@@ -97,6 +107,36 @@ def validate(folder):
         assert chapter
         (support / "epub-preview-path.txt").write_text(str((preview / chapter).resolve()))
         (support / "epub-copyright-path.txt").write_text(str((preview / copyright_path).resolve()))
+
+    web = (folder / "wisdom.html").read_text()
+    assert all(src.startswith("data:") for src in re.findall(r'src="([^"]+)"', web)), "HTML images must work offline"
+    assert all(url.startswith("data:") for url in re.findall(r'url\("([^"]+)"\)', web)), "HTML fonts must work offline"
+    web_reader = Text()
+    web_reader.feed(web)
+    web_text = canonical(' '.join(web_reader.text))
+    assert all(unit in web_text for unit in units), "HTML omitted manuscript text"
+    markdown = (folder / "wisdom.md").read_text()
+    assert not re.search(r'!\[|<img\b|data:image/', markdown, re.I), "Markdown must not embed images"
+    markdown_html = subprocess.check_output(["pandoc", str(folder / "wisdom.md"), "--from=gfm", "--to=html5"], text=True)
+    markdown_reader = Text()
+    markdown_reader.feed(markdown_html)
+    markdown_text = canonical(' '.join(markdown_reader.text))
+    assert all(unit in markdown_text for unit in units), "Image-free Markdown omitted manuscript text"
+    assert not re.search(r'<(?:div|span|p|img|figure)\b', markdown), "Markdown must use Markdown rather than HTML layout"
+    kindle_parts = []
+    for path in sorted((support / "kindle-preview").rglob("*")):
+        if path.suffix.lower() in (".html", ".htm", ".xhtml"):
+            reader = Text()
+            reader.feed(path.read_text())
+            text = canonical(' '.join(reader.text))
+            kindle_parts.append(text)
+            if canonical(edition_label) in text:
+                (support / "kindle-preview-path.txt").write_text(str(path.resolve()))
+    kindle_text = ''.join(kindle_parts)
+    assert (support / "kindle-preview-path.txt").is_file(), "Kindle copyright page missing"
+    assert all(unit in kindle_text for unit in units), "AZW3 omitted manuscript text"
+    for label, text in (("HTML", web_text), ("Markdown", markdown_text), ("AZW3", kindle_text)):
+        assert canonical(edition_label) in text and canonical(display_date) in text, f"{label} edition/date mismatch"
 
     doc = pymupdf.open(folder / "wisdom.pdf")
     pages = []
@@ -146,7 +186,9 @@ def validate(folder):
               "pdf_content_preserved": True, "pdf_pages": len(doc), "pdf_bookmarks": len(doc.get_toc()),
               "empty_pages": empty_pages, "text_outside_pages": clipped, "pdf_fonts": sorted({font[3] for page in doc for font in page.get_fonts()}),
               "copyright_page": {"pdf_page": 3, "epub_spine_position": copyright_index + 1,
-                                 "edition": edition["version"], "date": display_date, "license": "CC BY-NC 4.0"}}
+                                 "edition": edition["version"], "date": display_date, "license": "CC BY-NC 4.0"},
+              "html_self_contained": True, "markdown_image_free": True,
+              "html_content_preserved": True, "markdown_content_preserved": True, "azw3_content_preserved": True}
     (support / "validation.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
     assert not empty_pages, f"Unexpected empty pages: {empty_pages}"
