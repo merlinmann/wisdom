@@ -1,7 +1,7 @@
-@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Regular.ttf"); }
-@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-It.ttf"); font-style: italic; }
-@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Bold.ttf"); font-weight: bold; }
-@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-BoldIt.ttf"); font-weight: bold; font-style: italic; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Regular.ttf"); font-display: swap; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-It.ttf"); font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-Bold.ttf"); font-weight: bold; font-display: swap; }
+@font-face { font-family: "Source Serif"; src: url("fonts/SourceSerif4-BoldIt.ttf"); font-weight: bold; font-style: italic; font-display: swap; }
 html { color: #201b18; background: #fffdf8; font: 20px/1.5 "Source Serif", serif; }
 body { max-width: 36rem; padding: 0 1.1rem; margin: 3rem auto; }
 h1, h2 { font-weight: normal; line-height: 1.15; }

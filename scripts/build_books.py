@@ -29,11 +29,23 @@ def data_uri(path):
 def offline_html(content, metadata, day):
     """Embed the project's images, fonts, and CSS; no network is needed to read it."""
     def image(match):
-        path = (ROOT / html.unescape(match[1])).resolve()
+        tag, source = match[0], match[1]
+        path = (ROOT / html.unescape(source)).resolve()
         if not path.is_relative_to(ROOT) or not path.is_file():
-            raise ValueError(f"Offline HTML requires a repository image: {match[1]}")
-        return 'src="' + data_uri(path) + '"'
-    content = re.sub(r'src="([^"]+)"', image, content)
+            raise ValueError(f"Offline HTML requires a repository image: {source}")
+        # Reserve each image's aspect ratio before it decodes, including when a
+        # reader opens a deep link directly into the book.
+        if path.suffix.lower() == ".svg":
+            box = ET.parse(path).getroot().get("viewBox").split()
+            width, height = float(box[2]), float(box[3])
+        else:
+            from PIL import Image
+            with Image.open(path) as asset:
+                width, height = asset.size
+        if not re.search(r'\b(?:width|height)=', tag):
+            tag = tag.replace("<img", f'<img width="{width:g}" height="{height:g}"', 1)
+        return tag.replace('src="' + source + '"', 'src="' + data_uri(path) + '"', 1)
+    content = re.sub(r'<img\b[^>]*\bsrc="([^"]+)"[^>]*>', image, content)
     css = (ROOT / "book/html.css").read_text()
     css = re.sub(r'url\("([^"]+)"\)', lambda match: 'url("' + data_uri(ROOT / "book" / match[1]) + '")', css)
     font_license = html.escape((ROOT / "book/fonts/LICENSE.md").read_text(), quote=True)
