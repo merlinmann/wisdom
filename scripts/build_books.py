@@ -87,14 +87,20 @@ def markdown_edition(content):
     """Pure GFM, with working heading links even after HTML anchors disappear."""
     original = json.loads(command("pandoc", "--from=html", "--to=json",
                                   "--lua-filter=book/text-only.lua", input=content))
-    headings, aliases = [], {}
+    headings = [node for node in ast_nodes(original["blocks"]) if node["t"] == "Header"]
+    positions = {id(node): index for index, node in enumerate(headings)}
+    aliases, previous_heading = {}, None
     for node in ast_nodes(original["blocks"]):
         if node["t"] == "Header":
-            headings.append(node)
-            aliases[node["c"][1][0]] = len(headings) - 1
-        elif node["t"] in ("Div", "Span") and node["c"][0][0] and headings:
-            # A bibliography entry's HTML id becomes a link to Works Cited.
-            aliases[node["c"][0][0]] = len(headings) - 1
+            previous_heading = positions[id(node)]
+            if node["c"][1][0]:
+                aliases[node["c"][1][0]] = previous_heading
+        elif node["t"] in ("Div", "Span") and node["c"][0][0]:
+            # Section wrappers precede their headings; bibliography anchors do not.
+            nested = next((child for child in ast_nodes(node["c"][1]) if child["t"] == "Header"), None)
+            target = positions[id(nested)] if nested is not None else previous_heading
+            if target is not None:
+                aliases[node["c"][0][0]] = target
     markdown = command("pandoc", "--from=json", "--to=gfm-raw_html", "--wrap=none", input=json.dumps(original))
     parsed = json.loads(command("pandoc", "--from=gfm", "--to=json", input=markdown))
     heading_ids = [node["c"][1][0] for node in ast_nodes(parsed["blocks"]) if node["t"] == "Header"]
