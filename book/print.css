@@ -43,3 +43,6 @@ figcaption { font-size: 8.5pt; font-style: italic; color: #666; margin-top: .1in
 .edition { break-before: page; font-size: 9.5pt; line-height: 1.5; }
 .edition h2 { margin-top: .6in; }
 .edition code { font: 8.5pt "Source Serif"; overflow-wrap: anywhere; }
+
+/* Chapter breaks already separate sections; a trailing rule must not create a page. */
+section.level2 > hr:last-child { display: none; }

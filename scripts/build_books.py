@@ -88,7 +88,10 @@ def build(version, output):
             f"--output={output / 'wisdom.epub'}")
     normalized_zip(output / "wisdom.epub", epoch)
     from weasyprint import HTML, CSS
-    HTML(string=pdf_html, base_url=str(ROOT) + "/").write_pdf(output / "wisdom.pdf", stylesheets=[CSS(filename=ROOT / "book/print.css")])
+    from weasyprint.text.fonts import FontConfiguration
+    fonts = FontConfiguration()
+    stylesheet = CSS(filename=ROOT / "book/print.css", font_config=fonts)
+    HTML(string=pdf_html, base_url=str(ROOT) + "/").write_pdf(output / "wisdom.pdf", stylesheets=[stylesheet], font_config=fonts)
     manifest = {
         "title": metadata["title"], "version": version, "source_commit": sha, "source_date": day,
         "source_date_epoch": epoch, "source_sha256": hashlib.sha256((ROOT / "wisdom.md").read_bytes()).hexdigest(),

@@ -85,7 +85,7 @@ def validate(folder):
     missing = [unit for unit in units if unit not in pdf]
     assert not missing, f"PDF omitted {len(missing)} source passages: {missing[:3]}"
     assert not clipped, f"Text outside page bounds: {clipped}"
-    empty_pages = [n + 1 for n, text in enumerate(pages) if n > 0 and len(text.strip()) <= 12 and not doc[n].get_images()]
+    empty_pages = [n + 1 for n, text in enumerate(pages) if n > 0 and len(text.strip()) <= 12 and not doc[n].get_image_info()]
     assert doc.get_toc(), "PDF bookmarks are missing"
 
     renders = support / "rendered"
@@ -113,6 +113,7 @@ def validate(folder):
     (support / "validation.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
     assert not empty_pages, f"Unexpected empty pages: {empty_pages}"
+    assert any("SourceSerif" in name for name in report["pdf_fonts"]), "The book font was not embedded"
 
 
 if __name__ == "__main__":
