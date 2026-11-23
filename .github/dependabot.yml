@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /book
+    schedule:
+      interval: monthly
+      time: "09:00"
+      timezone: America/Los_Angeles
+    open-pull-requests-limit: 1
+    groups:
+      python-maintenance:
+        applies-to: version-updates
+        patterns:
+          - "*"
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      time: "09:00"
+      timezone: America/Los_Angeles
+    open-pull-requests-limit: 1
+    groups:
+      actions-maintenance:
+        applies-to: version-updates
+        patterns:
+          - "*"
