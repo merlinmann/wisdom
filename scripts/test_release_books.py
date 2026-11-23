@@ -1,5 +1,5 @@
 """Exercise edition numbering boundaries and repeat publication decisions."""
-from datetime import date
+from datetime import date, datetime, timezone
 import json
 import os
 from pathlib import Path
@@ -11,25 +11,31 @@ from release_books import book_inputs, choose_version, plan, publish, resume_sch
 
 class Editions(unittest.TestCase):
     def test_first_edition_aligns_with_month(self):
-        self.assertEqual(choose_version([], [], "a", date(2026, 11, 20)), ("2026.11", False))
+        self.assertEqual(choose_version([], [], "a", date(2026, 11, 20)), ("2026.11.1", False))
 
     def test_second_edition_same_month_advances(self):
-        self.assertEqual(choose_version([], ["v2026.11"], "b", date(2026, 11, 20)), ("2026.12", False))
+        self.assertEqual(choose_version([], ["v2026.11.1"], "b", date(2026, 11, 20)), ("2026.11.2", False))
 
-    def test_can_skip_forward_but_never_backward(self):
-        self.assertEqual(choose_version([], ["v2026.2"], "b", date(2026, 11, 20)), ("2026.11", False))
-        self.assertEqual(choose_version([], ["v2026.20"], "b", date(2026, 11, 20)), ("2026.21", False))
+    def test_legacy_numbers_do_not_consume_monthly_editions(self):
+        self.assertEqual(choose_version([], ["v2026.11", "v2026.18"], "b", date(2026, 11, 20)), ("2026.11.1", False))
+
+    def test_sequences_are_numeric_and_reserved_tags_are_skipped(self):
+        self.assertEqual(choose_version([], ["v2026.11.9", "v2026.11.10"], "b", date(2026, 11, 20)), ("2026.11.11", False))
+
+    def test_new_month_resets_sequence(self):
+        self.assertEqual(choose_version([], ["v2026.11.10", "v2026.12"], "b", date(2026, 12, 1)), ("2026.12.1", False))
 
     def test_new_year_resets_sequence(self):
-        self.assertEqual(choose_version([], ["v2026.99"], "b", date(2027, 1, 2)), ("2027.1", False))
+        self.assertEqual(choose_version([], ["v2026.99", "v2026.12.10"], "b", date(2027, 1, 2)), ("2027.1.1", False))
 
     def test_published_commit_is_reused(self):
-        releases = [{"tag_name": "v2026.11", "target_commitish": "a", "draft": False}]
-        self.assertEqual(choose_version(releases, ["v2026.11"], "a", date(2026, 12, 1)), ("2026.11", True))
+        for version in ("2026.18", "2026.11.1"):
+            releases = [{"tag_name": "v" + version, "target_commitish": "a", "draft": False}]
+            self.assertEqual(choose_version(releases, [], "a", date(2026, 12, 1)), (version, True))
 
     def test_interrupted_draft_keeps_its_number(self):
-        releases = [{"tag_name": "v2026.11", "target_commitish": "a", "draft": True}]
-        self.assertEqual(choose_version(releases, ["v2026.11"], "a", date(2026, 12, 1)), ("2026.11", False))
+        releases = [{"tag_name": "v2026.11.1", "target_commitish": "a", "draft": True}]
+        self.assertEqual(choose_version(releases, [], "a", date(2026, 12, 1)), ("2026.11.1", False))
 
 
 class BatchDecisions(unittest.TestCase):
@@ -76,10 +82,10 @@ class BatchDecisions(unittest.TestCase):
     @patch("release_books.book_inputs", return_value="same-inputs")
     def test_compare_latest_published_edition_not_a_draft(self, inputs):
         items = [
-            {"tag_name": "v2026.13", "target_commitish": "old", "draft": False},
-            {"tag_name": "v2026.16", "target_commitish": "draft", "draft": True},
-            {"tag_name": "v2026.15", "target_commitish": "a" * 40, "draft": False},
-            {"tag_name": "v2026.17", "target_commitish": "preview", "draft": False, "prerelease": True},
+            {"tag_name": "v2026.18", "target_commitish": "old", "draft": False, "published_at": "2026-11-22T20:00:00Z"},
+            {"tag_name": "v2026.11.2", "target_commitish": "draft", "draft": True},
+            {"tag_name": "v2026.11.1", "target_commitish": "a" * 40, "draft": False, "published_at": "2026-11-23T02:00:00Z"},
+            {"tag_name": "v2026.11.3", "target_commitish": "preview", "draft": False, "prerelease": True},
         ]
         self.assertTrue(unchanged_since_publication("owner/repo", "current", items))
         self.assertEqual([call.args[1] for call in inputs.call_args_list], ["current", "a" * 40])
@@ -89,31 +95,39 @@ class BatchDecisions(unittest.TestCase):
 
     @patch("release_books.book_inputs")
     def test_moving_release_target_cannot_silently_suppress_editions(self, inputs):
-        items = [{"tag_name": "v2026.15", "target_commitish": "main", "draft": False}]
+        items = [{"tag_name": "v2026.15", "target_commitish": "main", "draft": False, "published_at": "2026-11-21T00:00:00Z"}]
         with self.assertRaisesRegex(RuntimeError, "immutable source commit"):
             unchanged_since_publication("owner/repo", "current", items)
         inputs.assert_not_called()
 
 
 class Planning(unittest.TestCase):
-    def planned(self, items, *, unchanged=False, verify_only=False):
+    def planned(self, items, *, unchanged=False, verify_only=False, now=None):
         with TemporaryDirectory() as folder:
             path, output = Path(folder) / "plan.json", Path(folder) / "outputs"
-            with patch("release_books.subprocess.check_output", side_effect=["c" * 40, "1795244000"]), \
+            with patch("release_books.subprocess.check_output", return_value="c" * 40), \
+                    patch("release_books.datetime") as clock, \
                     patch("release_books.releases", return_value=items), \
                     patch("release_books.gh", return_value="[[]]"), \
                     patch("release_books.unchanged_since_publication", return_value=unchanged), \
                     patch.dict(os.environ, {"GITHUB_OUTPUT": str(output)}):
+                clock.now.return_value = now or datetime(2026, 11, 23, 2, tzinfo=timezone.utc)
                 plan("owner/repo", path, verify_only)
             return json.loads(path.read_text()), output.read_text()
 
     def test_untagged_old_draft_reserves_its_number_before_conversion(self):
-        items = [{"tag_name": "v2026.15", "target_commitish": "a" * 40, "draft": False},
-                 {"tag_name": "v2026.16", "target_commitish": "b" * 40, "draft": True}]
+        items = [{"tag_name": "v2026.11.1", "target_commitish": "a" * 40, "draft": False},
+                 {"tag_name": "v2026.11.2", "target_commitish": "b" * 40, "draft": True}]
         result, output = self.planned(items)
-        self.assertEqual(result["version"], "2026.17")
+        self.assertEqual(result["version"], "2026.11.3")
         self.assertTrue(result["build"])
-        self.assertIn("version=2026.17\nbuild=true\n", output)
+        self.assertIn("version=2026.11.3\nbuild=true\n", output)
+
+    def test_month_uses_publication_planning_time_in_pacific(self):
+        before, _ = self.planned([], now=datetime(2026, 12, 1, 7, 59, tzinfo=timezone.utc))
+        after, _ = self.planned([], now=datetime(2026, 12, 1, 8, tzinfo=timezone.utc))
+        self.assertEqual(before["version"], "2026.11.1")
+        self.assertEqual(after["version"], "2026.12.1")
 
     def test_same_source_untagged_draft_is_reused(self):
         result, _ = self.planned([{"tag_name": "v2026.16", "target_commitish": "c" * 40, "draft": True}])

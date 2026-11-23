@@ -20,7 +20,9 @@ If GitHub disables the schedule after 60 days without repository activity, the n
 
 ## Versions
 
-Versions follow the year-and-sequence approach demonstrated for this project. The first November 2026 edition is `2026.11`; another edition that November becomes `2026.12`. Within a year, the next sequence is the larger of the current month and the previous sequence plus one. A new year starts a new sequence. Versions are calculated from the source commit date in America/Los_Angeles.
+Versions use **year.month.edition**, beginning with `2026.11.1`. The next November edition is `2026.11.2`; December starts at `2026.12.1`, and January at `2027.1.1`. The month comes from the publication planning date in America/Los_Angeles. The last number starts at one each month and increases for each new edition. An interrupted draft keeps its allocated number even if its retry crosses a month boundary. The source date inside the books still comes from the source commit.
+
+Merlin and Codex both goofed the original numbering while trying to borrow Marco’s system. We got a little ahead of the calendar: the first run went from `2026.11` to `2026.18`, all in November. The restart at `2026.11.1` corrects that while the project is new. Earlier editions retain their names, files, and links. Use the release marked **Latest** or the stable latest-download links to find the current edition; sorting the mixed old and new numbers will not identify it reliably. The publisher compares editions by publication date.
 
 Tags have a `v` prefix and identify exact source commits. Existing tags and draft releases reserve their numbers. A retry reuses the same draft; a published source commit produces no new edition. Newer source commits prevent older builds from replacing the latest edition. Published assets are never overwritten by this workflow. GitHub release immutability is enabled, so published assets and their source tags are protected from replacement.
 

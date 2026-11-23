@@ -170,8 +170,8 @@ def normalized_zip(path, epoch):
 
 
 def build(version, output):
-    if not re.fullmatch(r"20\d{2}\.[1-9]\d*", version):
-        raise ValueError("Expected a year-and-sequence version such as 2026.11")
+    if not re.fullmatch(r"20\d{2}\.(?:[1-9]\d*|(?:[1-9]|1[0-2])\.[1-9]\d*)", version):
+        raise ValueError("Expected year.month.edition, such as 2026.11.1, or a legacy year.sequence version")
     output.mkdir(parents=True, exist_ok=True)
     support = output / "Supporting files"
     support.mkdir(exist_ok=True)
