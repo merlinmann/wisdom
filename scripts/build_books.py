@@ -18,6 +18,7 @@ from string import Template
 from xml.etree import ElementTree as ET
 from zoneinfo import ZoneInfo
 from data_books import export as export_data, html_for_pandoc, yaml_metadata
+from build_provenance import build_identity
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_FILES = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md", "wisdom.json", "wisdom.sqlite")
@@ -176,6 +177,7 @@ def build(version, output):
     support = output / "Supporting files"
     support.mkdir(exist_ok=True)
     sha = command("git", "rev-parse", "HEAD").strip()
+    producer = build_identity(sha)
     epoch = int(command("git", "show", "-s", "--format=%ct", "HEAD"))
     os.environ["SOURCE_DATE_EPOCH"] = str(epoch)
     utc = datetime.fromtimestamp(epoch, timezone.utc)
@@ -252,6 +254,7 @@ def build(version, output):
     HTML(string=pdf_html, base_url=str(ROOT) + "/").write_pdf(output / "wisdom.pdf", stylesheets=[stylesheet], font_config=fonts)
     manifest = {
         "title": metadata["title"], "version": version, "source_commit": sha, "source_date": day,
+        "build": producer,
         "source_date_epoch": epoch, "source_sha256": hashlib.sha256((ROOT / "wisdom.md").read_bytes()).hexdigest(),
         "pandoc": command("pandoc", "--version").splitlines()[0],
         "weasyprint": command("python", "-m", "weasyprint", "--version").strip(),

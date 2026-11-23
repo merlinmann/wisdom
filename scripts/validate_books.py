@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check source preservation and render evidence from the actual ebook files."""
 import argparse
+from build_provenance import validate_build_identity
 from datetime import date
 from html.parser import HTMLParser
 import json
@@ -88,6 +89,7 @@ def validate(folder):
     from PIL import Image, ImageDraw
     support = folder / "Supporting files"
     edition = json.loads((folder / "edition.json").read_text())
+    validate_build_identity(edition.get("build"))
     day = date.fromisoformat(edition["source_date"])
     display_date = f"{day:%B} {day.day}, {day.year}"
     edition_label = f"Digital edition {edition['version']}"

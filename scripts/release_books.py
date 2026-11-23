@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Plan and publish complete, versioned editions through GitHub CLI."""
 import argparse
+from build_provenance import publication_build
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -132,6 +133,7 @@ def publish(repo, folder):
     for line in (folder / "SHA256SUMS").read_text().splitlines():
         digest, name = line.split("  ", 1)
         assert name in ASSETS and hashlib.sha256((folder / name).read_bytes()).hexdigest() == digest
+    build_link = publication_build(manifest.get("build"), repo, sha)
     prior = latest_publication(items)
     compare = f"https://github.com/{repo}/compare/{prior['tag_name']}...{tag}" if prior else f"https://github.com/{repo}/commit/{sha}"
     correction = ""
@@ -151,10 +153,16 @@ All seven formats preserve the manuscript text and identify this edition and its
 
 [Changes in this edition]({compare}) · [Source commit](https://github.com/{repo}/commit/{sha})
 
-`SHA256SUMS` verifies the downloads. `edition.json` records the source and build tools. GitHub’s artifact attestations establish the provenance of all seven formats.
+{build_link}. `edition.json` records this producing execution, the source, and build tools. A publication retry retains the original build identity.
+
+`SHA256SUMS` verifies the downloads. GitHub’s artifact attestations establish the provenance of all seven formats and `edition.json`.
 '''
     if existing is None:
         existing = api(f"repos/{repo}/releases", "POST", {"tag_name": tag, "target_commitish": sha, "name": f"Wisdom — {version}", "body": notes, "draft": True, "prerelease": False})
+    else:
+        # A rebuilt draft may contain a newer producing attempt. Keep its
+        # technical notes consistent with the files about to be uploaded.
+        api(f"repos/{repo}/releases/{existing['id']}", "PATCH", {"body": notes})
     gh("release", "upload", tag, *[str(folder / name) for name in ASSETS], "--repo", repo, "--clobber")
     verify = folder / "Supporting files/published-assets"
     verify.mkdir(exist_ok=True)
