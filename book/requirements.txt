@@ -6,7 +6,7 @@ fonttools==4.68.0
 pillow==13.0.0
 pycparser==3.12
 pydyf==0.13.0
-PyMuPDF==1.26.7
+PyMuPDF==2.1
 pyphen==0.18.1
 tinycss2==1.5.1
 tinyhtml5==2.1.0
