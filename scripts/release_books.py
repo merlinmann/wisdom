@@ -11,7 +11,8 @@ import subprocess
 from zoneinfo import ZoneInfo
 
 ASSETS = ("wisdom.epub", "wisdom.pdf", "wisdom.html", "wisdom.azw3", "wisdom.md", "wisdom.json", "wisdom.sqlite", "edition.json", "SHA256SUMS")
-VERSION = re.compile(r"^v(20\d{2})\.([1-9]\d*)$")
+VERSION = re.compile(r"^v20\d{2}\.(?:[1-9]\d*|(?:[1-9]|1[0-2])\.[1-9]\d*)$")
+MONTHLY_VERSION = re.compile(r"^v(20\d{2})\.([1-9]|1[0-2])\.([1-9]\d*)$")
 
 
 def gh(*args, **kwargs):
@@ -48,12 +49,17 @@ def book_inputs(repo, sha):
     return hashlib.sha256(json.dumps(sorted(records)).encode()).hexdigest()
 
 
-def unchanged_since_publication(repo, sha, items):
+def latest_publication(items):
+    """Publication order survives the switch from legacy year.sequence tags."""
     published = [item for item in items if not item["draft"]
                  and not item.get("prerelease", False) and VERSION.fullmatch(item["tag_name"])]
-    if not published:
+    return max(published, key=lambda item: item["published_at"], default=None)
+
+
+def unchanged_since_publication(repo, sha, items):
+    latest = latest_publication(items)
+    if latest is None:
         return False
-    latest = max(published, key=lambda item: tuple(map(int, VERSION.fullmatch(item["tag_name"]).groups())))
     source = latest["target_commitish"]
     if not re.fullmatch(r"[0-9a-f]{40}", source):
         raise RuntimeError("Published edition must identify an immutable source commit")
@@ -76,15 +82,15 @@ def choose_version(items, tags, sha, day):
     for item in items:
         if item["target_commitish"] == sha and VERSION.fullmatch(item["tag_name"]):
             return item["tag_name"][1:], not item["draft"]
-    taken = [int(match[2]) for tag in tags if (match := VERSION.fullmatch(tag)) and int(match[1]) == day.year]
-    sequence = max(day.month, max(taken, default=0) + 1)
-    return f"{day.year}.{sequence}", False
+    taken = [int(match[3]) for tag in tags if (match := MONTHLY_VERSION.fullmatch(tag))
+             and (int(match[1]), int(match[2])) == (day.year, day.month)]
+    sequence = max(taken, default=0) + 1
+    return f"{day.year}.{day.month}.{sequence}", False
 
 
 def plan(repo, path, verify_only=False):
     sha = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
-    epoch = int(subprocess.check_output(["git", "show", "-s", "--format=%ct", "HEAD"], text=True))
-    day = datetime.fromtimestamp(epoch, timezone.utc).astimezone(ZoneInfo("America/Los_Angeles")).date()
+    day = datetime.now(timezone.utc).astimezone(ZoneInfo("America/Los_Angeles")).date()
     items = releases(repo)
     pages = json.loads(gh("api", f"repos/{repo}/tags?per_page=100", "--paginate", "--slurp"))
     tags = [x["name"] for page in pages for x in page] + [x["tag_name"] for x in items]
@@ -126,11 +132,14 @@ def publish(repo, folder):
     for line in (folder / "SHA256SUMS").read_text().splitlines():
         digest, name = line.split("  ", 1)
         assert name in ASSETS and hashlib.sha256((folder / name).read_bytes()).hexdigest() == digest
-    prior = next((x for x in items if not x["draft"] and VERSION.fullmatch(x["tag_name"])), None)
+    prior = latest_publication(items)
     compare = f"https://github.com/{repo}/compare/{prior['tag_name']}...{tag}" if prior else f"https://github.com/{repo}/commit/{sha}"
+    correction = ""
+    if version == "2026.11.1":
+        correction = "Merlin and Codex both goofed the release numbering while trying to borrow Marco’s system. We got a little ahead of the calendar. We’re starting over at **2026.11.1**: year, month, edition within that month. Next comes **2026.11.2**, and December starts at **2026.12.1**. Earlier downloads keep their original names and links.\n\n"
     notes = f'''## Merlin’s Wisdom Project — {version}
 
-- **EPUB:** adjustable text for e-readers and reading apps; Kindle readers can use [Send to Kindle](https://www.amazon.com/sendtokindle).
+{correction}- **EPUB:** adjustable text for e-readers and reading apps; Kindle readers can use [Send to Kindle](https://www.amazon.com/sendtokindle).
 - **PDF:** a typeset edition with fixed pages.
 - **HTML:** a complete offline edition with its images and fonts included.
 - **AZW3:** a Kindle edition for USB transfer or Calibre. For Amazon’s Send to Kindle service, use the EPUB.
