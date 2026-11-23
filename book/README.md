@@ -28,6 +28,16 @@ Tags have a `v` prefix and identify exact source commits. Existing tags and draf
 
 A small planning job reads publication metadata with the repository permission required to see unpublished drafts. It performs no repository or release writes. The plan and version then pass to a separate build job with read-only repository permissions. Third-party conversion tools never receive a write-enabled token. A superseded draft remains preserved and reserves its number, so the next source commit can receive a new number without colliding with it. Published editions must name an immutable source commit; a moving branch name is rejected before comparison.
 
+## Build Numbers
+
+The public edition remains **year.month.edition**. Each GitHub build also records its automatically assigned workflow run number and producing attempt in `edition.json`, and the release notes link to that execution: for example, **Build 36 (attempt 1)**. No counter needs to be edited. Review runs and runs with no changed book inputs still consume workflow numbers, so gaps are normal. One build identity covers the complete set of seven formats.
+
+The `build` object records `provider`, `repository`, `run_id`, `run_number`, `run_attempt`, `workflow_ref`, `workflow_commit`, and `url`. The run ID is stored as a string; number and attempt are integers. Repository, run ID, and producing attempt identify the execution, while the shorter run number is convenient to read. GitHub preserves the run ID and number on a rerun and increments the attempt. A build rerun captures its new attempt; a publication-only retry retains the metadata of the build that produced the files. Rebuilding an unpublished draft updates its technical notes to match its new files. Published editions remain unchanged.
+
+Plans and books are retained as separate artifacts for each producing attempt. Jobs pass the exact artifact IDs forward, so a retry downloads the intended package without replacing an earlier attempt’s review files. The existing 30-day artifact retention remains in effect.
+
+Build identity is recorded only in the technical manifest and release notes. It does not alter book content, public edition identifiers, source dates, or the data schema. The seven book files remain reproducible across runs using the same edition, source, and tools; the manifest identifies the particular execution. Checksums include the completed manifest, and GitHub signs its digest alongside the seven book digests. A local conversion records `"build": {"provider": "local"}` without inventing an official number. Publication requires a build from the same GitHub workflow run and source, with a producing attempt no later than the publishing attempt. Older editions predate these additive manifest fields.
+
 ## Files and Verification
 
 The EPUB and PDF place a dedicated copyright page immediately after the authored title page, followed by contents and epigraphs. The HTML, AZW3, and Markdown carry the same copyright text near the beginning. The page includes the official CC BY-NC 4.0 badge (omitted with all other images in Markdown), linked license terms, the publisher, and an automatically filled edition number and date. `book/copyright.html` supplies the shared text; the version and America/Los_Angeles source date are the same values recorded in `edition.json`. Retries retain that date instead of using the rebuild time.
@@ -40,7 +50,7 @@ For wireless delivery to Kindle, upload the EPUB through [Send to Kindle](https:
 
 The build runs EPUBCheck, verifies source passages in all seven formats (including text extracted from the finished AZW3), checks PDF text bounds and bookmarks, and rebuilds all seven files to compare their bytes. It also checks copyright placement, edition/date consistency, image-free Markdown, YAML metadata, and self-contained HTML assets. An independent reader compares every SQLite section, entry, link, and metadata value with JSON, checks database integrity and references, and exercises full-text search. Rendered PDF pages, narrow/wide EPUB and HTML screenshots, and an extracted Kindle-page preview are retained with the Actions artifact. Browser previews do not replace device-specific reading-system tests.
 
-GitHub artifact attestations identify the workflow and source that produced the books. Verify a downloaded EPUB with:
+GitHub artifact attestations identify the workflow and source for the seven books and their `edition.json` build record. Verify a downloaded EPUB with:
 
 ```sh
 gh attestation verify wisdom.epub --repo merlinmann/wisdom
@@ -67,6 +77,7 @@ shasum -a 256 -c SHA256SUMS
 - `scripts/data_books.py`: structured JSON, SQLite, and YAML metadata.
 - `scripts/validate_data_books.py`: independent data-file and search checks.
 - `scripts/release_books.py`: version allocation and verified publication.
+- `scripts/build_provenance.py`: automatic producing-run identity and publication-context validation.
 - `.github/workflows/checks.yml`: quick checks for edits and compatibility updates for existing reading links.
 - `.github/workflows/books.yml`: daily or manually requested editions, with separate metadata planning, read-only conversion, compatibility, and publication jobs.
 
