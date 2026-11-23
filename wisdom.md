@@ -132,7 +132,7 @@ Brief introductory remarks regarding the Project:
 
 ----
 
-- Every project is a triangle made of time, money, and quality; shortening the length of one side necessarily lengthens one or—more often—*both* of the other sides.
+- Every project is a triangle made of time, money, and quality; trying to improve one side necessarily worsens one or—more often—*both* of the other sides.
 - Less well known is that we each tend to blow it hardest in estimating the sides of the triangle we least understand or respect.
 - Kindly note that the grave existential truth of the Project Management Triangle is *non-negotiable*. People **hate** this. Which is normal.
 - If the person with whom you are negotiating finds it difficult to provide a decisive budget estimate for their project, ask them to try and situate it between two orders of magnitude. As in, "How many zeroes are we talking about here?" Quickly discovering that your ballpark figures are 2 to 6 zeroes apart can save you both a *lot* of time and frustration.
